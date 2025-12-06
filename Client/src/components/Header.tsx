@@ -1,14 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {
-  Menu,
-  X,
-  ChevronDown,
-  Calendar,
-  User,
-  Info,
-  Home,
-  Clock,
-} from "lucide-react";
+import { useState, useEffect } from "react";
+import { Menu, X, ChevronDown, User, Info, Home, Clock } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,8 +19,6 @@ const Header = () => {
   const handleNavClick = (navItem: string) => {
     setActiveNav(navItem);
     setIsMenuOpen(false);
-    // Smooth scroll to section would go here
-    // document.getElementById(navItem)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const navItems = [

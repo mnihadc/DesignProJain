@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   FlaskConical,
   Globe2,
@@ -10,8 +9,6 @@ import {
 } from "lucide-react";
 
 const ConferenceThemes = () => {
-  const [hoveredCard, setHoveredCard] = useState(null);
-
   const themes = [
     {
       icon: FlaskConical,
@@ -71,14 +68,14 @@ const ConferenceThemes = () => {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-b from-[#0A2463] to-[#0d2d7a] text-white relative overflow-hidden">
+    <section className="w-full bg-linear-to-b from-[#0A2463] to-[#0d2d7a] text-white relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
 
       <div className="relative z-10 px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 py-12 sm:py-16 md:py-20">
         {/* DIVIDER */}
-        <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto mb-8 sm:mb-12 md:mb-16 rounded-full"></div>
+        <div className="w-24 h-1 bg-linear-to-r from-blue-400 to-cyan-400 mx-auto mb-8 sm:mb-12 md:mb-16 rounded-full"></div>
 
         {/* TITLE SECTION */}
         <div className="text-center mb-10 sm:mb-14 md:mb-18">
@@ -87,7 +84,7 @@ const ConferenceThemes = () => {
               KEY THEMES
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 bg-linear-to-r from-white to-blue-100 bg-clip-text text-transparent">
             Conference Themes
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl italic font-medium text-blue-100 mt-4 sm:mt-6 max-w-3xl mx-auto px-2">
@@ -112,22 +109,17 @@ const ConferenceThemes = () => {
               const Icon = theme.icon;
 
               return (
-                <div
-                  key={index}
-                  className="relative group"
-                  onMouseEnter={() => setHoveredCard(index)}
-                  onMouseLeave={() => setHoveredCard(null)}
-                >
+                <div key={index} className="relative group">
                   {/* Glow effect */}
                   <div
-                    className={`absolute inset-0 bg-gradient-to-br ${theme.gradient} opacity-0 group-hover:opacity-20 blur-xl rounded-3xl transition-all duration-500 scale-100 group-hover:scale-105`}
+                    className={`absolute inset-0 bg-linear-to-br ${theme.gradient} opacity-0 group-hover:opacity-20 blur-xl rounded-3xl transition-all duration-500 scale-100 group-hover:scale-105`}
                   ></div>
 
                   {/* Main Card */}
                   <div className="relative bg-white/95 backdrop-blur-sm rounded-2xl p-5 sm:p-6 md:p-7 shadow-xl hover:shadow-2xl transition-all duration-500 border border-white/20 hover:border-white/40 h-full group-hover:-translate-y-2 flex flex-col overflow-hidden">
                     {/* Top accent line */}
                     <div
-                      className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${theme.gradient} opacity-80`}
+                      className={`absolute top-0 left-0 right-0 h-1 bg-linear-to-r ${theme.gradient} opacity-80`}
                     ></div>
 
                     {/* Animated background pattern */}
@@ -143,7 +135,7 @@ const ConferenceThemes = () => {
                     {/* Icon Container */}
                     <div className="relative mb-4 sm:mb-5 md:mb-6">
                       <div
-                        className={`relative inline-block p-3 sm:p-4 rounded-xl bg-gradient-to-br ${theme.gradient} group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                        className={`relative inline-block p-3 sm:p-4 rounded-xl bg-linear-to-br ${theme.gradient} group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                       >
                         <Icon
                           size={28}
@@ -152,7 +144,7 @@ const ConferenceThemes = () => {
                       </div>
                       {/* Icon glow */}
                       <div
-                        className={`absolute inset-0 bg-gradient-to-br ${theme.gradient} opacity-30 blur-lg group-hover:opacity-50 transition-opacity duration-300 rounded-xl`}
+                        className={`absolute inset-0 bg-linear-to-br ${theme.gradient} opacity-30 blur-lg group-hover:opacity-50 transition-opacity duration-300 rounded-xl`}
                       ></div>
                     </div>
 
@@ -162,7 +154,7 @@ const ConferenceThemes = () => {
                     </h3>
 
                     {/* Description */}
-                    <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed flex-grow relative z-10 group-hover:text-gray-600 transition-colors duration-300">
+                    <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed grow relative z-10 group-hover:text-gray-600 transition-colors duration-300">
                       {theme.description}
                     </p>
 
@@ -188,7 +180,7 @@ const ConferenceThemes = () => {
 
                     {/* Bottom gradient accent */}
                     <div
-                      className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${theme.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500`}
+                      className={`absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r ${theme.gradient} opacity-0 group-hover:opacity-100 transition-all duration-500 origin-left scale-x-0 group-hover:scale-x-100`}
                     ></div>
                   </div>
                 </div>

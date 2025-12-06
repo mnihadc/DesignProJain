@@ -1,24 +1,53 @@
+// Updated Header.tsx with corrected TypeScript types and Tailwind canonical classes
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown, User, Info, Home, Clock } from "lucide-react";
+import toast from "react-hot-toast";
+
+interface NavMap {
+  [key: string]: string;
+}
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeNav, setActiveNav] = useState("home");
 
-  // Handle scroll effect
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Handle navigation click
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const handleNavClick = (navItem: string) => {
     setActiveNav(navItem);
     setIsMenuOpen(false);
+
+    if (navItem === "registration") {
+      toast("Registration has not started yet — Coming Soon!", {
+        icon: "⏳",
+        style: {
+          background: "#052058",
+          color: "white",
+          border: "1px solid #3356a8",
+        },
+      });
+      return;
+    }
+
+    const map: NavMap = {
+      home: "home",
+      about: "about",
+      schedule: "schedule",
+    };
+
+    scrollToSection(map[navItem]);
   };
 
   const navItems = [
@@ -54,7 +83,6 @@ const Header = () => {
     >
       <div className="max-w-8xl mx-auto px-3 sm:px-5 lg:px-8 py-3 sm:py-4">
         <div className="flex items-center justify-between">
-          {/* Logo Section */}
           <div className="flex items-center space-x-3 sm:space-x-4">
             <button
               className="lg:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
@@ -78,7 +106,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden lg:block">
             <ul className="flex items-center space-x-1">
               {navItems.map((item) => (
@@ -95,8 +122,9 @@ const Header = () => {
                     <span className="font-medium text-sm xl:text-base">
                       {item.label}
                     </span>
+
                     {activeNav === item.id && (
-                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-300 rounded-full"></div>
+                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-linear-to-r from-blue-400 to-cyan-300 rounded-full" />
                     )}
                   </button>
                 </li>
@@ -105,7 +133,6 @@ const Header = () => {
           </nav>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden mt-4 pb-3 animate-in slide-in-from-top-5 duration-300">
             <div className="bg-white/10 backdrop-blur-lg rounded-xl border border-white/20 p-4">
@@ -116,7 +143,7 @@ const Header = () => {
                       onClick={() => handleNavClick(item.id)}
                       className={`flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ${
                         activeNav === item.id
-                          ? "text-white bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-white/20"
+                          ? "text-white bg-linear-to-r from-blue-500/20 to-cyan-500/20 border border-white/20"
                           : "text-gray-300 hover:text-white hover:bg-white/10"
                       }`}
                     >
@@ -130,10 +157,9 @@ const Header = () => {
                 ))}
               </ul>
 
-              {/* Additional Info for Mobile */}
               <div className="mt-4 pt-4 border-t border-white/20">
                 <div className="text-center text-blue-100/80 text-sm">
-                  <p className="font-medium">Feb 15-17, 2026</p>
+                  <p className="font-medium">Feb 15–17, 2026</p>
                   <p className="text-xs mt-1">
                     Design Innovation Center, New Delhi
                   </p>
@@ -143,8 +169,8 @@ const Header = () => {
           </div>
         )}
       </div>
-      {/* Bottom gradient line */}
-      <div className="h-0.5 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-50"></div>
+
+      <div className="h-0.5 bg-linear-to-r from-transparent via-white/30 to-transparent opacity-50" />
     </header>
   );
 };

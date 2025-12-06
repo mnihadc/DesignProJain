@@ -25,24 +25,24 @@ const Hero = () => {
         {/* Main Title Section */}
         <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12">
           {/* Decorative Accent Line */}
-          <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-4 sm:w-20 sm:mb-6 md:mb-8 rounded-full" />
+          <div className="w-16 h-0.5 bg-gradient-to-r" />
 
-          {/* Typography Title */}
+          {/* Typography Title - Single Line */}
           <div className="mb-8 sm:mb-10 md:mb-12">
             <h1
-              className="text-5xl font-[400] text-gray-900 sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] 2xl:text-[180px]"
+              className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[160px]"
               style={{ fontFamily: "Georgia, serif" }}
             >
-              <span className="block bg-gradient-to-r from-[#0A2463] via-blue-700 to-cyan-700 bg-clip-text text-transparent leading-[0.9] sm:leading-[0.95] md:leading-[1] pb-2 sm:pb-3 md:pb-4 lg:pb-6">
+              <span className="block leading-tight">
                 Typoday
-              </span>
-              <span className="block text-4xl text-gray-700 mt-1 sm:text-6xl sm:mt-2 md:text-7xl md:mt-3 lg:text-8xl xl:text-[100px] 2xl:text-[120px] leading-none">
-                2026
+                <span className="ml-2 sm:ml-3 md:ml-4 lg:ml-6 xl:ml-8">
+                  2026
+                </span>
               </span>
             </h1>
 
             {/* Venue */}
-            <p className="text-base text-gray-700 font-semibold mt-1 sm:text-lg sm:mt-2 md:text-[20px] lg:text-[22px]">
+            <p className="text-base text-gray-700 font-semibold mt-2 sm:text-lg sm:mt-3 md:text-[20px] lg:text-[22px] md:mt-4">
               Venue: Jain Deemed-to-be University, Kochi
             </p>
           </div>

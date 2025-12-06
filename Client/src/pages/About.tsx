@@ -1,8 +1,9 @@
 const AboutSection = () => {
   return (
-    <section className="w-full bg-[#0A2463] text-white px-6 md:px-20 py-16 leading-relaxed">
+    <section className="w-full bg-[#0A2463] text-white px-3 md:px-10 py-7 leading-relaxed">
       {/* DATE + VENUE */}
-      <div className="text-center mb-10">
+
+      <div className="text-center mb-10 ">
         <p className="text-[20px] font-light">
           28th, 29th and 30th September 2026
         </p>
@@ -10,7 +11,7 @@ const AboutSection = () => {
           Venue: Jain Deemed-to-be University, Kochi
         </p>
       </div>
-
+      <div className="w-full border-t border-white/30 mb-10"></div>
       {/* DESCRIPTION BLOCK */}
       <p className="text-[15px] mb-6">
         <strong>Typography Day</strong> is being held for the eighteenth time on
@@ -58,12 +59,14 @@ const AboutSection = () => {
       </p>
 
       {/* STATS */}
-      <div className="flex justify-center gap-10 mt-8 flex-wrap text-[20px] font-semibold">
+      <div className="flex justify-center gap-10 mt-8 flex-wrap text-[20px] font-bold">
         <span>50+ Speakers</span>
         <span>30+ Workshops</span>
         <span>500+ Attendees</span>
       </div>
+  
     </section>
+    
   );
 };
 

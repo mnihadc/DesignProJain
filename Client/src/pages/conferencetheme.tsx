@@ -10,14 +10,12 @@ import {
 
 const ConferenceThemes = () => {
   return (
-    <section className="w-full bg-[#0A2463] text-white px-6 md:px-20 py-20">
-      {/* TOP BORDER */}
+    <section className="w-full bg-[#0A2463] text-white px-6 md:px-10 py-5 pb-15">
       <div className="w-full border-t border-white/30 mb-10"></div>
-
       {/* TITLE */}
       <div className="text-center mb-10">
-        <h2 className="text-[28px] font-semibold">Conference Themes</h2>
-        <p className="text-[16px] italic mt-2">
+        <h2 className="text-[28px] font-bold">Conference Themes</h2>
+        <p className="text-[16px] italic font-semibold mt-2">
           Typography and Storytelling: Exploring the intersection of letterforms
           and narratives
         </p>
@@ -33,7 +31,7 @@ const ConferenceThemes = () => {
       {/* GRID */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* 1 */}
-        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[180px]">
+        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[200px]">
           <FlaskConical size={36} className="mb-3" />
           <h3 className="text-[18px] font-semibold mb-2">
             Experiments and Explorations
@@ -45,7 +43,7 @@ const ConferenceThemes = () => {
         </div>
 
         {/* 2 */}
-        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[180px]">
+        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[200px]">
           <Globe2 size={36} className="mb-3" />
           <h3 className="text-[18px] font-semibold mb-2">Cultural Context</h3>
           <p className="text-[14px] leading-relaxed">
@@ -55,7 +53,7 @@ const ConferenceThemes = () => {
         </div>
 
         {/* 3 */}
-        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[180px]">
+        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[200px]">
           <GraduationCap size={36} className="mb-3" />
           <h3 className="text-[18px] font-semibold mb-2">Learning Processes</h3>
           <p className="text-[14px] leading-relaxed">
@@ -64,7 +62,7 @@ const ConferenceThemes = () => {
         </div>
 
         {/* 4 */}
-        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[180px]">
+        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[200px]">
           <Languages size={36} className="mb-3" />
           <h3 className="text-[18px] font-semibold mb-2">
             Multilingual Scripts
@@ -76,7 +74,7 @@ const ConferenceThemes = () => {
         </div>
 
         {/* 5 */}
-        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[180px]">
+        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[200px]">
           <PenTool size={36} className="mb-3" />
           <h3 className="text-[18px] font-semibold mb-2">Indigenous Scripts</h3>
           <p className="text-[14px] leading-relaxed">
@@ -85,7 +83,7 @@ const ConferenceThemes = () => {
         </div>
 
         {/* 6 */}
-        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[180px]">
+        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[200px]">
           <Map size={36} className="mb-3" />
           <h3 className="text-[18px] font-semibold mb-2">Local Languages</h3>
           <p className="text-[14px] leading-relaxed">
@@ -94,7 +92,7 @@ const ConferenceThemes = () => {
         </div>
 
         {/* 7 */}
-        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[180px]">
+        <div className="bg-white text-[#0A2463] rounded-2xl p-6 shadow-md min-h-[200px]">
           <BookOpen size={36} className="mb-3" />
           <h3 className="text-[18px] font-semibold mb-2">
             Research Activities

@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="w-full bg-white text-white pt-16 pb-14 px-4 text-center">
+    <section className="w-full bg-white text-white pt-4 pb-1 px-4 text-center">
       {/* MAIN TITLE */}
       <h1
         className="text-[150px] font-[400] leading-tight mb-6 text-black"
@@ -14,12 +14,12 @@ const Hero = () => {
         <img
           src="/images/iitbombay.jpg"
           alt="IIT Bombay"
-          className="h-[250px] w-[350px]  object-contain"
+          className="h-[200px] w-[350px]  object-contain"
         />
         <img
           src="/images/jainDesign.png"
           alt="JAIN University"
-          className="h-[250px] w-[500px] object-contain"
+          className="h-[200px] w-[500px] object-contain"
         />
       </div>
     </section>

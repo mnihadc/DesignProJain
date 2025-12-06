@@ -156,15 +156,6 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-
-              <div className="mt-4 pt-4 border-t border-white/20">
-                <div className="text-center text-blue-100/80 text-sm">
-                  <p className="font-medium">Feb 15–17, 2026</p>
-                  <p className="text-xs mt-1">
-                    Design Innovation Center, New Delhi
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         )}

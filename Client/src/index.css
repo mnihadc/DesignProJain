@@ -10,12 +10,13 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: only light;
 }
-
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  color-scheme: only light;
 }
 
 /* Custom responsive utility classes */

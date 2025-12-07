@@ -32,11 +32,17 @@ const Hero = () => {
           Venue: Jain Deemed-to-be University, Kochi
         </p>
 
+<<<<<<< HEAD
         {/* Event Date Badge */}
         <div className="mt-4 sm:mt-6 md:mt-8">
           <div className="inline-block px-4 py-1.5 bg-blue-50/80 backdrop-blur-sm rounded-full border border-blue-200 sm:px-5 sm:py-2">
             <p className="text-sm text-gray-700 font-medium sm:text-base md:text-lg">
               September 28, 29, and 30, 2026
+=======
+            {/* Venue */}
+            <p className="text-base text-gray-700 font-semibold mt-2 sm:text-lg sm:mt-3 md:text-[20px] lg:text-[22px] md:mt-4">
+              Venue: JAIN Deemed-to-be University, Kochi
+>>>>>>> 005dfdaeb2f2e0c92d2f6d72bb2f0d5dc6201580
             </p>
           </div>
         </div>
@@ -67,7 +73,17 @@ const Hero = () => {
                   <img
                     src="/images/jainDesign.png"
                     alt="JAIN University"
+<<<<<<< HEAD
                     className="w-auto h-[55px] object-contain mx-auto sm:h-[70px] md:h-[90px] lg:h-[110px] xl:h-[130px] 2xl:h-[150px] 3xl:h-[180px]"
+=======
+                    className="w-auto h-[55px] object-contain mx-auto
+                             sm:h-[90px]
+                             md:h-[110px]
+                             lg:h-[130px]
+                             xl:h-[150px]
+                             2xl:h-[180px]
+                             3xl:h-[180px]"
+>>>>>>> 005dfdaeb2f2e0c92d2f6d72bb2f0d5dc6201580
                     loading="lazy"
                   />
                 </div>

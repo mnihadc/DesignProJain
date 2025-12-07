@@ -79,9 +79,6 @@ const Hero = () => {
                     loading="lazy"
                   />
                 </div>
-                <p className="mt-2 text-xs font-medium text-gray-600 sm:text-sm sm:mt-3">
-                  Indian Institute of Technology Bombay
-                </p>
               </div>
             </div>
 
@@ -102,9 +99,6 @@ const Hero = () => {
                     loading="lazy"
                   />
                 </div>
-                <p className="mt-2 text-xs font-medium text-gray-600 sm:text-sm sm:mt-3">
-                  JAIN (Deemed-to-be University)
-                </p>
               </div>
             </div>
           </div>

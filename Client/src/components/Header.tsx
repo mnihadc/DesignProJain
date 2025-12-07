@@ -100,9 +100,6 @@ const Header = () => {
               <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight font-serif">
                 Typoday 2026
               </h1>
-              <p className="text-[10px] xs:text-xs sm:text-sm text-blue-200/80 tracking-wide font-medium mt-0.5">
-                International Conference on Typography & Design
-              </p>
             </div>
           </div>
 

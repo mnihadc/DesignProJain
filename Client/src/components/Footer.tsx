@@ -19,7 +19,7 @@ const Footer = () => {
               &
               <span className="font-medium">
                 {" "}
-                Jain Deemed-to-be University, Kochi
+                JAIN Deemed-to-be University, Kochi
               </span>
               .
             </p>

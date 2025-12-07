@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="mt-4 sm:mt-6 md:mt-8">
             <div className="inline-block px-4 py-1.5 bg-blue-50/80 backdrop-blur-sm rounded-full border border-blue-200 sm:px-5 sm:py-2">
               <p className="text-sm text-gray-700 font-medium sm:text-base md:text-lg">
-                Kochi, Kerala • September 28-30, 2026
+                September 28, 29, and 30, 2026
               </p>
             </div>
           </div>

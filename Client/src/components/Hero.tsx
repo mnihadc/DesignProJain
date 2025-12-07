@@ -60,7 +60,7 @@ const Hero = () => {
               <img
                 src="/images/jainDesign.png"
                 alt="JAIN University"
-                className="w-full h-full object-contain"
+                className="w-auto h-[70px] object-contain mx-auto sm:h-[90px] md:h-[110px] lg:h-[130px] xl:h-[130px] 2xl:h-[150px] 3xl:h-[180px]"
                 loading="lazy"
               />
             </div>

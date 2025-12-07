@@ -29,7 +29,7 @@ const Hero = () => {
 
         {/* Venue */}
         <p className="text-base text-gray-700 font-semibold mt-2 sm:text-lg sm:mt-3 md:text-[20px] lg:text-[22px] md:mt-4">
-          Venue: Jain Deemed-to-be University, Kochi
+          Venue: JAIN Deemed-to-be University, Kochi
         </p>
 
         {/* Event Date Badge */}
@@ -41,37 +41,28 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* University Logos Section */}
         <div className="relative mt-6 mb-4 sm:mt-8 sm:mb-6 md:mt-10 md:mb-8 lg:mt-12">
           <div className="hidden sm:block absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300/50 to-transparent -translate-y-1/2" />
 
-          <div className="flex flex-col items-center justify-center gap-10 sm:flex-row sm:gap-14 md:gap-18 lg:gap-22 xl:gap-24">
+          <div className="flex flex-col items-center justify-center gap-10 sm:flex-row sm:gap-14 md:gap-16 lg:gap-20 xl:gap-24">
             {/* IIT Bombay Logo */}
-            <div className="w-full max-w-[320px] sm:max-w-none">
-              <div className="bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-md border border-gray-200 sm:rounded-2xl sm:p-4 md:p-5">
-                <div className="p-1 sm:p-2">
-                  <img
-                    src="/images/iitbombay.jpg"
-                    alt="IIT Bombay"
-                    className="w-auto h-[70px] object-contain mx-auto sm:h-[90px] md:h-[110px] lg:h-[130px] xl:h-[150px] 2xl:h-[180px]"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
+            <div className="w-[320px] h-[160px] sm:w-[360px] sm:h-[180px] md:w-[420px] md:h-[200px] bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-md border border-gray-200 flex items-center justify-center">
+              <img
+                src="/images/iitbombay.jpg"
+                alt="IIT Bombay"
+                className="w-full h-full object-contain"
+                loading="lazy"
+              />
             </div>
 
             {/* JAIN University Logo */}
-            <div className="w-full max-w-[480px] sm:max-w-none">
-              <div className="bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-md border border-gray-200 sm:rounded-2xl sm:p-4 md:p-5">
-                <div className="p-1 sm:p-2">
-                  <img
-                    src="/images/jainDesign.png"
-                    alt="JAIN University"
-                    className="w-auto h-[55px] object-contain mx-auto sm:h-[70px] md:h-[90px] lg:h-[110px] xl:h-[130px] 2xl:h-[150px] 3xl:h-[180px]"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
+            <div className="w-[320px] h-[160px] sm:w-[360px] sm:h-[180px] md:w-[420px] md:h-[200px] bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-md border border-gray-200 flex items-center justify-center">
+              <img
+                src="/images/jainDesign.png"
+                alt="JAIN University"
+                className="w-full h-full object-contain"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@ const AboutSection = () => {
             2026, hosted by School of Design, Media and Creative Arts, JAIN
             (Deemed-to-be University), Kochi in collaboration with the IDC
             School of Design (IDC), Indian Institute of Technology Mumbai (IITB)
+            
           </p>
 
           {/* About the Theme */}

@@ -43,7 +43,7 @@ const Hero = () => {
 
             {/* Venue */}
             <p className="text-base text-gray-700 font-semibold mt-2 sm:text-lg sm:mt-3 md:text-[20px] lg:text-[22px] md:mt-4">
-              Venue: Jain Deemed-to-be University, Kochi
+              Venue: JAIN Deemed-to-be University, Kochi
             </p>
           </div>
 

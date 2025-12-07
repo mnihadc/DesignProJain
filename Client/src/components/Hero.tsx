@@ -90,11 +90,11 @@ const Hero = () => {
                     src="/images/jainDesign.png"
                     alt="JAIN University"
                     className="w-auto h-[55px] object-contain mx-auto
-                             sm:h-[70px]
-                             md:h-[90px]
-                             lg:h-[110px]
-                             xl:h-[130px]
-                             2xl:h-[150px]
+                             sm:h-[90px]
+                             md:h-[110px]
+                             lg:h-[130px]
+                             xl:h-[150px]
+                             2xl:h-[180px]
                              3xl:h-[180px]"
                     loading="lazy"
                   />

@@ -9,7 +9,7 @@ const AboutSection = () => {
             held for the eighteenth time on 28th, 29th and 30th of September
             2026, hosted by School of Design, Media and Creative Arts, JAIN
             (Deemed-to-be University), Kochi in collaboration with the IDC
-            School of Design (IDC), Indian Institute of Technology Mumbai (IITB)
+            School of Design (IDC), Indian Institute of Technology Bombay(IITB) Mumbai.
           </p>
 
           {/* About the Theme */}

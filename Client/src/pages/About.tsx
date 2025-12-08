@@ -10,7 +10,6 @@ const AboutSection = () => {
             2026, hosted by School of Design, Media and Creative Arts, JAIN
             (Deemed-to-be University), Kochi in collaboration with the IDC
             School of Design (IDC), Indian Institute of Technology Mumbai (IITB)
-            
           </p>
 
           {/* About the Theme */}
@@ -23,7 +22,10 @@ const AboutSection = () => {
             <strong className="font-semibold">
               'Typographic Intersections: Analogue to Digital and Beyond'
             </strong>
-            . The event begins by featuring a day of workshops on Typography and
+            .
+          </p>
+          <p className="text-sm leading-relaxed sm:text-base sm:leading-relaxed md:text-[15px] lg:text-base lg:leading-relaxed mb-4 sm:mb-5 md:mb-6">
+            The event begins by featuring a day of workshops on Typography and
             Calligraphy, followed by an international conference themed on
             'Typographic Intersections: Analogue to Digital and Beyond', and
             dedicated to addressing issues faced by type designers, type users

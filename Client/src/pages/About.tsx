@@ -6,7 +6,7 @@ const AboutSection = () => {
         <div className="mb-6 sm:mb-8 md:mb-10">
           <p className="text-sm leading-relaxed sm:text-base sm:leading-relaxed md:text-[15px] lg:text-base lg:leading-relaxed mb-4 sm:mb-5 md:mb-6">
             <strong className="font-semibold">Typography Day</strong> is being
-            held for the eighteenth time on 28nd, 29rd and 30th of September
+            held for the eighteenth time on 28th , 29rd and 30th of September
             2026, hosted by School of Design, Media and Creative Arts, JAIN
             (Deemed-to-be University), Kochi in collaboration with the IDC
             School of Design (IDC), Indian Institute of Technology Mumbai (IITB)

@@ -6,12 +6,7 @@ const AboutSection = () => {
         <div className="mb-6 sm:mb-8 md:mb-10">
           <p className="text-sm leading-relaxed sm:text-base sm:leading-relaxed md:text-[15px] lg:text-base lg:leading-relaxed mb-4 sm:mb-5 md:mb-6">
             <strong className="font-semibold">Typography Day</strong> is being
-<<<<<<< HEAD
-            held for the eighteenth time on 28th , 29rd and 30th of September
-=======
-            held for the eighteenth time on 28th
-            , 29rd and 30th of September
->>>>>>> 54d2c809e5b55a83d184d1d9a78d323839178f31
+            held for the eighteenth time on 28th, 29rd and 30th of September
             2026, hosted by School of Design, Media and Creative Arts, JAIN
             (Deemed-to-be University), Kochi in collaboration with the IDC
             School of Design (IDC), Indian Institute of Technology Mumbai (IITB)
@@ -29,6 +24,7 @@ const AboutSection = () => {
             </strong>
             .
           </p>
+
           <p className="text-sm leading-relaxed sm:text-base sm:leading-relaxed md:text-[15px] lg:text-base lg:leading-relaxed mb-4 sm:mb-5 md:mb-6">
             The event begins by featuring a day of workshops on Typography and
             Calligraphy, followed by an international conference themed on
@@ -81,7 +77,6 @@ const AboutSection = () => {
               <div className="text-xs font-medium text-white/90">Speakers</div>
             </div>
 
-            {/* Mobile divider */}
             <div className="w-px h-8 bg-white/30" />
 
             {/* Workshops */}
@@ -90,7 +85,6 @@ const AboutSection = () => {
               <div className="text-xs font-medium text-white/90">Workshops</div>
             </div>
 
-            {/* Mobile divider */}
             <div className="w-px h-8 bg-white/30" />
 
             {/* Attendees */}
@@ -112,7 +106,6 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* Desktop divider */}
             <div className="w-px h-12 bg-white/30" />
 
             {/* Workshops */}
@@ -125,7 +118,6 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* Desktop divider */}
             <div className="w-px h-12 bg-white/30" />
 
             {/* Attendees */}

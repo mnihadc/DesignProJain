@@ -1,6 +1,6 @@
 // Updated Header.tsx with corrected TypeScript types and Tailwind canonical classes
 import { useState, useEffect } from "react";
-import { Menu, X, ChevronDown, User, Info, Home, Clock } from "lucide-react";
+import { Menu, X, ChevronDown, User, Home, Clock } from "lucide-react";
 import toast from "react-hot-toast";
 
 interface NavMap {
@@ -67,9 +67,10 @@ const Header = () => {
       icon: <Clock className="w-4 h-4 md:w-5 md:h-5" />,
     },
     {
-      id: "about",
-      label: "About",
-      icon: <Info className="w-4 h-4 md:w-5 md:h-5" />,
+      id: "more",
+      label: "More",
+      // Empty icon since we'll handle More specially
+      icon: null,
     },
   ];
 
@@ -97,7 +98,7 @@ const Header = () => {
             </button>
 
             <div className="flex flex-col">
-              <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight font-serif">
+              <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-white leading-tight font-serif [text-shadow:0_2px_4px_rgba(0,0,0,0.5),0_0_0_1px_rgba(0,0,0,0.3)]">
                 Typoday 2026
               </h1>
             </div>
@@ -115,10 +116,24 @@ const Header = () => {
                         : "text-gray-300 hover:text-white hover:bg-white/5"
                     }`}
                   >
-                    <span className="hidden xl:inline-block">{item.icon}</span>
-                    <span className="font-medium text-sm xl:text-base">
-                      {item.label}
-                    </span>
+                    {/* For "More" only: Show label first, then icon */}
+                    {item.id === "more" ? (
+                      <>
+                        <span className="font-medium text-sm xl:text-base">
+                          {item.label}
+                        </span>
+                        <ChevronDown className="w-3 h-3 md:w-4 md:h-4" />
+                      </>
+                    ) : (
+                      <>
+                        <span className="hidden xl:inline-block">
+                          {item.icon}
+                        </span>
+                        <span className="font-medium text-sm xl:text-base">
+                          {item.label}
+                        </span>
+                      </>
+                    )}
 
                     {activeNav === item.id && (
                       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-linear-to-r from-blue-400 to-cyan-300 rounded-full" />
@@ -144,8 +159,18 @@ const Header = () => {
                           : "text-gray-300 hover:text-white hover:bg-white/10"
                       }`}
                     >
-                      {item.icon}
-                      <span className="font-medium">{item.label}</span>
+                      {/* For "More" only in mobile: Show label first, then icon */}
+                      {item.id === "more" ? (
+                        <>
+                          <span className="font-medium">{item.label}</span>
+                          <ChevronDown className="w-3 h-3 md:w-4 md:h-4 ml-2" />
+                        </>
+                      ) : (
+                        <>
+                          {item.icon}
+                          <span className="font-medium">{item.label}</span>
+                        </>
+                      )}
                       {activeNav === item.id && (
                         <ChevronDown className="w-4 h-4 ml-auto transform rotate-90" />
                       )}

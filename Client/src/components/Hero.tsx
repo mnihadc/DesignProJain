@@ -35,15 +35,15 @@ const Hero = () => {
           </div>
         </div>
         {/* Venue */}
-        <p className="text-base text-gray-700 font-semibold mt-2 sm:text-lg sm:mt-3 md:text-[20px] lg:text-[22px] md:mt-4">
-          Venue: JAIN Deemed-to-be University, Kochi
+        <p className="text-base text-gray-700 font-bold mt-2 sm:text-lg sm:mt-3 md:text-[20px] lg:text-[22px] md:mt-4">
+          Venue: JAIN (Deemed-to-be University), Kochi
         </p>
         <div className="relative mt-6 mb-4 sm:mt-8 sm:mb-6 md:mt-10 md:mb-8 lg:mt-12">
           <div className="hidden sm:block absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300/50 to-transparent -translate-y-1/2" />
 
           <div className="flex flex-col items-center justify-center gap-10 sm:flex-row sm:gap-14 md:gap-16 lg:gap-20 xl:gap-24">
             {/* IIT Bombay Logo */}
-            <div className="w-[320px] h-[160px] sm:w-[360px] sm:h-[180px] md:w-[420px] md:h-[200px] bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-md border border-gray-200 flex items-center justify-center">
+            <div className="w-[320px] h-[160px] sm:w-[360px] sm:h-[180px] md:w-[420px] md:h-[200px] bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-md border-2 border-gray-200 flex items-center justify-center">
               <img
                 src="/images/iitbombay.jpg"
                 alt="IIT Bombay"
@@ -53,7 +53,7 @@ const Hero = () => {
             </div>
 
             {/* JAIN University Logo */}
-            <div className="w-[320px] h-[160px] sm:w-[360px] sm:h-[180px] md:w-[420px] md:h-[200px] bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-md border border-gray-200 flex items-center justify-center">
+            <div className="w-[320px] h-[160px] sm:w-[360px] sm:h-[180px] md:w-[420px] md:h-[200px] bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-md border-2 border-gray-200 flex items-center justify-center">
               <img
                 src="/images/jainDesign.png"
                 alt="JAIN University"

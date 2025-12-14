@@ -3,8 +3,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import { Toaster } from "react-hot-toast";
-import LogoDesignCompetitionSection from "./pages/LogoDesignCompetitionSection";
 import Loading from "./components/Loading";
+import AboutSection from "./pages/About";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -36,7 +36,7 @@ function App() {
       </section>
 
       <section id="about">
-        <LogoDesignCompetitionSection />
+        <AboutSection />
       </section>
 
       <Footer />

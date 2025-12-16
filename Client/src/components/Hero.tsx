@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
         {/* Venue */}
         <p className="text-base text-gray-700 font-bold mt-2 sm:text-lg sm:mt-3 md:text-[20px] lg:text-[22px] md:mt-4">
-          Venue: JAIN (Deemed-to-be University), Kochi
+          Venue: JAIN (Deemed-to-be University) Kochi
         </p>
         <div className="relative mt-6 mb-4 sm:mt-8 sm:mb-6 md:mt-10 md:mb-8 lg:mt-12">
           <div className="hidden sm:block absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300/50 to-transparent -translate-y-1/2" />

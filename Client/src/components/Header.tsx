@@ -1,5 +1,6 @@
 // Updated Header.tsx with corrected TypeScript types and Tailwind canonical classes
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, User, Home, Clock } from "lucide-react";
 import toast from "react-hot-toast";
 
@@ -9,8 +10,12 @@ interface NavMap {
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMoreDropdownOpen, setIsMoreDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeNav, setActiveNav] = useState("home");
+  const dropdownRef = useRef<HTMLLIElement>(null);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -18,10 +23,39 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsMoreDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  useEffect(() => {
+    if (location.pathname === "/terms-and-conditions") {
+      setActiveNav("more");
+    } else {
+      setActiveNav("home");
+    }
+  }, [location]);
+
   const scrollToSection = (id: string) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -38,6 +72,11 @@ const Header = () => {
           border: "1px solid #3356a8",
         },
       });
+      return;
+    }
+
+    if (navItem === "more") {
+      setIsMoreDropdownOpen(!isMoreDropdownOpen);
       return;
     }
 
@@ -97,17 +136,17 @@ const Header = () => {
               )}
             </button>
 
-            <div className="flex flex-col">
+            <Link to="/" className="flex flex-col">
               <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-white leading-tight font-serif [text-shadow:0_2px_4px_rgba(0,0,0,0.5),0_0_0_1px_rgba(0,0,0,0.3)]">
                 Typoday 2026
               </h1>
-            </div>
+            </Link>
           </div>
 
           <nav className="hidden lg:block">
             <ul className="flex items-center space-x-1">
               {navItems.map((item) => (
-                <li key={item.id} className="relative">
+                <li key={item.id} className="relative" ref={item.id === "more" ? dropdownRef : null}>
                   <button
                     onClick={() => handleNavClick(item.id)}
                     className={`flex items-center space-x-2 px-4 py-2.5 rounded-lg transition-all duration-300 ${
@@ -122,7 +161,7 @@ const Header = () => {
                         <span className="font-medium text-sm xl:text-base">
                           {item.label}
                         </span>
-                        <ChevronDown className="w-3 h-3 md:w-4 md:h-4" />
+                        <ChevronDown className={`w-3 h-3 md:w-4 md:h-4 transition-transform ${isMoreDropdownOpen ? 'rotate-180' : ''}`} />
                       </>
                     ) : (
                       <>
@@ -139,6 +178,22 @@ const Header = () => {
                       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-linear-to-r from-blue-400 to-cyan-300 rounded-full" />
                     )}
                   </button>
+
+                  {/* Dropdown Menu for More */}
+                  {item.id === "more" && isMoreDropdownOpen && (
+                    <div className="absolute right-0 mt-2 w-56 bg-[#052058] border border-white/20 rounded-lg shadow-xl overflow-hidden">
+                      <Link
+                        to="/terms-and-conditions"
+                        onClick={() => {
+                          setIsMoreDropdownOpen(false);
+                          setActiveNav("more");
+                        }}
+                        className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
+                      >
+                        Terms & Conditions
+                      </Link>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>
@@ -151,30 +206,51 @@ const Header = () => {
               <ul className="space-y-2">
                 {navItems.map((item) => (
                   <li key={item.id}>
-                    <button
-                      onClick={() => handleNavClick(item.id)}
-                      className={`flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ${
-                        activeNav === item.id
-                          ? "text-white bg-linear-to-r from-blue-500/20 to-cyan-500/20 border border-white/20"
-                          : "text-gray-300 hover:text-white hover:bg-white/10"
-                      }`}
-                    >
-                      {/* For "More" only in mobile: Show label first, then icon */}
-                      {item.id === "more" ? (
-                        <>
+                    {item.id === "more" ? (
+                      <div>
+                        <button
+                          onClick={() => setIsMoreDropdownOpen(!isMoreDropdownOpen)}
+                          className={`flex items-center justify-between w-full px-4 py-3 rounded-lg transition-all duration-300 ${
+                            activeNav === item.id
+                              ? "text-white bg-linear-to-r from-blue-500/20 to-cyan-500/20 border border-white/20"
+                              : "text-gray-300 hover:text-white hover:bg-white/10"
+                          }`}
+                        >
                           <span className="font-medium">{item.label}</span>
-                          <ChevronDown className="w-3 h-3 md:w-4 md:h-4 ml-2" />
-                        </>
-                      ) : (
-                        <>
-                          {item.icon}
-                          <span className="font-medium">{item.label}</span>
-                        </>
-                      )}
-                      {activeNav === item.id && (
-                        <ChevronDown className="w-4 h-4 ml-auto transform rotate-90" />
-                      )}
-                    </button>
+                          <ChevronDown className={`w-4 h-4 transition-transform ${isMoreDropdownOpen ? 'rotate-180' : ''}`} />
+                        </button>
+                        {isMoreDropdownOpen && (
+                          <div className="mt-2 ml-4 space-y-2">
+                            <Link
+                              to="/terms-and-conditions"
+                              onClick={() => {
+                                setIsMenuOpen(false);
+                                setIsMoreDropdownOpen(false);
+                                setActiveNav("more");
+                              }}
+                              className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
+                            >
+                              Terms & Conditions
+                            </Link>
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <button
+                        onClick={() => handleNavClick(item.id)}
+                        className={`flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ${
+                          activeNav === item.id
+                            ? "text-white bg-linear-to-r from-blue-500/20 to-cyan-500/20 border border-white/20"
+                            : "text-gray-300 hover:text-white hover:bg-white/10"
+                        }`}
+                      >
+                        {item.icon}
+                        <span className="font-medium">{item.label}</span>
+                        {activeNav === item.id && (
+                          <ChevronDown className="w-4 h-4 ml-auto transform rotate-90" />
+                        )}
+                      </button>
+                    )}
                   </li>
                 ))}
               </ul>

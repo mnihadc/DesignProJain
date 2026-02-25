@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const TermsAndConditions = () => {
   return (
     <div className="min-h-screen">
@@ -40,6 +42,29 @@ const TermsAndConditions = () => {
           <p className="text-base text-gray-700 font-bold mt-2 sm:text-lg sm:mt-3 md:text-[20px] lg:text-[22px] md:mt-4">
             Venue: JAIN (Deemed-to-be University), Kochi
           </p>
+
+          {/* Action Buttons */}
+          <div className="flex flex-wrap items-center justify-center gap-3 mt-4 sm:mt-5 md:mt-6">
+            <Link
+              to="/terms-and-conditions"
+              className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#001C54]/80 transition-colors duration-200"
+            >
+              Call for Papers
+            </Link>
+            <Link
+              to="/terms-and-conditions"
+              className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#001C54]/80 transition-colors duration-200"
+            >
+              Logo Design Competition
+            </Link>
+            <Link
+              to="/terms-and-conditions"
+              className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#001C54]/80 transition-colors duration-200"
+            >
+              Poster Design Competition
+            </Link>
+          </div>
+
           <div className="relative mt-6 mb-4 sm:mt-8 sm:mb-6 md:mt-10 md:mb-8 lg:mt-12">
             <div className="hidden sm:block absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300/50 to-transparent -translate-y-1/2" />
 
@@ -94,7 +119,7 @@ const TermsAndConditions = () => {
             <div className="space-y-4 sm:space-y-5 text-xs sm:text-sm md:text-[15px] leading-relaxed">
               <div>
                 <h3 className="font-semibold mb-2">
-                  Jury/ selection process
+                  Jury selection process
                 </h3>
                 <p>
                   All the entries received by the stipulated date and time and found in order, shall be evaluated by a Jury panel set up by the organisers. No correspondence or enquiry about the identity of jury members will be entertained by the organisers at any point of time. The decision of the jury will be final.

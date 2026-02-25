@@ -35,7 +35,7 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    if (location.pathname === "/terms-and-conditions") {
+    if (location.pathname === "/terms-and-conditions" || location.pathname === "/acknowledgement") {
       setActiveNav("more");
     } else {
       setActiveNav("home");
@@ -115,11 +115,10 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrolled
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled
           ? "bg-[#052058]/95 backdrop-blur-md shadow-xl"
           : "bg-[#052058] shadow-lg"
-      }`}
+        }`}
     >
       <div className="max-w-8xl mx-auto px-3 sm:px-5 lg:px-8 py-3 sm:py-4">
         <div className="flex items-center justify-between">
@@ -149,11 +148,10 @@ const Header = () => {
                 <li key={item.id} className="relative" ref={item.id === "more" ? dropdownRef : null}>
                   <button
                     onClick={() => handleNavClick(item.id)}
-                    className={`flex items-center space-x-2 px-4 py-2.5 rounded-lg transition-all duration-300 ${
-                      activeNav === item.id
+                    className={`flex items-center space-x-2 px-4 py-2.5 rounded-lg transition-all duration-300 ${activeNav === item.id
                         ? "text-white bg-white/10 backdrop-blur-sm"
                         : "text-gray-300 hover:text-white hover:bg-white/5"
-                    }`}
+                      }`}
                   >
                     {/* For "More" only: Show label first, then icon */}
                     {item.id === "more" ? (
@@ -192,6 +190,16 @@ const Header = () => {
                       >
                         Terms & Conditions
                       </Link>
+                      <Link
+                        to="/acknowledgement"
+                        onClick={() => {
+                          setIsMoreDropdownOpen(false);
+                          setActiveNav("more");
+                        }}
+                        className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
+                      >
+                        Acknowledgement
+                      </Link>
                     </div>
                   )}
                 </li>
@@ -210,11 +218,10 @@ const Header = () => {
                       <div>
                         <button
                           onClick={() => setIsMoreDropdownOpen(!isMoreDropdownOpen)}
-                          className={`flex items-center justify-between w-full px-4 py-3 rounded-lg transition-all duration-300 ${
-                            activeNav === item.id
+                          className={`flex items-center justify-between w-full px-4 py-3 rounded-lg transition-all duration-300 ${activeNav === item.id
                               ? "text-white bg-linear-to-r from-blue-500/20 to-cyan-500/20 border border-white/20"
                               : "text-gray-300 hover:text-white hover:bg-white/10"
-                          }`}
+                            }`}
                         >
                           <span className="font-medium">{item.label}</span>
                           <ChevronDown className={`w-4 h-4 transition-transform ${isMoreDropdownOpen ? 'rotate-180' : ''}`} />
@@ -232,17 +239,27 @@ const Header = () => {
                             >
                               Terms & Conditions
                             </Link>
+                            <Link
+                              to="/acknowledgement"
+                              onClick={() => {
+                                setIsMenuOpen(false);
+                                setIsMoreDropdownOpen(false);
+                                setActiveNav("more");
+                              }}
+                              className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
+                            >
+                              Acknowledgement
+                            </Link>
                           </div>
                         )}
                       </div>
                     ) : (
                       <button
                         onClick={() => handleNavClick(item.id)}
-                        className={`flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ${
-                          activeNav === item.id
+                        className={`flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ${activeNav === item.id
                             ? "text-white bg-linear-to-r from-blue-500/20 to-cyan-500/20 border border-white/20"
                             : "text-gray-300 hover:text-white hover:bg-white/10"
-                        }`}
+                          }`}
                       >
                         {item.icon}
                         <span className="font-medium">{item.label}</span>

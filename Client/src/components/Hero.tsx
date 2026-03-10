@@ -44,19 +44,19 @@ const Hero = () => {
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-3 mt-4 sm:mt-5 md:mt-6">
           <Link
-            to="/terms-and-conditions"
+            to="/call-for-papers"
             className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#001C54]/80 transition-colors duration-200"
           >
             Call for Papers
           </Link>
           <Link
-            to="/terms-and-conditions"
+            to="/logo-design-competition"
             className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#001C54]/80 transition-colors duration-200"
           >
             Logo Design Competition
           </Link>
           <Link
-            to="/terms-and-conditions"
+            to="/poster-design-competition"
             className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#001C54]/80 transition-colors duration-200"
           >
             Poster Design Competition

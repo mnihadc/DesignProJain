@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const PosterDesignCompetition = () => {
   return (
     <div className="min-h-screen">
@@ -43,24 +45,24 @@ const PosterDesignCompetition = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-3 mt-4 sm:mt-5 md:mt-6">
-            <a
-              href="#"
+            <Link
+              to="/call-for-papers"
               className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#001C54]/80 transition-colors duration-200"
             >
               Call for Papers
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/logo-design-competition"
               className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#001C54]/80 transition-colors duration-200"
             >
               Logo Design Competition
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/poster-design-competition"
               className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200"
             >
               Poster Design Competition
-            </a>
+            </Link>
           </div>
 
           <div className="relative mt-6 mb-4 sm:mt-8 sm:mb-6 md:mt-10 md:mb-8 lg:mt-12">

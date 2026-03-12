@@ -115,11 +115,14 @@ const CallForPapers = () => {
             </p>
 
             <ul className="list-decimal pl-6 space-y-2">
-              <li>Innovative applications of typographic intersections: Analogue to Digital and Beyond</li>
-              <li>Innovative applications of typographic intersections: Analogue to Digital and Beyond (case studies)</li>
+              <li>Innovative applications of Typographic Intersections: Analogue to Digital and Beyond (academic approaches/presentations)</li>
+              <li>Innovative applications of Typographic Intersections: Analogue to Digital and Beyond (Case studies)</li>
               <li>Student projects on 'Typographic Intersections: Analogue to Digital and Beyond'</li>
-              <li>The poster submissions come in: Analogue and/or Digital and/or Beyond</li>
             </ul>
+
+            <p>
+              The paper submission is open to all Indians and non-resident Indians, as well as foreign citizens.
+            </p>
 
             <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
               Main typographic topics for the conference:
@@ -127,11 +130,11 @@ const CallForPapers = () => {
 
             <ul className="list-decimal pl-6 space-y-2">
               <li>Typographic self-analysis: Analogue to Digital and Beyond - Intersections: Analogue to Digital and Beyond</li>
-              <li>Typographic Intersections: Analogue to Digital and Beyond - the context of culture</li>
-              <li>Typographic Intersections: Analogue to Digital and Beyond - the context of technology</li>
-              <li>Typographic Intersections: Analogue to Digital and Beyond - the context of education</li>
-              <li>Typographic Intersections: Analogue to Digital and Beyond - Medium-dependent Scripts</li>
-              <li>Typographic Intersections: Analogue to Digital and Beyond - Localization</li>
+              <li>Typographic Intersections: Analogue to Digital and Beyond in the context of culture</li>
+              <li>Typographic Intersections: Analogue to Digital and Beyond in the context of technology</li>
+              <li>Typographic Intersections: Analogue to Digital and Beyond in the context of education</li>
+              <li>Typographic Intersections: Analogue to Digital and Beyond in Medium-dependent Scripts</li>
+              <li>Typographic Intersections: Analogue to Digital and Beyond in Localization</li>
               <li>Research activities in Typographic Intersections: Analogue to Digital and Beyond</li>
             </ul>
 
@@ -150,6 +153,10 @@ const CallForPapers = () => {
               <li>Category of the proposed paper (research / case study / student project)</li>
             </ul>
 
+            <p>
+              For submitting abstracts, organization, and contact details (including email)
+            </p>
+
             <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
               Paper and Presentation Details:
             </h2>
@@ -158,13 +165,13 @@ const CallForPapers = () => {
               The abstract should be of 300 words in July.
             </p>
             <p className="mb-3">
-              The full paper should be of 3000 words or 10 pages (to be written by the authors after the conference on the 29th and 30th of September 2026) in MS Dhoni-style font.
-            </p>
-            <p className="mb-3">
-              In its fullness, each of the paper presentations is 15 minutes, followed by 5 minutes for discussion along with Q & A. The relevant papers will be published in the conference proceedings.
+              The full paper should be of 3000 words or 10 pages (to be written by the authors during the conference on the 29th and 30th of September 2026) in MS Dhoni-style font. In its fullness, each of the paper presentations is 15 minutes, followed by 5 minutes for discussion along with Q & A. The relevant papers will be published in the conference proceedings.
             </p>
             <p>
-              For submitting abstracts as well as a template for the full paper will be made available along with the acceptance of the abstract. Selected paper submissions presented at the conference will be published in the conference proceedings. Acceptance of the paper does not guarantee its publication in the conference proceedings. The authors will have the publishing (content and accompanying) to paper the paper authors.
+              For submitting abstracts as well as a template for the full paper will be supplied along with the acceptance mail of the abstract. Selected paper submissions presented at the conference will be published in the conference proceedings. On the 29th and 30th of September 2026, requires registration. Organizers will NOT be providing travel and accommodation for paper and poster authors.
+            </p>
+            <p>
+              For online abstract submission <a href="#" className="text-[#f59e0b] hover:underline">click here</a>
             </p>
 
             <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">

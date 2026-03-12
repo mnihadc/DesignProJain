@@ -112,94 +112,83 @@ const LogoDesignCompetition = () => {
           <div className="space-y-6 sm:space-y-7 text-xs sm:text-sm md:text-[15px] leading-relaxed">
             <div>
               <p className="mb-3">
-                <span className="font-semibold text-gray-300">Typographic Dialogues:</span>{" "}
-                <span className="font-bold">'Typographic Intersections: Analogue to Digital and Beyond'</span>
+                <span className="font-semibold">Typographic Dialogues: 'Typographic Intersections: Analogue to Digital and Beyond'</span>
               </p>
             </div>
 
-            <p className="text-gray-300">
+            <p>
               Design a logo for 'Typography Day 2026' that reflects the event's theme, 'Typographic Intersections: Analogue to Digital and Beyond.'
             </p>
 
-            <p className="text-gray-300">
-              As the conference is being held in Kochi/Kerala, we encourage you to include the context of Kochi/Kerala in your design of the logo.
-            </p>
-
-            <p className="text-gray-300">
-              The logo may use calligraphic or digitally generated letterforms, pre-existing fonts, or a mix of these. "Typography Day 2026" or "Typo Day 2026" should also appear in the logo.
-            </p>
-
-            <p className="text-gray-300">
-              The resulting logo should be of the size and specification given below. Only students are eligible to participate in this competition. Both foreign nationals and non-resident Indians are welcome to participate in the competition.
-            </p>
-
-            <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
-              Procedure for selecting student participants:
-            </h2>
-            <p className="text-gray-300">
-              One idea will be finalized from the submitted lot. The jury will have the right to select, reject, or request modifications for the selected logo.
-            </p>
-
-            <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
-              Submission Specifications:
-            </h2>
-            <p className="text-gray-300">
-              You need to submit the solution along with a brief write-up of around 100 words written in English language.
-            </p>
-
-            <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
-              Size and Resolution:
-            </h2>
-            <ul className="list-disc pl-6 space-y-2 text-gray-300">
-              <li>Size of the final logo: 300mm x 100mm only in wide format</li>
-              <li>Resolution: 300 dpi</li>
-              <li>File type: PDF</li>
-              <li>Color Mode: CMYK</li>
-            </ul>
-
-            <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
-              Write-up + contact info + bio:
-            </h2>
-            <ul className="list-disc pl-6 space-y-2 text-gray-300">
-              <li>Format: PDF</li>
-              <li>Write up about the design: Maximum 100 words and should be written in the English language.</li>
-              <li>Contact Info: Name, Postal Address, Email, Telephone Number, and Name and Address of Institution in English.</li>
-              <li>Your bio-data/personal information: Maximum of 100 words and should be written in English.</li>
-            </ul>
-
-            <p className="text-gray-300">
-              Each participant is allowed a maximum of three entries.
-              <br />
-              (Repetition is not allowed.)
-            </p>
-
-            <p className="mt-6">
-              <strong>For online Logo Submission &lt;click here&gt;</strong>
-              <br />
-              <span>The EasyChair window opens for Logo Submission - 1st January 2026</span>
+            <p>
+              <span className="font-semibold">Eligibility:</span> Students below 25 years of age. Foreign nationals and non-resident Indians are welcome to participate in the competition.
             </p>
 
             <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
               Important Dates:
             </h2>
-            <div className="text-gray-300">
-              <p className="mb-3">
-                <span className="font-semibold">Deadline for logo submission:</span>{" "}
-                <span className="font-bold text-white">28th February 2026</span>
-              </p>
-              <p>
-                <span className="font-semibold">Declaration of logo results:</span>{" "}
-                <span className="font-bold text-white">14th April 2026</span>
-              </p>
-            </div>
+            <p className="mb-2">
+              <span className="text-[#f59e0b] font-semibold">Deadline for logo submission: 15th April 2026</span>
+            </p>
+            <p>
+              <span className="font-semibold">Declaration of logo competition results: 24th May 2026</span>
+            </p>
 
-            <p className="mt-8">
+            <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
+              Submission Guidelines
+            </h2>
+            <p className="mb-3">
+              Design a logo for the theme of the conference. As the conference is being held in Kochi/Kerala, we encourage you to consider reflecting the context of Kochi/ Kerala in your logo.
+            </p>
+            <p className="mb-3">
+              The logo may use calligraphic or digitally generated letterforms, pre-existing fonts, or a mix of these. "Typography 2026" should be clearly visible in the logo.
+            </p>
+            <p className="mb-3">
+              Logo should be usable in colour and Black/white, in lower resolutions in small sizes. The main title "Typoday 2026" should be clearly visible in Colour and Black and White. The logo should be in JPG file format. (For print in a multilingual format)
+            </p>
+            <p className="mb-3">
+              The logo should be of the size and specification given below:
+            </p>
+
+            <p className="mb-2">Size of the final logo: 300mm x 100mm</p>
+            <p className="mb-2">Resolution: 300 dpi</p>
+            <p className="mb-2">File type: PDF</p>
+            <p className="mb-3">Color Mode: CMYK</p>
+
+            <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
+              Uploading entries for logo:
+            </h2>
+            <p className="mb-3">
+              Each participant has to upload <span className="font-semibold">TWO SEPARATE FILES:</span>
+            </p>
+            <p className="mb-3">
+              <span className="font-semibold">1. The final logo/s</span> - in one page (and not page with a brief write-up explaining the concept of the design in a designer's note). The documentation should be in english only, including any written content in the logo. If the participant should use the regional language, they should also provide the english translation of the same in these two pages.
+            </p>
+            <p className="mb-3">
+              <span className="font-semibold">2.Brief bio data</span>
+            </p>
+            <p className="mb-3">
+              Contain the: Name and Address of Institution (if you are a student), Postal Address, Email, Telephone Number,
+            </p>
+            <p className="mb-3">
+              Bio-data/personal information: Maximum of 100 words - in English.
+            </p>
+            <p className="mb-3">
+              <span className="font-semibold">3. Copy of the id card</span> of the institution (proof of being a student)
+            </p>
+
+            <p className="mb-3 font-semibold">
+              Each participant is allowed a maximum of three entries.
+            </p>
+            <p className="mb-3">(Repetition is not allowed.)</p>
+            <p className="mb-3">
+              For online Logo Submission <a href="#" className="text-[#f59e0b] hover:underline">click here</a>
+            </p>
+            <p className="mb-3">
               If you have any queries, please do not hesitate to contact us:
-              <br />
-              <span className="text-gray-300">Mailing it to: </span>
-              <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline font-semibold">
-                help@typoday.org
-              </a>
+            </p>
+            <p>
+              mailing it to: <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">help@typoday.org</a>
             </p>
           </div>
         </div>

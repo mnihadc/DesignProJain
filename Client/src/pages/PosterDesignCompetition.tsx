@@ -112,7 +112,7 @@ const PosterDesignCompetition = () => {
           <div className="space-y-6 sm:space-y-7 text-xs sm:text-sm md:text-[15px] leading-relaxed">
             {/* Theme */}
             <div>
-              <h2 className="text-lg sm:text-xl font-bold mb-3 text-[#f59e0b]">
+              <h2 className="text-lg sm:text-xl font-bold mb-3">
                 Theme: 'Typographic Intersections: Analogue to Digital and Beyond'
               </h2>
               <p className="mb-3">
@@ -125,7 +125,7 @@ const PosterDesignCompetition = () => {
                 Any font, size, script and typeface of any script can be used.
               </p>
               <p>
-                You can make use of text, or image, or a combination of both, or even a paragraph or poem of words.
+                You can make use of text, or letter, one word, many words, or even a paragraph composed of words.
               </p>
             </div>
 
@@ -141,7 +141,7 @@ const PosterDesignCompetition = () => {
                 All poster submissions should be of the size and specification given below:
               </p>
               <p className="mb-2">
-                Size: 24x36" (Full poster: 4 ft height x 3ft width) in portrait format
+                Size of the final poster: 4 ft height x 3ft width only in portrait format
               </p>
               <p className="mb-2">Resolution: 300 dpi</p>
               <p className="mb-2">File type: PDF</p>
@@ -150,11 +150,11 @@ const PosterDesignCompetition = () => {
 
             {/* Deadline */}
             <div>
-              <h2 className="text-lg sm:text-xl font-bold mb-3">
-                Deadline for poster submission: 18th June 2026
-              </h2>
+              <p className="mb-2">
+                <span className="text-[#f59e0b] font-semibold">Deadline for poster submission: 10th June 2026</span>
+              </p>
               <p>
-                Declaration of poster competition results: 1st August 2026
+                <span className="font-semibold">Declaration of poster competition results: 1st August 2026</span>
               </p>
             </div>
 
@@ -164,13 +164,13 @@ const PosterDesignCompetition = () => {
                 Uploading entries-Poster
               </h2>
               <p className="mb-2">
-                Each participant has to upload TWO SEPARATE FILES:
+                Each participant has to upload <span className="font-semibold">TWO SEPARATE FILES:</span>
               </p>
               <p className="mb-2">
-                1. The final poster/s - A PDF file. Each poster PDF file should not accompany or be accompanied by any other means revealing the concept of the poster (like designer's note). The documentation should be in english only, including any written content in the poster. The documentation should be in english only, including any written content in the poster. If the participant should use the regional language, they should also provide the english translation of the same in a separate file.
+                <span className="font-semibold">1. The final poster/s</span> - A PDF file. Each poster PDF file should not accompany or be accompanied by a brief write-up explaining the concept of the poster (like designer's note). The documentation should be in english only, including any written content in the poster. If the participant should use the regional language, they should also provide the english translation of the same in these two pages.
               </p>
               <p className="mb-2">
-                Name of the participant should not be mentioned anywhere in the poster.
+                Name of the participant should not be mentioned anywhere, directly or indirectly, in these two pages.
               </p>
             </div>
 
@@ -183,25 +183,25 @@ const PosterDesignCompetition = () => {
                 Contain the: Name and Address of Institution (if you are a student), Postal Address, Email, Telephone Number,
               </p>
               <p className="mb-2">
-                Brief bio of 100 words maximum. Maximum of 100 words - E-dition
+                Brief bio/personal information: Maximum of 100 words - in English.
               </p>
               <p className="mb-2">
-                Each participant is allowed a maximum of three entries.
+                <span className="font-semibold">Each participant is allowed a maximum of three entries.</span>
               </p>
               <p className="mb-2">(Repetition is not allowed.)</p>
               <p>
-                For further logo submission <a href="#" className="text-[#f59e0b] hover:underline">click here</a>
+                For online Logo Submission <a href="#" className="text-[#f59e0b] hover:underline">click here</a>
               </p>
             </div>
 
             {/* Contact */}
             <div>
               <p>
-                If you have any queries please do not hesitate to contact us:
+                If you have any queries, please do not hesitate to contact us:
               </p>
               <p>
-                <a href="mailto:typoday@iitb.ac.in" className="text-[#f59e0b] hover:underline">
-                  typoday@iitb.ac.in
+                mailing it to: <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">
+                  help@typoday.org
                 </a>
               </p>
             </div>

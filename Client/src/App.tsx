@@ -7,7 +7,6 @@ import { Toaster } from "react-hot-toast";
 import Loading from "./components/Loading";
 import AboutSection from "./pages/About";
 import TermsAndConditions from "./pages/TermsAndConditions";
-import Acknowledgement from "./pages/Acknowledgement";
 import PosterDesignCompetition from "./pages/PosterDesignCompetition";
 import CallForPapers from "./pages/CallForPapers";
 import LogoDesignCompetition from "./pages/LogoDesignCompetition";
@@ -52,7 +51,6 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-        <Route path="/acknowledgement" element={<Acknowledgement />} />
         <Route path="/poster-design-competition" element={<PosterDesignCompetition />} />
         <Route path="/call-for-papers" element={<CallForPapers />} />
         <Route path="/logo-design-competition" element={<LogoDesignCompetition />} />

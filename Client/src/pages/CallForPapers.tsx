@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const CallForPapers = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#0A2463]">
       {/* Hero Section */}
       <section className="relative w-full bg-gradient-to-b from-white via-white to-gray-50 text-center overflow-hidden pt-6 pb-2 px-4 sm:pt-8 sm:pb-4 sm:px-6 md:pt-10 md:pb-6 md:px-8 lg:pt-12">
         {/* Background Elements */}
@@ -103,7 +103,7 @@ const CallForPapers = () => {
       </section>
 
       {/* Call for Papers Content Section */}
-      <div className="w-full bg-[#0A2463] text-white px-4 py-8 sm:px-6 sm:py-10 md:px-10 md:py-12 lg:px-12 lg:py-14">
+      <div className="w-full bg-[#0A2463] text-white px-4 py-8 sm:px-6 sm:py-10 md:px-10 md:py-12 lg:px-12 lg:py-14 slide-up-section">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-[#f59e0b]">
             Call for Papers

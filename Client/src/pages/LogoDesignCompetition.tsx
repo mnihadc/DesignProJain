@@ -128,23 +128,22 @@ const LogoDesignCompetition = () => {
               Important Dates:
             </h2>
             <p className="mb-2">
-              <span className="text-[#f59e0b] font-semibold">Deadline for logo submission: 15th April 2026</span>
+              <span className="text-[#f59e0b] font-semibold">Deadline for logo submission: <span className="font-bold">15th April 2026</span>
             </p>
             <p>
-              <span className="font-semibold">Declaration of logo competition results: 24th May 2026</span>
+              <span className="text-[#f59e0b] "font-semibold">Declaration of logo competition results: <span className="font-bold">20th May 2026</span>
             </p>
 
             <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
               Submission Guidelines
             </h2>
             <p className="mb-3">
-              Design a logo for the theme of the conference. As the conference is being held in Kochi/Kerala, we encourage you to consider reflecting the context of Kochi/ Kerala in your logo.
+              Logo should reflect the theme of the conference. As the conference is being held in Kochi/Kerala, we encourage you to consider including the context of Kochi/Kerala in your logo.
             </p>
             <p className="mb-3">
-              The logo may use calligraphic or digitally generated letterforms, pre-existing fonts, or a mix of these. "Typography 2026" should be clearly visible in the logo.
-            </p>
+              The logo may use calligraphic or digitally generated letterforms, pre-existing fonts, or a mix of these. "Typoday 2026" should be clearly visible in the logo. Participants using fonts in the logo are encouraged to use open source fonts. The organisers do not take any responsibility for legal disputes arising out of copyrighted fonts used in the logo.
             <p className="mb-3">
-              Logo should be usable in colour and Black/white, in lower resolutions in small sizes. The main title "Typoday 2026" should be clearly visible in Colour and Black and White. The logo should be in JPG file format. (For print in a multilingual format)
+              Logo should be usable in colour and Black&White, in low resolution in small sizes. The main title “Typoday 2026” should be clearly visible in Colour and Black and White in sizes as small as 120 by 120 pixels (Example: Instagram DP seen in a mobilephone)
             </p>
             <p className="mb-3">
               The logo should be of the size and specification given below:
@@ -159,16 +158,14 @@ const LogoDesignCompetition = () => {
               Uploading entries for logo:
             </h2>
             <p className="mb-3">
-              Each participant has to upload <span className="font-semibold">TWO SEPARATE FILES:</span>
+              Each participant has to upload <span className="font-semibold">THREE SEPARATE FILES:</span>
             </p>
             <p className="mb-3">
-              <span className="font-semibold">1. The final logo/s</span> - in one page (and not page with a brief write-up explaining the concept of the design in a designer's note). The documentation should be in english only, including any written content in the logo. If the participant should use the regional language, they should also provide the english translation of the same in these two pages.
-            </p>
-            <p className="mb-3">
+              <span className="font-semibold">1. The final logo/s</span> in PDF format, with two pages in one PDF file: Final design in one page and next page with a brief write (not exceeding 100 words) up about the design concept. Write up should be in English. Identity of the participant should not be mentioned anywhere, directly or indirectly in these two pages.
               <span className="font-semibold">2.Brief bio data</span>
             </p>
             <p className="mb-3">
-              Contain the: Name and Address of Institution (if you are a student), Postal Address, Email, Telephone Number,
+             Contact Info: Name, Name and Address of Institution, Postal Address, Email, Telephone Number.
             </p>
             <p className="mb-3">
               Bio-data/personal information: Maximum of 100 words - in English.
@@ -176,11 +173,12 @@ const LogoDesignCompetition = () => {
             <p className="mb-3">
               <span className="font-semibold">3. Copy of the id card</span> of the institution (proof of being a student)
             </p>
+              <p className="mb-3"> Participants should upload the final logo </p>
 
             <p className="mb-3 font-semibold">
               Each participant is allowed a maximum of three entries.
             </p>
-            <p className="mb-3">(Repetition is not allowed.)</p>
+            <p className="mb-3 font-semibold">(Repetition is not allowed.)</p>
             <p className="mb-3">
               For online Logo Submission <a href="https://event.leconfe.com/juk1/scheduled/logo/panel/submissions" target="_blank" rel="noopener noreferrer" className="text-[#f59e0b] hover:underline">click here</a>
             </p>

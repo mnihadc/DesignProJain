@@ -197,16 +197,6 @@ const Header = () => {
                       >
                         Terms & Conditions
                       </Link>
-                      <Link
-                        to="/acknowledgement"
-                        onClick={() => {
-                          setActiveNav("more");
-                          setIsMoreDropdownOpen(false);
-                        }}
-                        className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10"
-                      >
-                        Acknowledgement
-                      </Link>
                     </div>
                   )}
                 </li>
@@ -242,12 +232,6 @@ const Header = () => {
                               className="block w-full text-left px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition"
                             >
                               Terms & Conditions
-                            </button>
-                            <button
-                              onClick={() => goToPage("/acknowledgement")}
-                              className="block w-full text-left px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition"
-                            >
-                              Acknowledgement
                             </button>
                           </div>
                         )}

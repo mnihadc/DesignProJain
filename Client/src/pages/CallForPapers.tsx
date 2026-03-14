@@ -87,7 +87,7 @@ const CallForPapers = () => {
       {/* Main Content Section - 4. Added ref and scroll-mt-20 here */}
       <div 
         ref={contentRef} 
-        className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-10 text-white bg-[#0A2463] scroll-mt-20"
+        className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-10 text-white bg-[#0A2463] scroll-mt-20 slide-up-section"
       >
         
         {/* Call for Papers Details */}

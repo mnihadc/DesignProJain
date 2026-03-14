@@ -92,7 +92,7 @@ const PosterDesignCompetition = () => {
       </section>
 
       {/* Main Content Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-12 text-white bg-[#0A2463]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-12 text-white bg-[#0A2463] slide-up-section">
         {/* Competition Details */}
         <section className="pb-6">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-[#f59e0b]">

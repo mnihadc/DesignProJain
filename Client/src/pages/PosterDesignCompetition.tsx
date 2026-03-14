@@ -146,27 +146,30 @@ You can make use of one letter, one word, many words, or even a paragraph compos
             {/* Deadline */}
             <div>
               <p className="mb-2">
-                <span className="text-[#f59e0b] font-semibold">Deadline for poster submission: 10th June 2026</span>
+                <span className="text-[#f59e0b] font-semibold">Deadline for poster submission: <span className="font-bold"> 10th June 2026 </span>
               </p>
               <p>
-                <span className="text-[#f59e0b] font-semibold">Declaration of poster competition results: 1st August 2026</span>
+                <span className="text-[#f59e0b] font-semibold">Declaration of poster competition results: <span className="font-bold"> 1st August 2026</span>
               </p>
             </div>
 
             {/* Uploading entries-Poster */}
             <div>
               <h2 className="text-lg sm:text-xl font-bold mb-3">
-                Uploading entries-Poster
+                Uploading entries-Poster:
               </h2>
               <p className="mb-2">
-                Each participant has to upload <span className="font-semibold">TWO SEPARATE FILES:</span>
+                Each participant has to upload <span className="font-semibold">Two SEPARATE FILES:</span>
               </p>
               <p className="mb-2">
-                <span className="font-semibold">1. The final poster/s</span> - A PDF file. Each poster PDF file should not accompany or be accompanied by a brief write-up explaining the concept of the poster (like designer's note). The documentation should be in english only, including any written content in the poster. If the participant should use the regional language, they should also provide the english translation of the same in these two pages.
+                <span className="font-semibold">1. The final poster/s</span> in PDF format. Each poster PDF file would be accompanied by a brief write up explaining the concept of the poster in a
+SEPARATE PAGE. The explanation should be in english, not exceeding 100 words.
               </p>
               <p className="mb-2">
-                Name of the participant should not be mentioned anywhere, directly or indirectly, in these two pages.
+                Identity of the participant should not be mentioned anywhere, directly or indirectly in these two pages.
               </p>
+              <p> If you are uploading multiple entries, each poster should accompany a write up.
+</p>
             </div>
 
             {/* Brief Bio data */}
@@ -175,15 +178,16 @@ You can make use of one letter, one word, many words, or even a paragraph compos
                 2.Brief bio data
               </h2>
               <p className="mb-2">
-                Contain the: Name and Address of Institution (if you are a student), Postal Address, Email, Telephone Number,
+                Contact Info: Name, Name and Address of Institution (if you are a student), Postal Address, Email, Telephone Number.
               </p>
               <p className="mb-2">
-                Brief bio/personal information: Maximum of 100 words - in English.
+                Bio-data/personal information: Maximum of 100 words  in English.
               </p>
               <p className="mb-2">
                 <span className="font-semibold">Each participant is allowed a maximum of three entries.</span>
               </p>
-              <p className="mb-2">(Repetition is not allowed.)</p>
+              <p className="mb-2"><span className="font-semibold">(Repetition is not allowed.)</span>
+              </p>
               <p>
                 For online Poster Submission <a href="https://event.leconfe.com/juk1/scheduled/Poster/panel/submissions" target="_blank" rel="noopener noreferrer" className="text-[#f59e0b] hover:underline">click here</a>
               </p>

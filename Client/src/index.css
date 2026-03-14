@@ -27,7 +27,7 @@ body {
   }
   to {
     opacity: 1;
-    transform: translateY(-350px);
+    transform: translateY(-310px);
   }
 }
 

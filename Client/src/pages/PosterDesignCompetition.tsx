@@ -105,6 +105,7 @@ const PosterDesignCompetition = () => {
                 Theme: 'Typographic Intersections: Analogue to Digital and
                 Beyond'
               </h2>
+<<<<<<< HEAD
               <p className="mb-3 font-medium">
                 Design a poster to represent 'Typographic Intersections:
                 Analogue to Digital and Beyond.'
@@ -123,11 +124,22 @@ const PosterDesignCompetition = () => {
                 </li>
               </ul>
             </div>
+=======
+              <p className="mb-3">
+                Design a poster to represent ‘Typographic Intersections: Analogue to Digital and Beyond.‘ 
+Handcrafted, Calligraphic, digitally created letterforms or digital fonts can be used in the poster.
+              </p>
+              <p className="mb-3">
+                Any  language, script and typeface of any script can be used. 
+You can make use of one letter, one word, many words, or even a paragraph composed of words.
+              </p>
+>>>>>>> 2b33fa671820c844acf7c657f10c4319fc159c22
 
             <div className="bg-white/5 p-6 rounded-xl border border-white/10">
               <h2 className="text-lg font-bold mb-4 text-[#f59e0b]">
                 Submission Specifications:
               </h2>
+<<<<<<< HEAD
               <p className="mb-4">
                 You need to submit the solution along with a brief write-up of
                 around 150 words. All poster submissions should be of the size
@@ -167,18 +179,41 @@ const PosterDesignCompetition = () => {
                   </li>
                 </ul>
               </div>
+=======
+              <p className="mb-2">
+                You need to submit the solution along with a brief write-up of around 150 words.
+              </p>
+              <p className="mb-2">
+                All poster submissions should be of the size and specification given below.
+              </p>
+              <p className="mb-2">
+                Size of the final poster: 4 ft height x 3ft width only in portrait format
+              </p>
+              <p className="mb-2">Resolution: 300 dpi</p>
+              <p className="mb-2">File type: PDF</p>
+              <p>Color Mode: CMYK</p>
+>>>>>>> 2b33fa671820c844acf7c657f10c4319fc159c22
             </div>
 
             <div>
+<<<<<<< HEAD
               <p className="text-[#f59e0b] font-bold text-lg">
                 Deadline for poster submission: 10th June 2026
               </p>
               <p className="font-bold">
                 Declaration of poster competition results: 1st August 2026
+=======
+              <p className="mb-2">
+                <span className="text-[#f59e0b] font-semibold">Deadline for poster submission: <span className="font-bold"> 10th June 2026 </span>
+              </p>
+              <p>
+                <span className="text-[#f59e0b] font-semibold">Declaration of poster competition results: <span className="font-bold"> 1st August 2026</span>
+>>>>>>> 2b33fa671820c844acf7c657f10c4319fc159c22
               </p>
             </div>
 
             <div>
+<<<<<<< HEAD
               <h2 className="text-lg font-bold mb-3">
                 Uploading entries-Poster:
               </h2>
@@ -221,6 +256,54 @@ const PosterDesignCompetition = () => {
                   className="text-[#f59e0b] font-bold hover:underline"
                 >
                   click here
+=======
+              <h2 className="text-lg sm:text-xl font-bold mb-3">
+                Uploading entries-Poster:
+              </h2>
+              <p className="mb-2">
+                Each participant has to upload <span className="font-semibold">Two SEPARATE FILES:</span>
+              </p>
+              <p className="mb-2">
+                <span className="font-semibold">1. The final poster/s</span> in PDF format. Each poster PDF file would be accompanied by a brief write up explaining the concept of the poster in a
+SEPARATE PAGE. The explanation should be in english, not exceeding 100 words.
+              </p>
+              <p className="mb-2">
+                Identity of the participant should not be mentioned anywhere, directly or indirectly in these two pages.
+              </p>
+              <p> If you are uploading multiple entries, each poster should accompany a write up.
+</p>
+            </div>
+
+            {/* Brief Bio data */}
+            <div>
+              <h2 className="text-lg sm:text-xl font-bold mb-3">
+                2.Brief bio data
+              </h2>
+              <p className="mb-2">
+                Contact Info: Name, Name and Address of Institution (if you are a student), Postal Address, Email, Telephone Number.
+              </p>
+              <p className="mb-2">
+                Bio-data/personal information: Maximum of 100 words  in English.
+              </p>
+              <p className="mb-2">
+                <span className="font-semibold">Each participant is allowed a maximum of three entries.</span>
+              </p>
+              <p className="mb-2"><span className="font-semibold">(Repetition is not allowed.)</span>
+              </p>
+              <p>
+                For online Poster Submission <a href="https://event.leconfe.com/juk1/scheduled/Poster/panel/submissions" target="_blank" rel="noopener noreferrer" className="text-[#f59e0b] hover:underline">click here</a>
+              </p>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <p>
+                If you have any queries, please do not hesitate to contact us:
+              </p>
+              <p>
+                mailing it to: <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">
+                  help@typoday.org
+>>>>>>> 2b33fa671820c844acf7c657f10c4319fc159c22
                 </a>
               </p>
             </div>

@@ -116,18 +116,13 @@ const PosterDesignCompetition = () => {
                 Theme: 'Typographic Intersections: Analogue to Digital and Beyond'
               </h2>
               <p className="mb-3">
-                Design a poster to represent Typographic Intersections: Analogue to Digital and Beyond.
+                Design a poster to represent ‘Typographic Intersections: Analogue to Digital and Beyond.‘ 
+Handcrafted, Calligraphic, digitally created letterforms or digital fonts can be used in the poster.
               </p>
               <p className="mb-3">
-                Identify the cultural, social, or political issues of our times and present the poster.
+                Any  language, script and typeface of any script can be used. 
+You can make use of one letter, one word, many words, or even a paragraph composed of words.
               </p>
-              <p className="mb-3">
-                Any font, size, script and typeface of any script can be used.
-              </p>
-              <p>
-                You can make use of text, or letter, one word, many words, or even a paragraph composed of words.
-              </p>
-            </div>
 
             {/* Submission Specifications */}
             <div>
@@ -135,10 +130,10 @@ const PosterDesignCompetition = () => {
                 Submission Specifications:
               </h2>
               <p className="mb-2">
-                You need to submit the solution along with a brief write-up of around 100 words.
+                You need to submit the solution along with a brief write-up of around 150 words.
               </p>
               <p className="mb-2">
-                All poster submissions should be of the size and specification given below:
+                All poster submissions should be of the size and specification given below.
               </p>
               <p className="mb-2">
                 Size of the final poster: 4 ft height x 3ft width only in portrait format
@@ -154,7 +149,7 @@ const PosterDesignCompetition = () => {
                 <span className="text-[#f59e0b] font-semibold">Deadline for poster submission: 10th June 2026</span>
               </p>
               <p>
-                <span className="font-semibold">Declaration of poster competition results: 1st August 2026</span>
+                <span className="text-[#f59e0b] font-semibold">Declaration of poster competition results: 1st August 2026</span>
               </p>
             </div>
 

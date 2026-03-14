@@ -182,7 +182,7 @@ const LogoDesignCompetition = () => {
             </p>
             <p className="mb-3">(Repetition is not allowed.)</p>
             <p className="mb-3">
-              For online Logo Submission <a href="#" className="text-[#f59e0b] hover:underline">click here</a>
+              For online Logo Submission <a href="https://event.leconfe.com/juk1/scheduled/logo/panel/submissions" target="_blank" rel="noopener noreferrer" className="text-[#f59e0b] hover:underline">click here</a>
             </p>
             <p className="mb-3">
               If you have any queries, please do not hesitate to contact us:

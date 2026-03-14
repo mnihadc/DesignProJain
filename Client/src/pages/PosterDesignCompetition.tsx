@@ -190,7 +190,7 @@ const PosterDesignCompetition = () => {
               </p>
               <p className="mb-2">(Repetition is not allowed.)</p>
               <p>
-                For online Logo Submission <a href="#" className="text-[#f59e0b] hover:underline">click here</a>
+                For online Poster Submission <a href="https://event.leconfe.com/juk1/scheduled/Poster/panel/submissions" target="_blank" rel="noopener noreferrer" className="text-[#f59e0b] hover:underline">click here</a>
               </p>
             </div>
 

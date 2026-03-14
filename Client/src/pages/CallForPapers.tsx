@@ -171,7 +171,7 @@ const CallForPapers = () => {
               For submitting abstracts as well as a template for the full paper will be supplied along with the acceptance mail of the abstract. Selected paper submissions presented at the conference will be published in the conference proceedings. On the 29th and 30th of September 2026, requires registration. Organizers will NOT be providing travel and accommodation for paper and poster authors.
             </p>
             <p>
-              For online abstract submission <a href="#" className="text-[#f59e0b] hover:underline">click here</a>
+              For online abstract submission <a href="https://event.leconfe.com/juk1/scheduled/abstract/panel/submissions" target="_blank" rel="noopener noreferrer" className="text-[#f59e0b] hover:underline">click here</a>
             </p>
 
             <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">

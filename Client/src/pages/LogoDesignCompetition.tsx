@@ -5,7 +5,6 @@ const LogoDesignCompetition = () => {
     <div className="min-h-screen bg-[#0A2463]">
       {/* Hero Section */}
       <section className="relative w-full bg-gradient-to-b from-white via-white to-gray-50 text-center overflow-hidden pt-6 pb-2 px-4 sm:pt-8 sm:pb-4 sm:px-6 md:pt-10 md:pb-6 md:px-8 lg:pt-12">
-        {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-50 rounded-full opacity-30 sm:opacity-40" />
           <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-blue-50 rounded-full opacity-30 sm:opacity-40" />
@@ -20,7 +19,6 @@ const LogoDesignCompetition = () => {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto">
-          {/* Logo */}
           <div className="mb-8 sm:mb-10 md:mb-12 flex justify-center">
             <img
               src="/images/Typoday2026logo.png"
@@ -30,7 +28,6 @@ const LogoDesignCompetition = () => {
             />
           </div>
 
-          {/* Date Badge */}
           <div className="mt-4 sm:mt-6 md:mt-8">
             <div className="inline-block px-4 py-1.5 bg-blue-50/80 backdrop-blur-sm rounded-full border border-blue-200 sm:px-5 sm:py-2">
               <p className="text-sm text-gray-700 font-medium sm:text-base md:text-lg">
@@ -43,7 +40,6 @@ const LogoDesignCompetition = () => {
             Venue: JAIN (Deemed-to-be University), Kochi
           </p>
 
-          {/* Navigation Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-3 mt-4 sm:mt-5 md:mt-6">
             <Link
               to="/call-for-papers"
@@ -65,7 +61,6 @@ const LogoDesignCompetition = () => {
             </Link>
           </div>
 
-          {/* University Logos */}
           <div className="relative mt-6 mb-4 sm:mt-8 sm:mb-6 md:mt-10 md:mb-8 lg:mt-12">
             <div className="flex flex-col items-center justify-center gap-10 sm:flex-row sm:gap-14 md:gap-16 lg:gap-20 xl:gap-24">
               <div className="w-[320px] h-[160px] sm:w-[360px] sm:h-[180px] md:w-[420px] md:h-[200px] bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-md border-2 border-gray-200 flex items-center justify-center">
@@ -150,7 +145,6 @@ const LogoDesignCompetition = () => {
               </div>
             </div>
 
-<<<<<<< HEAD
             <div>
               <h2 className="text-xl font-bold mb-4">Submission Guidelines</h2>
               <ul className="space-y-4">
@@ -171,7 +165,7 @@ const LogoDesignCompetition = () => {
                 <li>
                   Logo should be usable in colour and Black & White, in low
                   resolution in small sizes. The main title{" "}
-                  <span className="font-bold">“Typoday 2026”</span> should be
+                  <span className="font-bold">"Typoday 2026"</span> should be
                   clearly visible in sizes as small as{" "}
                   <span className="font-bold">120 by 120 pixels</span> (Example:
                   Instagram DP seen in a mobile phone).
@@ -241,72 +235,6 @@ const LogoDesignCompetition = () => {
                 </a>
               </p>
             </div>
-=======
-            <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
-              Important Dates:
-            </h2>
-            <p className="mb-2">
-              <span className="text-[#f59e0b] font-semibold">Deadline for logo submission: <span className="font-bold">15th April 2026</span>
-            </p>
-            <p>
-              <span className="text-[#f59e0b] "font-semibold">Declaration of logo competition results: <span className="font-bold">20th May 2026</span>
-            </p>
-
-            <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
-              Submission Guidelines
-            </h2>
-            <p className="mb-3">
-              Logo should reflect the theme of the conference. As the conference is being held in Kochi/Kerala, we encourage you to consider including the context of Kochi/Kerala in your logo.
-            </p>
-            <p className="mb-3">
-              The logo may use calligraphic or digitally generated letterforms, pre-existing fonts, or a mix of these. "Typoday 2026" should be clearly visible in the logo. Participants using fonts in the logo are encouraged to use open source fonts. The organisers do not take any responsibility for legal disputes arising out of copyrighted fonts used in the logo.
-            <p className="mb-3">
-              Logo should be usable in colour and Black&White, in low resolution in small sizes. The main title “Typoday 2026” should be clearly visible in Colour and Black and White in sizes as small as 120 by 120 pixels (Example: Instagram DP seen in a mobilephone)
-            </p>
-            <p className="mb-3">
-              The logo should be of the size and specification given below:
-            </p>
-
-            <p className="mb-2">Size of the final logo: 300mm x 100mm</p>
-            <p className="mb-2">Resolution: 300 dpi</p>
-            <p className="mb-2">File type: PDF</p>
-            <p className="mb-3">Color Mode: CMYK</p>
-
-            <h2 className="text-lg sm:text-xl font-bold mt-8 mb-4">
-              Uploading entries for logo:
-            </h2>
-            <p className="mb-3">
-              Each participant has to upload <span className="font-semibold">THREE SEPARATE FILES:</span>
-            </p>
-            <p className="mb-3">
-              <span className="font-semibold">1. The final logo/s</span> in PDF format, with two pages in one PDF file: Final design in one page and next page with a brief write (not exceeding 100 words) up about the design concept. Write up should be in English. Identity of the participant should not be mentioned anywhere, directly or indirectly in these two pages.
-              <span className="font-semibold">2.Brief bio data</span>
-            </p>
-            <p className="mb-3">
-             Contact Info: Name, Name and Address of Institution, Postal Address, Email, Telephone Number.
-            </p>
-            <p className="mb-3">
-              Bio-data/personal information: Maximum of 100 words - in English.
-            </p>
-            <p className="mb-3">
-              <span className="font-semibold">3. Copy of the id card</span> of the institution (proof of being a student)
-            </p>
-              <p className="mb-3"> Participants should upload the final logo </p>
-
-            <p className="mb-3 font-semibold">
-              Each participant is allowed a maximum of three entries.
-            </p>
-            <p className="mb-3 font-semibold">(Repetition is not allowed.)</p>
-            <p className="mb-3">
-              For online Logo Submission <a href="https://event.leconfe.com/juk1/scheduled/logo/panel/submissions" target="_blank" rel="noopener noreferrer" className="text-[#f59e0b] hover:underline">click here</a>
-            </p>
-            <p className="mb-3">
-              If you have any queries, please do not hesitate to contact us:
-            </p>
-            <p>
-              mailing it to: <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">help@typoday.org</a>
-            </p>
->>>>>>> 2b33fa671820c844acf7c657f10c4319fc159c22
           </div>
         </section>
 

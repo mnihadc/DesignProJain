@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CallForPapers = () => {
   // 2. Create a reference for the content section
-  const contentRef = useRef(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // 3. Scroll to the content section automatically on load

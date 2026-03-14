@@ -1,24 +1,29 @@
 const TermsAndConditions = () => {
   return (
-    <div className="min-h-screen">
-      {/* Terms and Conditions Content Section */}
-      <div className="w-full bg-[#0A2463] text-white px-4 py-8 sm:px-6 sm:py-10 md:px-10 md:py-12 lg:px-12 lg:py-14">
+    <div className="min-h-screen bg-[#0A2463]">
+      {/* Main Content Section */}
+      <div className="w-full text-white px-4 py-8 sm:px-6 sm:py-10 md:px-10 md:py-12 lg:px-12 lg:py-14">
         <div className="max-w-7xl mx-auto">
           {/* Page Title */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-[#f59e0b]">
-            Terms and Conditions of Typoday 2026
-          </h1>
+          <div className="mb-12 border-b border-white/10 pb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#f59e0b]">
+              Terms and Conditions of Typoday 2026
+            </h1>
+          </div>
 
           {/* Logo Competition Section */}
-          <section className="mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-5 md:mb-6">
-              Logo competition
+          <section className="mb-12 bg-white/5 p-6 rounded-2xl border border-white/10">
+            <h2 className="text-xl sm:text-2xl font-bold mb-6 text-[#f59e0b] flex items-center gap-3">
+              <span className="w-2 h-8 bg-[#f59e0b] rounded-full"></span>
+              Logo Competition
             </h2>
 
-            <div className="space-y-4 sm:space-y-5 text-xs sm:text-sm md:text-[15px] leading-relaxed">
+            <div className="space-y-6 text-sm md:text-[15px] leading-relaxed">
               <div>
-                <h3 className="font-semibold mb-2">Jury selection process</h3>
-                <p>
+                <h3 className="font-bold text-lg mb-2 underline underline-offset-4">
+                  Jury/ Selection Process
+                </h3>
+                <p className="text-gray-200">
                   All the entries received by the stipulated date and time and
                   found in order, shall be evaluated by a Jury panel set up by
                   the organisers. No correspondence or enquiry about the
@@ -28,268 +33,187 @@ const TermsAndConditions = () => {
               </div>
 
               <div>
-                <h3 className="font-semibold mb-2">
-                  Rights of the organisers:
+                <h3 className="font-bold text-lg mb-2 underline underline-offset-4">
+                  Rights of the Organisers
                 </h3>
-                <p className="mb-2">
-                  The jury will have the right to select, reject, or request
-                  modifications for the selected logo.
-                </p>
-                <p className="mb-2">
-                  Organisers reserve the right to modify and use the final logo
-                  in any form, in any medium as deemed fit.
-                </p>
-                <p>
-                  Participants using fonts in the logo are encouraged to use
-                  open source fonts only. The organisers do not take any
-                  responsibility arising out of copyrighted fonts used in the
-                  logo.
-                </p>
+                <ul className="list-disc ml-5 space-y-2 text-gray-200">
+                  <li>
+                    The jury will have the right to select, reject, or request
+                    modifications for the selected logo.
+                  </li>
+                  <li>
+                    Organisers reserve the right to modify and use the final
+                    logo in any form, in any medium as deemed fit.
+                  </li>
+                  <li>
+                    Participants using fonts in the logo are encouraged to use
+                    open source fonts only. The organisers do not take any
+                    responsibility arising out of copyrighted fonts used in the
+                    logo.
+                  </li>
+                </ul>
               </div>
 
-              <div>
-                <h3 className="font-semibold mb-2">
-                  Undertaking - plagiarism/non-AI/copyrights:
+              <div className="bg-black/20 p-5 rounded-xl">
+                <h3 className="font-bold text-lg mb-3 text-[#f59e0b]">
+                  Undertaking - Plagiarism / Non-AI / Copyrights
                 </h3>
-                <p className="mb-2">
-                  The logo should be the original work of the participant and
-                  must not infringe the Intellectual Property Rights of any
-                  third party.
-                </p>
-                <p className="mb-2">
-                  Declaration that all concepts, ideas, visuals used in the logo
-                  are original and belong to the participant is mandatory while
-                  taking part in this competition.
-                </p>
-                <p className="mb-2">
-                  Total responsibility of originality and plagiarism free
-                  content is with the participant. The organisers do not take
-                  any responsibility arising out of legal disputes on
-                  copyrighted materials used in the logo or any disputes arising
-                  out of the IP rights of the idea, concept and contents of the
-                  final logo.
-                </p>
-                <p className="mb-2">
-                  The organisers do not take any responsibility for legal
-                  disputes arising out of copyrighted fonts used in the logo.
-                </p>
-                <p className="mb-2">
-                  AI generated logos will not be accepted in this competition.
-                </p>
-                <p className="mb-2">
-                  The entries sent once shall not be returned.
-                </p>
-                <p className="mb-2">
-                  The final selected logo shall become the intellectual property
-                  of the organisers and the designer shall not have any right
-                  over the same.
-                </p>
-                <p className="mb-2">
-                  The responsibility to comply with the guidelines and other
-                  conditions fully lies with the participant and the organisers
-                  shall not be liable for any dispute raised by a third party.
-                </p>
-                <p className="mb-2">
-                  The Designer of the finally selected logo will get a prize of
-                  Rs.5,000/- with a citation and would be required to surrender
-                  copyright of the design to the organisers of Typoday 2026
-                  conference.
-                </p>
-                <p className="mb-2">
-                  Designer of the winning logo should submit the vector file of
-                  the logo in .ai and .eps formats
-                </p>
-                <p className="mb-2">
-                  If the name of the designer is mentioned in the logo, directly
-                  or indirectly, the entry will be disqualified.
-                </p>
-                <p>
-                  All data about the identity of the designer should be uploaded
-                  in a separate file.
-                </p>
+                <div className="space-y-3 text-gray-200">
+                  <p>
+                    The logo should be the original work of the participant and
+                    must not infringe the Intellectual Property Rights of any
+                    third party.
+                  </p>
+                  <p>
+                    Declaration that all concepts, ideas, visuals used in the
+                    logo are original and belong to the participant is mandatory
+                    while taking part in this competition. Total responsibility
+                    of originality and plagiarism free content is with the
+                    participant.
+                  </p>
+                  <p className="font-bold text-red-400">
+                    AI generated logos will not be accepted in this competition.
+                  </p>
+                  <p>
+                    The final selected logo shall become the intellectual
+                    property of the organisers and the designer shall not have
+                    any right over the same.
+                  </p>
+                  <p className="pt-2">
+                    <span className="text-[#f59e0b] font-bold">The Prize:</span>{" "}
+                    The Designer of the finally selected logo will get a prize
+                    of <span className="font-bold">Rs. 5,000/-</span> with a
+                    citation and would be required to surrender copyright of the
+                    design.
+                  </p>
+                  <p className="italic text-sm">
+                    Winning designers must submit the vector file of the logo in
+                    .ai and .eps formats.
+                  </p>
+                  <p className="text-xs text-gray-400 border-t border-white/10 pt-2">
+                    If the name of the designer is mentioned in the logo,
+                    directly or indirectly, the entry will be disqualified. All
+                    identity data should be uploaded in a separate file.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
 
           {/* Poster Competition Section */}
-          <section className="mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-5 md:mb-6">
-              Poster competition
+          <section className="mb-12 bg-white/5 p-6 rounded-2xl border border-white/10">
+            <h2 className="text-xl sm:text-2xl font-bold mb-6 text-[#f59e0b] flex items-center gap-3">
+              <span className="w-2 h-8 bg-[#f59e0b] rounded-full"></span>
+              Poster Competition
             </h2>
 
-            <div className="space-y-4 sm:space-y-5 text-xs sm:text-sm md:text-[15px] leading-relaxed">
-              <p>
-                Participation in this competition is open to students, faculty
-                members, and professionals. It is inclusive of all individuals,
-                non-resident Indians and foreign nationals.
+            <div className="space-y-6 text-sm md:text-[15px] leading-relaxed">
+              <p className="bg-[#f59e0b]/10 p-4 rounded-lg border border-[#f59e0b]/20">
+                Participation is open to{" "}
+                <span className="font-bold">
+                  students, faculty members, and professionals
+                </span>
+                . Inclusive of all individuals, non-resident Indians and foreign
+                nationals.
               </p>
 
               <div>
-                <h3 className="font-semibold mb-2">
-                  Selection procedure for winners:
+                <h3 className="font-bold text-lg mb-2 underline underline-offset-4">
+                  Selection & Benefits
                 </h3>
+                <ul className="list-disc ml-5 space-y-2 text-gray-200">
+                  <li>
+                    Evaluation by an independent Jury panel; their decision is
+                    final.
+                  </li>
+                  <li>
+                    Winning entries will be published as a book and displayed in
+                    an exhibition.
+                  </li>
+                  <li>
+                    <span className="font-bold text-[#f59e0b]">
+                      20% discount
+                    </span>{" "}
+                    in registration fees for all winners.
+                  </li>
+                  <li>
+                    <span className="font-bold text-[#f59e0b]">
+                      Free Registration
+                    </span>{" "}
+                    for the 1st and 2nd prize winners (excludes travel and
+                    accommodation).
+                  </li>
+                  <li>
+                    All winning participants receive a copy of the book and a
+                    'Certificate of Winning'.
+                  </li>
+                </ul>
               </div>
 
-              <div>
-                <h3 className="font-semibold mb-2">Jury/ selection process</h3>
-                <p>
-                  All the entries received by the stipulated date and time and
-                  found in order, shall be evaluated by a Jury panel set up by
-                  the organisers. No correspondence or enquiry about the
-                  identity of jury members will be entertained by the organisers
-                  at any point of time. The decision of the jury will be final.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-2">
-                  Rights of the organisers:
+              <div className="bg-black/20 p-5 rounded-xl">
+                <h3 className="font-bold text-lg mb-3 text-[#f59e0b]">
+                  Undertaking - Plagiarism / Non-AI / Copyrights
                 </h3>
-                <p className="mb-2">
-                  The jury will have the right to select, reject, or request
-                  modifications for the selected posters.
-                </p>
-                <p className="mb-2">
-                  Winning entries will be published as a book and displayed in
-                  an exhibition during the event. The winners are entitled to a
-                  20% discount in registration fees for the event.
-                </p>
-                <p className="mb-2">
-                  Winners of the first and second prize in the Poster
-                  competition will be given free registration for the event.
-                </p>
-                <p className="mb-2">
-                  This does NOT include travel and accommodation.
-                </p>
-                <p className="mb-2">
-                  All winning participants will receive a copy of the book and
-                  will also be given the 'Certificate of Winning the Poster
-                  Competition'.
-                </p>
-                <p>
-                  Participants of poster competition are encouraged to use open
-                  source fonts only. If any copyrighted fonts are used in the
-                  poster entry, the organisers do not take any responsibility
-                  for legal disputes arising out of copyrighted fonts used in
-                  the poster.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-2">
-                  Undertaking - plagiarism/non-AI/copyrights /
-                </h3>
-                <p className="mb-2">
-                  The poster should be the original work of the participant and
-                  must not infringe the Intellectual Property Rights of any
-                  third party.
-                </p>
-                <p className="mb-2">
-                  Declaration that all concepts, ideas, visuals used in the
-                  poster are original and belong to the participant is mandatory
-                  while taking part in this competition.
-                </p>
-                <p className="mb-2">
-                  Total responsibility of originality and plagiarism free
-                  content is with the participant. The organisers do not take
-                  any responsibility on any legal disputes arising out of
-                  copyrighted materials used in the poster or IP rights of the
-                  visuals, idea, concept and contents of the final poster.
-                </p>
-                <p className="mb-2">
-                  The organisers do not take any responsibility on any legal
-                  dispute arising out of copyrighted fonts used in the poster.
-                </p>
-                <p className="mb-2">
-                  AI generated posters will not be accepted in this competition.
-                </p>
-                <p className="mb-2">
-                  The entries sent once shall not be returned.
-                </p>
-                <p className="mb-2">
-                  The final selected poster shall become the intellectual
-                  property of the organisers and the designer shall not have any
-                  right over the same.
-                </p>
-                <p className="mb-2">
-                  The responsibility to comply with the guidelines and other
-                  conditions fully lies with the participant and the organisers
-                  shall not be liable for any disputes raised by any third
-                  party.
-                </p>
-                <p className="mb-2">
-                  If the name of the designer is mentioned in the poster,
-                  directly or indirectly, the entry will be disqualified.
-                </p>
-                <p>
-                  All data about the identity of the designer should be uploaded
-                  in a separate file.
-                </p>
+                <div className="space-y-3 text-gray-200">
+                  <p>
+                    The poster must be original work. Declaration of originality
+                    is mandatory.
+                  </p>
+                  <p className="font-bold text-red-400">
+                    AI generated posters will not be accepted.
+                  </p>
+                  <p>
+                    Organisers do not take responsibility for legal disputes
+                    arising out of copyrighted fonts or materials used in the
+                    poster.
+                  </p>
+                  <p>
+                    The final selected poster becomes the intellectual property
+                    of the organisers.
+                  </p>
+                  <p className="text-xs text-gray-400 border-t border-white/10 pt-2">
+                    Identity of the designer should not be visible on the
+                    poster; use a separate file for bio-data.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
 
           {/* Abstract Entries Section */}
-          <section className="mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-5 md:mb-6">
-              Abstract entries
+          <section className="mb-8 bg-white/5 p-6 rounded-2xl border border-white/10">
+            <h2 className="text-xl sm:text-2xl font-bold mb-6 text-[#f59e0b] flex items-center gap-3">
+              <span className="w-2 h-8 bg-[#f59e0b] rounded-full"></span>
+              Abstract Entries
             </h2>
 
-            <div className="space-y-4 sm:space-y-5 text-xs sm:text-sm md:text-[15px] leading-relaxed">
-              <div>
-                <h3 className="font-semibold mb-2">
-                  Undertaking - plagiarism/non-AI/copyrights
+            <div className="space-y-6 text-sm md:text-[15px] leading-relaxed">
+              <div className="bg-black/20 p-5 rounded-xl">
+                <h3 className="font-bold text-lg mb-3 text-[#f59e0b]">
+                  Undertaking - Plagiarism / Non-AI / Copyrights
                 </h3>
-                <p className="mb-2">
-                  The paper abstract should be the original work of the
-                  participant and must not infringe the Intellectual Property
-                  Rights of any third party.
-                </p>
-                <p className="mb-2">
-                  Declaration that all research work, data, theoretical
-                  arguments, conjectures, hypothesis, concepts, ideas, visuals
-                  used in the paper abstract are original and belong to the
-                  participant is mandatory while taking part in this
-                  competition.
-                </p>
-                <p className="mb-2">
-                  Total responsibility of originality and plagiarism free
-                  content is with the participant. The organisers do not take
-                  any responsibility on any legal disputes arising out of
-                  copyrighted materials used in the paper abstract or IP rights
-                  of the idea, concept and contents of the final paper abstract.
-                </p>
-                <p className="mb-2">
-                  The organisers do not take any responsibility for any legal
-                  dispute arising out of copyrighted fonts or images used
-                  anywhere in the paper abstract.
-                </p>
-                <p className="mb-2">
-                  AI generated paper abstracts will not be accepted in this
-                  competition.
-                </p>
-                <p className="mb-2">
-                  The entries sent once shall not be returned.
-                </p>
-                <p className="mb-2">
-                  The final selected paper abstract shall become the
-                  intellectual property of the organisers and the participant
-                  shall not have any right over the same.
-                </p>
-                <p className="mb-2">
-                  The responsibility to comply with the guidelines and other
-                  conditions fully lies with the participant and the organisers
-                  shall not be liable for any Legal disputes raised by any third
-                  party.
-                </p>
-                <p className="mb-2">
-                  If the name of the author is mentioned in the paper abstract,
-                  directly or indirectly, the entry will be disqualified.
-                </p>
-                <p>
-                  Data about the identity of the author should be uploaded in a
-                  separate file.
-                </p>
+                <div className="space-y-3 text-gray-200">
+                  <p>
+                    Paper abstracts must be original research/work. Declaration
+                    that all data, theoretical arguments, and visuals are
+                    original is mandatory.
+                  </p>
+                  <p className="font-bold text-red-400">
+                    AI generated paper abstracts will not be accepted.
+                  </p>
+                  <p>
+                    Organisers are not liable for legal disputes regarding
+                    copyrighted fonts, images, or IP rights within the abstract.
+                  </p>
+                  <p>
+                    The final selected paper abstract becomes the intellectual
+                    property of the organisers.
+                  </p>
+                  <p className="text-xs text-gray-400 border-t border-white/10 pt-2">
+                    Mentioning the author's name in the abstract will lead to
+                    disqualification. Identity data must be uploaded separately.
+                  </p>
+                </div>
               </div>
             </div>
           </section>

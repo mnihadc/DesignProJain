@@ -65,6 +65,25 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* Associate Partner Section */}
+        <div className="mb-8 sm:mb-10 text-center">
+          <h2 className="text-lg font-bold text-[#f59e0b] mb-3 sm:text-xl">
+            Associate Partner
+          </h2>
+          <div className="w-full h-px bg-white/20 mb-6" />
+          <div className="flex justify-center">
+            <div className="bg-white rounded-xl p-4 shadow-md inline-flex items-center justify-center w-[280px] h-[140px] sm:w-[340px] sm:h-[160px]">
+              <img
+                src="/images/sadea.png"
+                alt="SADEA - South Asian Design Educators Alliance"
+                className="w-full h-full object-contain"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div className="w-full h-px bg-white/20 mt-6" />
+        </div>
+
         {/* Statistics Section */}
         <div className="relative">
           {/* Divider Line */}

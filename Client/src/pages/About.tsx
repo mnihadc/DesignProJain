@@ -74,7 +74,7 @@ const AboutSection = () => {
           <div className="flex justify-center">
             <div className="bg-white rounded-xl p-4 shadow-md inline-flex items-center justify-center w-[280px] h-[140px] sm:w-[340px] sm:h-[160px]">
               <img
-                src="/images/sadea.png"
+                src="/images/sadea.png.gif"
                 alt="SADEA - South Asian Design Educators Alliance"
                 className="w-full h-full object-contain"
                 loading="lazy"

@@ -72,7 +72,7 @@ const AboutSection = () => {
           </h2>
           <div className="w-full h-px bg-white/20 mb-6" />
           <div className="flex justify-center">
-            <div className="bg-white rounded-xl p-4 shadow-md inline-flex items-center justify-center w-[280px] h-[140px] sm:w-[340px] sm:h-[160px]">
+            <div className="bg-white rounded-xl p-4 shadow-md inline-flex items-center justify-center w-[500px] h-[220px]">
               <img
                 src="/images/sadea.png.gif"
                 alt="SADEA - South Asian Design Educators Alliance"
@@ -85,71 +85,10 @@ const AboutSection = () => {
         </div>
 
         {/* Statistics Section */}
-        <div className="relative">
-          {/* Divider Line */}
-          <div className="hidden sm:block absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-
-          {/* Mobile: Single line layout */}
-          <div className="flex sm:hidden items-center justify-between pt-6">
-            {/* Speakers */}
-            <div className="text-center">
-              <div className="text-2xl font-bold mb-1">50+</div>
-              <div className="text-xs font-medium text-white/90">Speakers</div>
-            </div>
-
-            <div className="w-px h-8 bg-white/30" />
-
-            {/* Workshops */}
-            <div className="text-center">
-              <div className="text-2xl font-bold mb-1">30+</div>
-              <div className="text-xs font-medium text-white/90">Workshops</div>
-            </div>
-
-            <div className="w-px h-8 bg-white/30" />
-
-            {/* Attendees */}
-            <div className="text-center">
-              <div className="text-2xl font-bold mb-1">500+</div>
-              <div className="text-xs font-medium text-white/90">Attendees</div>
-            </div>
-          </div>
-
-          {/* Desktop layout */}
-          <div className="hidden sm:flex items-center justify-center gap-8 pt-8 md:gap-10 lg:gap-12">
-            {/* Speakers */}
-            <div className="text-center">
-              <div className="text-xl font-bold mb-1 md:text-2xl lg:text-3xl">
-                50+
-              </div>
-              <div className="text-sm font-medium text-white/90 md:text-base">
-                Speakers
-              </div>
-            </div>
-
-            <div className="w-px h-12 bg-white/30" />
-
-            {/* Workshops */}
-            <div className="text-center">
-              <div className="text-xl font-bold mb-1 md:text-2xl lg:text-3xl">
-                30+
-              </div>
-              <div className="text-sm font-medium text-white/90 md:text-base">
-                Workshops
-              </div>
-            </div>
-
-            <div className="w-px h-12 bg-white/30" />
-
-            {/* Attendees */}
-            <div className="text-center">
-              <div className="text-xl font-bold mb-1 md:text-2xl lg:text-3xl">
-                500+
-              </div>
-              <div className="text-sm font-medium text-white/90 md:text-base">
-                Attendees
-              </div>
-            </div>
-          </div>
+        <div className="flex flex-wrap items-center justify-center gap-8 pt-4 pb-2 sm:gap-12 md:gap-16">
+          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">50+ Speakers</span>
+          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">30+ Workshops</span>
+          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">500+ Attendees</span>
         </div>
       </div>
     </section>

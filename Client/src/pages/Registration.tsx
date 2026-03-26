@@ -71,7 +71,8 @@ const Registration = () => {
       </section>
 
       {/* Registration Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-10 text-white bg-[#0A2463] slide-up-section">
+      <div className="w-full bg-[#0A2463] slide-up-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-10 text-white">
 
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-[#f59e0b]">
           Registrations
@@ -163,6 +164,7 @@ const Registration = () => {
           <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">30+ Workshops</span>
           <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">500+ Attendees</span>
         </div>
+      </div>
       </div>
     </div>
   );

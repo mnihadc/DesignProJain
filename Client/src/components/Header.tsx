@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, User, Home, Clock } from "lucide-react";
-import toast from "react-hot-toast";
 
 interface NavMap {
   [key: string]: string;
@@ -89,14 +88,7 @@ const Header = () => {
     setActiveNav(navItem);
 
     if (navItem === "registration") {
-      toast("Registration has not started yet — Coming Soon!", {
-        icon: "⏳",
-        style: {
-          background: "#052058",
-          color: "white",
-          border: "1px solid #3356a8",
-        },
-      });
+      navigate("/registration");
       setIsMenuOpen(false);
       return;
     }

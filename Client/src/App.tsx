@@ -10,6 +10,7 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import PosterDesignCompetition from "./pages/PosterDesignCompetition";
 import CallForPapers from "./pages/CallForPapers";
 import LogoDesignCompetition from "./pages/LogoDesignCompetition";
+import Registration from "./pages/Registration";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -54,6 +55,7 @@ function App() {
         <Route path="/poster-design-competition" element={<PosterDesignCompetition />} />
         <Route path="/call-for-papers" element={<CallForPapers />} />
         <Route path="/logo-design-competition" element={<LogoDesignCompetition />} />
+        <Route path="/registration" element={<Registration />} />
       </Routes>
 
       <Footer />

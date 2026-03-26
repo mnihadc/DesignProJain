@@ -71,7 +71,7 @@ const Registration = () => {
       </section>
 
       {/* Registration Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-10 text-white slide-up-section">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-10 text-white">
 
         {/* Fees */}
         <div className="space-y-4 text-sm sm:text-base leading-relaxed">

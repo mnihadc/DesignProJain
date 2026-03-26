@@ -73,22 +73,6 @@ const Registration = () => {
       {/* Registration Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-10 text-white slide-up-section">
 
-        {/* Register Now Box */}
-        <div className="border border-white/20 rounded-xl p-6 mb-8 text-center">
-          <h2 className="text-[#f59e0b] font-bold text-lg mb-4">Register Now</h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            <Link to="/call-for-papers" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
-              Call for Papers
-            </Link>
-            <Link to="/logo-design-competition" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
-              Logo Design Competition
-            </Link>
-            <Link to="/poster-design-competition" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
-              Poster Design Competition
-            </Link>
-          </div>
-        </div>
-
         {/* Fees */}
         <div className="space-y-4 text-sm sm:text-base leading-relaxed">
           <p>Registration fees for the conference along with the workshop (for students) are as follows:</p>

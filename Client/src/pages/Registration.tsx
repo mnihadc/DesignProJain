@@ -79,7 +79,7 @@ const Registration = () => {
         </h1>
 
         {/* Register Now Box */}
-        <div className="border border-white/20 rounded-xl p-6 mb-8 text-center">
+        <div className="bg-white rounded-xl p-6 mb-8 text-center">
           <p className="text-[#f59e0b] font-semibold text-base mb-4">Register Now</p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link to="/call-for-papers" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">

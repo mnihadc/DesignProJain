@@ -93,6 +93,7 @@ const Header = () => {
     setActiveNav(navItem);
 
     if (navItem === "registration") {
+      navigate("/registration");
       setIsRegDropdownOpen((prev) => !prev);
       return;
     }

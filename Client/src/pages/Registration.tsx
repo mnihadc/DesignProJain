@@ -80,9 +80,9 @@ const Registration = () => {
 
         {/* Register Now Box */}
         <div className="flex justify-center mb-8">
-          <div className="bg-white rounded-xl px-8 py-6 text-center w-full max-w-lg shadow-md">
+          <div className="bg-white rounded-xl px-8 py-6 text-center w-full max-w-2xl shadow-md">
             <p className="text-[#f59e0b] font-semibold text-base mb-4">Register Now</p>
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-nowrap justify-center gap-3">
               <Link to="/call-for-papers" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
                 Call for Papers
               </Link>

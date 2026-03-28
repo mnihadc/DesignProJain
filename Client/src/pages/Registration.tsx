@@ -71,21 +71,28 @@ const Registration = () => {
       </section>
 
       {/* Registration Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-10 text-white slide-up-section">
+      <div className="w-full bg-[#0A2463] slide-up-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-10 text-white">
+
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-[#f59e0b]">
+          Registrations
+        </h1>
 
         {/* Register Now Box */}
-        <div className="border border-white/20 rounded-xl p-6 mb-8 text-center">
-          <h2 className="text-[#f59e0b] font-bold text-lg mb-4">Register Now</h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            <Link to="/call-for-papers" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
-              Call for Papers
-            </Link>
-            <Link to="/logo-design-competition" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
-              Logo Design Competition
-            </Link>
-            <Link to="/poster-design-competition" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
-              Poster Design Competition
-            </Link>
+        <div className="flex justify-center mb-8">
+          <div className="bg-white rounded-xl px-8 py-6 text-center w-full max-w-2xl shadow-md">
+            <p className="text-[#f59e0b] font-semibold text-base mb-4 drop-shadow-[0_0_8px_rgba(245,158,11,0.8)] animate-pulse">Register Now</p>
+            <div className="flex flex-nowrap justify-center gap-3">
+              <Link to="/call-for-papers" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
+                Call for Papers
+              </Link>
+              <Link to="/logo-design-competition" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
+                Logo Design Competition
+              </Link>
+              <Link to="/poster-design-competition" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
+                Poster Design Competition
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -159,6 +166,7 @@ const Registration = () => {
           <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">30+ Workshops</span>
           <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">500+ Attendees</span>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -9,12 +9,10 @@ interface NavMap {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMoreDropdownOpen, setIsMoreDropdownOpen] = useState(false);
-  const [isRegDropdownOpen, setIsRegDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeNav, setActiveNav] = useState("home");
 
   const dropdownRef = useRef<HTMLLIElement>(null);
-  const regDropdownRef = useRef<HTMLLIElement>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   const navigate = useNavigate();
@@ -49,9 +47,6 @@ const Header = () => {
       // Close desktop dropdown if clicked outside its li
       if (dropdownRef.current && !dropdownRef.current.contains(target)) {
         setIsMoreDropdownOpen(false);
-      }
-      if (regDropdownRef.current && !regDropdownRef.current.contains(target)) {
-        setIsRegDropdownOpen(false);
       }
     };
 
@@ -93,7 +88,9 @@ const Header = () => {
     setActiveNav(navItem);
 
     if (navItem === "registration") {
-      setIsRegDropdownOpen((prev) => !prev);
+      navigate("/registration");
+      setIsRegDropdownOpen(false);
+      setIsMenuOpen(false);
       return;
     }
 
@@ -161,7 +158,7 @@ const Header = () => {
                 <li
                   key={item.id}
                   className="relative"
-                  ref={item.id === "more" ? dropdownRef : item.id === "registration" ? regDropdownRef : null}
+                  ref={item.id === "more" ? dropdownRef : null}
                 >
                   <button
                     onClick={() => handleNavClick(item.id)}
@@ -173,53 +170,19 @@ const Header = () => {
                   >
                     {item.icon}
                     <span>{item.label}</span>
-                    {(item.id === "more" || item.id === "registration") && (
+                    {item.id === "more" && (
                       <ChevronDown
-                        className={`w-4 h-4 transition ${
-                          item.id === "more" ? (isMoreDropdownOpen ? "rotate-180" : "") :
-                          (isRegDropdownOpen ? "rotate-180" : "")
-                        }`}
+                        className={`w-4 h-4 transition ${isMoreDropdownOpen ? "rotate-180" : ""}`}
                       />
                     )}
                   </button>
-
-                  {/* Registration Dropdown */}
-                  {item.id === "registration" && isRegDropdownOpen && (
-                    <div className="absolute left-0 mt-2 w-64 bg-[#b0b8c8] rounded-lg shadow-xl overflow-hidden z-50
-                      animate-in fade-in slide-in-from-top-2 duration-200">
-                      <Link
-                        to="/call-for-papers"
-                        onClick={() => { setIsRegDropdownOpen(false); setActiveNav("registration"); }}
-                        className="block px-5 py-3 text-[#0A2463] font-medium border-b border-[#9aa3b0] hover:bg-[#c8d0dc] transition-colors"
-                      >
-                        Call for Papers
-                      </Link>
-                      <Link
-                        to="/logo-design-competition"
-                        onClick={() => { setIsRegDropdownOpen(false); setActiveNav("registration"); }}
-                        className="block px-5 py-3 text-[#0A2463] font-medium border-b border-[#9aa3b0] hover:bg-[#c8d0dc] transition-colors"
-                      >
-                        Logo Design Competition
-                      </Link>
-                      <Link
-                        to="/poster-design-competition"
-                        onClick={() => { setIsRegDropdownOpen(false); setActiveNav("registration"); }}
-                        className="block px-5 py-3 text-[#0A2463] font-medium hover:bg-[#c8d0dc] transition-colors"
-                      >
-                        Poster Design Competition
-                      </Link>
-                    </div>
-                  )}
 
                   {/* More Dropdown */}
                   {item.id === "more" && isMoreDropdownOpen && (
                     <div className="absolute right-0 mt-2 w-56 bg-[#052058] border border-white/20 rounded-lg shadow-lg">
                       <Link
                         to="/terms-and-conditions"
-                        onClick={() => {
-                          setActiveNav("more");
-                          setIsMoreDropdownOpen(false);
-                        }}
+                        onClick={() => { setActiveNav("more"); setIsMoreDropdownOpen(false); }}
                         className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10"
                       >
                         Terms & Conditions
@@ -240,33 +203,14 @@ const Header = () => {
               <ul className="space-y-2">
                 {navItems.map((item) => (
                   <li key={item.id}>
-                    {item.id === "registration" ? (
-                      <>
-                        <button
-                          onClick={() => setIsRegDropdownOpen((prev) => !prev)}
-                          className="flex justify-between w-full px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg"
-                        >
-                          <span className="flex items-center gap-3">{item.icon}{item.label}</span>
-                          <ChevronDown className={`w-4 h-4 transition ${isRegDropdownOpen ? "rotate-180" : ""}`} />
-                        </button>
-                        {isRegDropdownOpen && (
-                          <div className="ml-4 mt-2 rounded-lg overflow-hidden bg-[#b0b8c8]">
-                            <button onClick={() => goToPage("/call-for-papers")} className="block w-full text-left px-4 py-3 text-[#0A2463] font-medium border-b border-[#9aa3b0] hover:bg-[#c8d0dc] transition">Call for Papers</button>
-                            <button onClick={() => goToPage("/logo-design-competition")} className="block w-full text-left px-4 py-3 text-[#0A2463] font-medium border-b border-[#9aa3b0] hover:bg-[#c8d0dc] transition">Logo Design Competition</button>
-                            <button onClick={() => goToPage("/poster-design-competition")} className="block w-full text-left px-4 py-3 text-[#0A2463] font-medium hover:bg-[#c8d0dc] transition">Poster Design Competition</button>
-                          </div>
-                        )}
-                      </>
-                    ) : item.id === "more" ? (
+                    {item.id === "more" ? (
                       <>
                         <button
                           onClick={() => setIsMoreDropdownOpen((prev) => !prev)}
                           className="flex justify-between w-full px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg"
                         >
                           {item.label}
-                          <ChevronDown
-                            className={`w-4 h-4 transition ${isMoreDropdownOpen ? "rotate-180" : ""}`}
-                          />
+                          <ChevronDown className={`w-4 h-4 transition ${isMoreDropdownOpen ? "rotate-180" : ""}`} />
                         </button>
                         {isMoreDropdownOpen && (
                           <div className="ml-4 mt-2 space-y-2">

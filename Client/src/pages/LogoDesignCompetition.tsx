@@ -92,250 +92,94 @@ const LogoDesignCompetition = () => {
 
       {/* Integrated Content Area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-10 text-white bg-[#0A2463] slide-up-section">
-        {/* Logo Competition Content */}
         <section className="pb-8">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-[#f59e0b]">
             Logo Design Competition
           </h1>
 
-          <div className="space-y-6 text-sm md:text-[15px] leading-relaxed">
-            <div className="border-l-4 border-[#f59e0b] pl-4">
-              <p className="font-bold text-lg">
-                Typographic Dialogues: 'Typographic Intersections: Analogue to
-                Digital and Beyond'
-              </p>
-              <p className="mt-2 text-gray-200">
-                Design a logo for 'Typography Day 2026' that reflects the
-                event's theme, 'Typographic Intersections: Analogue to Digital
-                and Beyond.'
-              </p>
-            </div>
+          <div className="text-sm md:text-[15px] leading-relaxed space-y-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#f59e0b]">
+              Typographic Dialogues: 'Typographic Intersections: Analogue to Digital and Beyond'
+            </h2>
 
             <p>
-              <span className="font-bold text-[#f59e0b]">Eligibility:</span>{" "}
-              Students below 25 years of age. Foreign nationals and non-resident
+              Design a logo for 'Typography Day 2026' that reflects the event's theme,
+              'Typographic Intersections: Analogue to Digital and Beyond.'
+            </p>
+            <p>
+              <span className="font-bold">Eligibility</span>: Students below 25 years of age. Foreign nationals and non-resident
               Indians are welcome to participate in the competition.
             </p>
+            <p><span className="font-bold">Important Dates:</span></p>
+            <p>
+              Deadline for logo submission: <span className="font-bold text-[#f59e0b]">15th April 2026</span>
+            </p>
+            <p>
+              Declaration of logo competition results: <span className="font-bold text-[#f59e0b]">20th May 2026</span>
+            </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white/5 p-6 rounded-xl border border-white/10">
-              <div>
-                <h2 className="text-lg font-bold mb-3 text-[#f59e0b]">
-                  Important Dates:
-                </h2>
-                <p>
-                  Deadline for logo submission:{" "}
-                  <span className="font-bold">15th April 2026</span>
-                </p>
-                <p>
-                  Declaration of logo competition results:{" "}
-                  <span className="font-bold">20th May 2026</span>
-                </p>
-              </div>
-              <div>
-                <h2 className="text-lg font-bold mb-3 text-[#f59e0b]">
-                  Submission Stats:
-                </h2>
-                <p>
-                  Maximum of <span className="font-bold">three entries</span>{" "}
-                  per participant.
-                </p>
-                <p className="text-xs italic text-gray-400 mt-1">
-                  (Repetition is not allowed.)
-                </p>
-              </div>
-            </div>
+            <p><span className="font-bold">Submission Guidelines</span></p>
+            <p>
+              Logo should reflect the theme of the conference. As the conference is being held in
+              Kochi/Kerala, we encourage you to consider including the context of Kochi/Kerala in your logo.
+            </p>
+            <p>
+              The logo may use calligraphic or digitally generated letterforms, pre-existing fonts,
+              or a mix of these. "Typoday 2026" should be clearly visible in the logo. Participants
+              using fonts in the logo are encouraged to use open source fonts. The organisers do
+              not take any responsibility for legal disputes arising out of copyrighted fonts used in
+              the logo.
+            </p>
+            <p>
+              Logo should be usable in colour and Black&White, in low resolution in small sizes.
+              The main title "Typoday 2026" should be clearly visible in Colour and Black and
+              White in sizes as small as 120 by 120 pixels (Example: Instagram DP seen in a
+              mobilephone)
+            </p>
+            <p>The logo should be of the size and specification given below.</p>
+            <p>Size and Resolution:</p>
+            <p>Size of the final logo: 300mm x 300mm</p>
+            <p>Resolution: 300 dpi&nbsp;&nbsp;File type: PDF</p>
+            <p>Color Mode: CMYK</p>
 
-            <div>
-              <h2 className="text-xl font-bold mb-4">Submission Guidelines</h2>
-              <ul className="space-y-4">
-                <li>
-                  Logo should reflect the theme of the conference. As the
-                  conference is being held in{" "}
-                  <span className="text-[#f59e0b]">Kochi/Kerala</span>, we
-                  encourage you to consider including the context of
-                  Kochi/Kerala in your logo.
-                </li>
-                <li>
-                  The logo may use calligraphic or digitally generated
-                  letterforms, pre-existing fonts, or a mix of these.{" "}
-                  <span className="italic">"Typoday 2026"</span> should be
-                  clearly visible in the logo. Participants using fonts in the
-                  logo are encouraged to use open source fonts.
-                </li>
-                <li>
-                  Logo should be usable in colour and Black & White, in low
-                  resolution in small sizes. The main title{" "}
-                  <span className="font-bold">"Typoday 2026"</span> should be
-                  clearly visible in sizes as small as{" "}
-                  <span className="font-bold">120 by 120 pixels</span> (Example:
-                  Instagram DP seen in a mobile phone).
-                </li>
-              </ul>
-            </div>
-
-            <div className="pt-4">
-              <h2 className="text-lg font-bold mb-3">Size and Resolution:</h2>
-              <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                <li className="bg-white/10 p-3 rounded-lg">
-                  <span className="block text-xs text-gray-400">Size</span>300mm
-                  x 300mm
-                </li>
-                <li className="bg-white/10 p-3 rounded-lg">
-                  <span className="block text-xs text-gray-400">
-                    Resolution
-                  </span>
-                  300 dpi
-                </li>
-                <li className="bg-white/10 p-3 rounded-lg">
-                  <span className="block text-xs text-gray-400">File Type</span>
-                  PDF
-                </li>
-                <li className="bg-white/10 p-3 rounded-lg">
-                  <span className="block text-xs text-gray-400">Mode</span>CMYK
-                </li>
-              </ul>
-            </div>
-
-            <div className="pt-4">
-              <h2 className="text-xl font-bold mb-4">
-                Uploading entries for logo:
-              </h2>
-              <p className="mb-4">
-                Each participant has to upload{" "}
-                <span className="font-bold text-[#f59e0b]">
-                  THREE SEPARATE FILES:
-                </span>
-              </p>
-              <div className="space-y-4 ml-4">
-                <p>
-                  <span className="font-bold">1. Final Logo (PDF):</span> Two
-                  pages in one PDF. Page 1: Design. Page 2: Brief write-up (max
-                  100 words) about the concept in English. No identity marks
-                  allowed on these pages.
-                </p>
-                <p>
-                  <span className="font-bold">2. Brief Bio-data:</span> Contact
-                  Info (Name, Institution Name/Address, Postal Address, Email,
-                  Telephone). Max 100 words in English.
-                </p>
-                <p>
-                  <span className="font-bold">3. Proof of Identity:</span> Copy
-                  of ID card of the institution (proof of being a student).
-                </p>
-              </div>
-              <p className="mt-8">
-                For online Logo Submission,{" "}
-                <a
-                  href="https://event.leconfe.com/juk1/scheduled/logo/panel/submissions"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#f59e0b] font-bold hover:underline"
-                >
-                  click here
-                </a>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <hr className="border-white/20 my-4" />
-
-        {/* Terms and Conditions */}
-        <section className="pt-4">
-          <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-[#f59e0b]">
-            Logo Competition Terms
-          </h1>
-
-          <div className="space-y-8 text-sm md:text-[15px] leading-relaxed mt-6">
-            <div>
-              <h3 className="font-bold text-lg mb-3 underline">
-                Jury / Selection Process
-              </h3>
-              <p>
-                All the entries received by the stipulated date and time and
-                found in order, shall be evaluated by a Jury panel set up by the
-                organisers. No correspondence or enquiry about the identity of
-                jury members will be entertained at any point of time. The
-                decision of the jury will be final.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="font-bold text-lg mb-3 underline">
-                  Rights of Organisers
-                </h3>
-                <ul className="list-disc ml-5 space-y-2">
-                  <li>
-                    The jury has the right to select, reject, or request
-                    modifications.
-                  </li>
-                  <li>
-                    Organisers reserve the right to modify and use the final
-                    logo in any form/medium.
-                  </li>
-                  <li>
-                    Organisers take no responsibility for legal disputes arising
-                    from copyrighted fonts.
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-bold text-lg mb-3 underline">
-                  Prizes & Copyright
-                </h3>
-                <ul className="list-disc ml-5 space-y-2">
-                  <li>
-                    Winner will receive{" "}
-                    <span className="font-bold text-[#f59e0b]">
-                      Rs. 5,000/-
-                    </span>{" "}
-                    and a citation.
-                  </li>
-                  <li>
-                    Winner must surrender design copyright and submit vector
-                    files (.ai and .eps).
-                  </li>
-                  <li>
-                    Final selected logo becomes the intellectual property of
-                    organisers.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-black/20 p-6 rounded-xl border border-white/10">
-              <h3 className="font-bold text-lg mb-4 text-[#f59e0b]">
-                Undertaking - Plagiarism / Non-AI / Copyrights
-              </h3>
-              <div className="space-y-3">
-                <p>
-                  The logo must be original work and not infringe any
-                  third-party IP rights. Declaration of originality is
-                  mandatory.
-                </p>
-                <p className="font-bold text-red-400">
-                  AI generated logos will not be accepted in this competition.
-                </p>
-                <p>
-                  If the name of the designer is mentioned in the logo, directly
-                  or indirectly, the entry will be disqualified. All data about
-                  identity should be in a separate file.
-                </p>
-              </div>
-            </div>
-
-            <div className="text-center pt-6">
-              <p className="text-gray-300">
-                If you have any queries, please do not hesitate to contact us:
-              </p>
+            <h2 className="text-xl sm:text-2xl font-bold text-[#f59e0b] pt-4">
+              Uploading entries for logo:
+            </h2>
+            <p>Each participant has to upload <span className="font-bold">THREE SEPARATE FILES:</span></p>
+            <p>
+              <span className="font-bold">1. The final logo</span> in PDF format, with two pages in one PDF file: Final design in
+              one page and next page with a brief write (not exceeding 100 words) up about the
+              design concept. Write up should be in English. Identity of the participant should not
+              be mentioned anywhere, directly or indirectly in these two pages.
+            </p>
+            <p><span className="font-bold">2.Brief bio data</span></p>
+            <p>Contact Info: Name, Name and Address of Institution, Postal Address, Email, Telephone Number.</p>
+            <p>Bio-data/personal information: Maximum of 100 words in English.</p>
+            <p>
+              <span className="font-bold">3. Copy of ID card</span> of the institution (proof of being a student)
+            </p>
+            <p>Participants should upload the final logo</p>
+            <p className="font-bold">Each participant is allowed a maximum of three entries.</p>
+            <p className="font-bold">(Repetition is not allowed.)</p>
+            <p>
+              For online Logo Submission &lt;
               <a
-                href="mailto:help@typoday.org"
-                className="text-[#f59e0b] text-xl font-bold hover:underline"
+                href="https://event.leconfe.com/juk1/scheduled/Poster/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#f59e0b] font-bold hover:underline"
               >
+                click here
+              </a>
+              &gt;
+            </p>
+            <p>If you have any queries, please do not hesitate to contact us:</p>
+            <p>
+              mailing it to:{" "}
+              <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">
                 help@typoday.org
               </a>
-            </div>
+            </p>
           </div>
         </section>
       </div>

@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 
+import { NavLink } from "react-router-dom";
 const CallForPapers = () => {
   return (
     <div className="min-h-screen bg-[#0A2463]">
@@ -42,24 +42,44 @@ const CallForPapers = () => {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mt-4 sm:mt-5 md:mt-6">
-            <Link
+            <NavLink
               to="/call-for-papers"
-              className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#001C54]/80 transition-colors duration-200"
+              className={({ isActive }) =>
+                `px-4 py-2 text-sm sm:text-base font-semibold text-white rounded-[10px] transition-colors duration-200 ${
+                  isActive
+                    ? "bg-[#f59e0b]"
+                    : "bg-[#001C54] hover:bg-[#001C54]/80"
+                }`
+              }
             >
               Call for Papers
-            </Link>
-            <Link
+            </NavLink>
+
+            <NavLink
               to="/logo-design-competition"
-              className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200"
+              className={({ isActive }) =>
+                `px-4 py-2 text-sm sm:text-base font-semibold text-white rounded-[10px] transition-colors duration-200 ${
+                  isActive
+                    ? "bg-[#f59e0b]"
+                    : "bg-[#001C54] hover:bg-[#001C54]/80"
+                }`
+              }
             >
               Logo Design Competition
-            </Link>
-            <Link
+            </NavLink>
+
+            <NavLink
               to="/poster-design-competition"
-              className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#001C54]/80 transition-colors duration-200"
+              className={({ isActive }) =>
+                `px-4 py-2 text-sm sm:text-base font-semibold text-white rounded-[10px] transition-colors duration-200 ${
+                  isActive
+                    ? "bg-[#f59e0b]"
+                    : "bg-[#001C54] hover:bg-[#001C54]/80"
+                }`
+              }
             >
               Poster Design Competition
-            </Link>
+            </NavLink>
           </div>
 
           <div className="relative mt-6 mb-4 sm:mt-8 sm:mb-6 md:mt-10 md:mb-8 lg:mt-12">

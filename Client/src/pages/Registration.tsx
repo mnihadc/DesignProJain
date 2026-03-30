@@ -150,7 +150,7 @@ const Registration = () => {
           <div className="flex justify-center">
             <div className="bg-white rounded-xl p-4 shadow-md inline-flex items-center justify-center w-[500px] h-[220px]">
               <img
-                src="/images/sadea.gif"
+                src="/images/sadea.png"
                 alt="SADEA - South Asian Design Educators Alliance"
                 className="w-full h-full object-contain"
                 loading="lazy"

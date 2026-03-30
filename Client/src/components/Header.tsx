@@ -89,7 +89,6 @@ const Header = () => {
 
     if (navItem === "registration") {
       navigate("/registration");
-      setIsRegDropdownOpen(false);
       setIsMenuOpen(false);
       return;
     }

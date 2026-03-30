@@ -156,7 +156,7 @@ const Header = () => {
               {navItems.map((item) => (
                 <li
                   key={item.id}
-                  className="relative"
+                  className={`relative ${item.id === "registration" ? "group" : ""}`}
                   ref={item.id === "more" ? dropdownRef : null}
                 >
                   <button
@@ -174,7 +174,42 @@ const Header = () => {
                         className={`w-4 h-4 transition ${isMoreDropdownOpen ? "rotate-180" : ""}`}
                       />
                     )}
+                    {item.id === "registration" && (
+                      <ChevronDown className="w-4 h-4 transition group-hover:rotate-180" />
+                    )}
                   </button>
+
+                  {/* Registration hover dropdown */}
+                  {item.id === "registration" && (
+                    <div className="absolute left-0 top-full pt-1 hidden group-hover:block z-50 min-w-[280px]">
+                      <div className="bg-[#b0b8c8] rounded-lg shadow-xl overflow-hidden">
+                        <a
+                          href="https://event.leconfe.com/juk1/scheduled/abstract/login"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block px-5 py-4 text-[#0A2463] font-semibold text-base border-b border-[#9aa3b0] hover:bg-[#c8d0dc] transition-colors"
+                        >
+                          Call for Papers
+                        </a>
+                        <a
+                          href="https://event.leconfe.com/juk1/scheduled/logo/login"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block px-5 py-4 text-[#0A2463] font-semibold text-base border-b border-[#9aa3b0] hover:bg-[#c8d0dc] transition-colors"
+                        >
+                          Logo Design Competition
+                        </a>
+                        <a
+                          href="https://event.leconfe.com/juk1/scheduled/Poster/login"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block px-5 py-4 text-[#0A2463] font-semibold text-base hover:bg-[#c8d0dc] transition-colors"
+                        >
+                          Poster Design Competition
+                        </a>
+                      </div>
+                    </div>
+                  )}
 
                   {/* More Dropdown */}
                   {item.id === "more" && isMoreDropdownOpen && (

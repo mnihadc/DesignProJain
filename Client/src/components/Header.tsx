@@ -9,6 +9,7 @@ interface NavMap {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMoreDropdownOpen, setIsMoreDropdownOpen] = useState(false);
+  const [isRegHovered, setIsRegHovered] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeNav, setActiveNav] = useState("home");
 
@@ -156,8 +157,10 @@ const Header = () => {
               {navItems.map((item) => (
                 <li
                   key={item.id}
-                  className={`relative ${item.id === "registration" ? "group" : ""}`}
+                  className="relative"
                   ref={item.id === "more" ? dropdownRef : null}
+                  onMouseEnter={() => item.id === "registration" && setIsRegHovered(true)}
+                  onMouseLeave={() => item.id === "registration" && setIsRegHovered(false)}
                 >
                   <button
                     onClick={() => handleNavClick(item.id)}
@@ -175,38 +178,25 @@ const Header = () => {
                       />
                     )}
                     {item.id === "registration" && (
-                      <ChevronDown className="w-4 h-4 transition group-hover:rotate-180" />
+                      <ChevronDown className={`w-4 h-4 transition ${isRegHovered ? "rotate-180" : ""}`} />
                     )}
                   </button>
 
                   {/* Registration hover dropdown */}
-                  {item.id === "registration" && (
-                    <div className="absolute left-0 top-full pt-1 hidden group-hover:block z-50 min-w-[280px]">
-                      <div className="bg-[#b0b8c8] rounded-lg shadow-xl overflow-hidden">
-                        <a
-                          href="https://event.leconfe.com/juk1/scheduled/abstract/login"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block px-5 py-4 text-[#0A2463] font-semibold text-base border-b border-[#9aa3b0] hover:bg-[#c8d0dc] transition-colors"
-                        >
-                          Call for Papers
-                        </a>
-                        <a
-                          href="https://event.leconfe.com/juk1/scheduled/logo/login"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block px-5 py-4 text-[#0A2463] font-semibold text-base border-b border-[#9aa3b0] hover:bg-[#c8d0dc] transition-colors"
-                        >
-                          Logo Design Competition
-                        </a>
-                        <a
-                          href="https://event.leconfe.com/juk1/scheduled/Poster/login"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block px-5 py-4 text-[#0A2463] font-semibold text-base hover:bg-[#c8d0dc] transition-colors"
-                        >
-                          Poster Design Competition
-                        </a>
+                  {item.id === "registration" && isRegHovered && (
+                    <div className="absolute left-0 top-full z-50 min-w-[280px]">
+                      <div className="pt-2">
+                        <div className="bg-[#b0b8c8] rounded-lg shadow-xl overflow-hidden">
+                          <a href="https://event.leconfe.com/juk1/scheduled/abstract/login" target="_blank" rel="noopener noreferrer" className="block px-5 py-4 text-[#0A2463] font-semibold text-base border-b border-[#9aa3b0] hover:bg-[#c8d0dc] transition-colors">
+                            Call for Papers
+                          </a>
+                          <a href="https://event.leconfe.com/juk1/scheduled/logo/login" target="_blank" rel="noopener noreferrer" className="block px-5 py-4 text-[#0A2463] font-semibold text-base border-b border-[#9aa3b0] hover:bg-[#c8d0dc] transition-colors">
+                            Logo Design Competition
+                          </a>
+                          <a href="https://event.leconfe.com/juk1/scheduled/Poster/login" target="_blank" rel="noopener noreferrer" className="block px-5 py-4 text-[#0A2463] font-semibold text-base hover:bg-[#c8d0dc] transition-colors">
+                            Poster Design Competition
+                          </a>
+                        </div>
                       </div>
                     </div>
                   )}

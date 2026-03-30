@@ -83,15 +83,15 @@ const Registration = () => {
           <div className="bg-white rounded-xl px-8 py-6 text-center w-full max-w-2xl shadow-md">
             <p className="text-[#f59e0b] font-semibold text-base mb-4 drop-shadow-[0_0_8px_rgba(245,158,11,0.8)] animate-pulse">Register Now</p>
             <div className="flex flex-nowrap justify-center gap-3">
-              <Link to="/call-for-papers" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
+              <a href="https://event.leconfe.com/juk1/scheduled/abstract/login" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
                 Call for Papers
-              </Link>
-              <Link to="/logo-design-competition" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
+              </a>
+              <a href="https://event.leconfe.com/juk1/scheduled/logo/login" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
                 Logo Design Competition
-              </Link>
-              <Link to="/poster-design-competition" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
+              </a>
+              <a href="https://event.leconfe.com/juk1/scheduled/Poster/login" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
                 Poster Design Competition
-              </Link>
+              </a>
             </div>
           </div>
         </div>

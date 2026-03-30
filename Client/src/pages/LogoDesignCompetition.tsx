@@ -164,7 +164,7 @@ const LogoDesignCompetition = () => {
             <p>
               For online Logo Submission &lt;
               <a
-                href="https://event.leconfe.com/juk1/scheduled/Poster/login"
+                href="https://event.leconfe.com/juk1/scheduled/logo/login"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#f59e0b] font-bold hover:underline"

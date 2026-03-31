@@ -17,7 +17,6 @@ const CallForPapers = () => {
             }}
           />
         </div>
-
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="mb-8 sm:mb-10 md:mb-12 flex justify-center">
             <img src="/images/Typoday2026logo.png" alt="Typoday 2026 Header" className="w-full max-w-[900px] h-auto object-contain" loading="lazy" />
@@ -56,11 +55,11 @@ const CallForPapers = () => {
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-10 text-white bg-[#0A2463] slide-up-section">
         <section className="pb-8">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-[#f59e0b]">Call for Papers</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#f59e0b]">Call for Papers</h1>
 
-          <div className="text-sm md:text-[15px] leading-relaxed space-y-4">
+          <div className="text-sm md:text-[15px] leading-relaxed space-y-3">
             <p>We invite a 500-800 word abstract (with examples) in three categories:</p>
-            <ol className="list-decimal ml-6 space-y-2">
+            <ol className="list-decimal ml-6 space-y-1">
               <li>Concerns in 'Typographic Intersections: Analogue to Digital and Beyond' (Academic Research/Presentations)</li>
               <li>Innovative applications of 'Typographic Intersections: Analogue to Digital and Beyond' (Case Studies)</li>
               <li>Student projects on 'Typographic Intersections: Analogue to Digital and Beyond'</li>
@@ -69,7 +68,7 @@ const CallForPapers = () => {
 
             <p><span className="font-bold">Main typographic topics for the conference:</span></p>
             <p>The conference will focus on the following issues:</p>
-            <ol className="list-decimal ml-6 space-y-2">
+            <ol className="list-decimal ml-6 space-y-1">
               <li>Experiments and Explorations in Typographic Intersections: Analogue to Digital and Beyond</li>
               <li>Typographic Intersections: Analogue to Digital and Beyond in the context of Culture</li>
               <li>Typographic Intersections: Analogue to Digital and Beyond in the process of Learning</li>
@@ -81,7 +80,7 @@ const CallForPapers = () => {
 
             <p><span className="font-bold">Abstract Guidelines:</span></p>
             <p>The abstract submission should include the following:</p>
-            <ol className="list-decimal ml-6 space-y-2">
+            <ol className="list-decimal ml-6 space-y-1">
               <li>Title of the paper</li>
               <li>Keywords</li>
               <li>Abstract of the paper</li>
@@ -106,7 +105,7 @@ const CallForPapers = () => {
               &gt;
             </p>
 
-            <div className="pt-4">
+            <div className="pt-2">
               <h2 className="text-xl sm:text-2xl font-bold text-[#f59e0b]">Deadlines:</h2>
               <p className="text-[#f59e0b] font-bold">Deadline for abstract submission: 25th May 2026</p>
               <p className="text-[#f59e0b] font-bold">Declaration of accepted abstracts: 1st July 2026</p>
@@ -115,6 +114,29 @@ const CallForPapers = () => {
 
             <p>If you have any queries, please feel free to contact us:</p>
             <p>mailing it to: <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">help@typoday.org</a></p>
+          </div>
+        </section>
+
+        <hr className="border-white/20 my-6" />
+
+        {/* Terms and Conditions */}
+        <section className="pt-4">
+          <h1 className="text-2xl sm:text-3xl font-bold mb-1 text-[#f59e0b]">Terms and Conditions of Typoday 2026</h1>
+          <h2 className="text-lg font-bold mb-4">Abstract entries</h2>
+
+          <div className="text-sm md:text-[15px] leading-relaxed space-y-3">
+            <p><span className="font-bold">Undertaking - plagiarism/non-AI/copyrights/</span></p>
+            <p>The paper abstract should be the original work of the participant and must not infringe the Intellectual Property Rights of any third party.</p>
+            <p>Declaration that all research work, data, theoretical arguments, conjectures, hypothesis, concepts, ideas, visuals used in the paper abstract are original and belong to the participant is mandatory while taking part in this competition.</p>
+            <p>Total responsibility of originality and plagiarism free content is with the participant.</p>
+            <p>The organisers do not take any responsibility on any legal disputes arising out of copyrighted materials used in the paper abstract or IP rights of the idea, concept and contents of the final paper abstract.</p>
+            <p>The organisers do not take any responsibility for any legal dispute arising out of copyrighted fonts or images used anywhere in the paper abstract.</p>
+            <p>AI generated paper abstracts will not be accepted in this competition.</p>
+            <p>The entries sent once shall not be returned.</p>
+            <p>The final selected paper abstract shall become the intellectual property of the organisers and the participant shall not have any right over the same.</p>
+            <p>The responsibility to comply with the guidelines and other conditions fully lies with the participant and the organisers shall not be liable for any legal disputes raised by any third party.</p>
+            <p>If the name of the author is mentioned in the paper abstract, directly or indirectly, the entry will be disqualified.</p>
+            <p>Data about the identity of the author should be uploaded in a separate file.</p>
           </div>
         </section>
       </div>

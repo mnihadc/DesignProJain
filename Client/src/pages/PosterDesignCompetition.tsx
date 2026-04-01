@@ -161,6 +161,37 @@ const PosterDesignCompetition = () => {
             </p>
           </div>
         </section>
+
+        <hr className="border-white/20 my-6" />
+
+        {/* Terms and Conditions */}
+        <section className="pt-4">
+          <h1 className="text-2xl sm:text-3xl font-bold mb-1 text-[#f59e0b]">Terms and Conditions of Typoday 2026</h1>
+          <h2 className="text-xl font-bold mb-4">Poster competition</h2>
+
+          <div className="text-sm md:text-[15px] leading-relaxed space-y-3">
+            <p>Participation in this competition is open to students, faculty members, and professionals. It is inclusive of all individuals, non-resident Indians and foreign nationals.</p>
+            <p>Selection procedure for winners:</p>
+            <p><span className="font-bold">Jury/ selection process</span></p>
+            <p>All the entries received by the stipulated date and time and found in order, shall be evaluated by a Jury panel set up by the organisers. No correspondence or enquiry about the identity of jury members will be entertained by the organisers at any point of time. The decision of the jury will be final.</p>
+            <p><span className="font-bold">Rights of the organisers:</span> The jury will have the right to select, reject, or request modifications for the selected posters.</p>
+            <p>Winning entries will be published as a book and displayed in an exhibition during the event. The winners are entitled to a 20% discount in registration fees for the event. This does NOT include travel and accommodation.</p>
+            <p>Winners of the first and second prize in the Poster competition will be given free registration for the event.</p>
+            <p>All winning participants will receive a copy of the book and will also be given the 'Certificate of Winning the Poster Competition'.</p>
+            <p>Participants of poster competition are encouraged to use open source fonts only. If any copyrighted fonts are used in the poster entry, the organisers do not take any responsibility for legal disputes arising out of copyrighted fonts used in the poster.</p>
+            <p><span className="font-bold">Undertaking - plagiarism/non-AI/copyrights:</span></p>
+            <p>The poster should be the original work of the participant and must not infringe the Intellectual Property Rights of any third party.</p>
+            <p>Declaration that all concepts, ideas, visuals used in the poster are original and belong to the participant is mandatory while taking part in this competition.</p>
+            <p>Total responsibility of originality and plagiarism free content is with the participant. The organisers do not take any responsibility on any legal disputes arising out of copyrighted materials used in the poster or IP rights of the visuals, idea, concept and contents of the final poster.</p>
+            <p>The organisers do not take any responsibility on any legal dispute arising out of copyrighted fonts used in the poster.</p>
+            <p>AI generated posters will not be accepted in this competition.</p>
+            <p>The entries sent once shall not be returned.</p>
+            <p>The final selected poster shall become the intellectual property of the organisers and the designer shall not have any right over the same.</p>
+            <p>The responsibility to comply with the guidelines and other conditions fully lies with the participant and the organisers shall not be liable for any disputes raised by any third party.</p>
+            <p>If the name of the designer is mentioned in the poster, directly or indirectly, the entry will be disqualified.</p>
+            <p>All data about the identity of the designer should be uploaded in a separate file.</p>
+          </div>
+        </section>
       </div>
     </div>
   );

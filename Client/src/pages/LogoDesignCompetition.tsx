@@ -182,6 +182,34 @@ const LogoDesignCompetition = () => {
             </p>
           </div>
         </section>
+
+        <hr className="border-white/20 my-6" />
+
+        {/* Terms and Conditions */}
+        <section className="pt-4">
+          <h1 className="text-2xl sm:text-3xl font-bold mb-1 text-[#f59e0b]">Terms and Conditions of Typoday 2026</h1>
+          <h2 className="text-xl font-bold mb-4">Logo competition</h2>
+
+          <div className="text-sm md:text-[15px] leading-relaxed space-y-3">
+            <p><span className="font-bold">Jury/ selection process</span></p>
+            <p>All the entries received by the stipulated date and time and found in order, shall be evaluated by a Jury panel set up by the organisers. No correspondence or enquiry about the identity of jury members will be entertained by the organisers at any point of time. The decision of the jury will be final.</p>
+            <p><span className="font-bold">Rights of the organisers:</span> The jury will have the right to select, reject, or request modifications for the selected logo. Organisers reserve the right to modify and use the final logo in any form, in any medium as deemed fit.</p>
+            <p>Participants using fonts in the logo are encouraged to use open source fonts only. The organisers do not take any responsibility arising out of copyrighted fonts used in the logo.</p>
+
+            <p><span className="font-bold">Undertaking - plagiarism/non-AI/copyrights:</span></p>
+            <p>The work of the participant and must not infringe the Intellectual Property Rights of any third party.</p>
+            <p>Declaration that all concepts, ideas, visuals used in the logo are original and belong to the participant, is mandatory while taking part in this competition.</p>
+            <p>Total responsibility of originality and plagiarism free content is with the participant. The organisers do not take any responsibility arising out of legal disputes or copyrighted materials used in the logo or any disputes arising out of the IP rights of the idea, concept and contents of the final logo.</p>
+            <p>The organisers do not take any responsibility for legal disputes arising out of copyrighted fonts used in the logo. AI generated logos will not be accepted in this competition.</p>
+            <p>The entries sent once shall not be returned.</p>
+            <p>The final selected logo shall become the intellectual property of the organisers and the designer shall not have any right over the same.</p>
+            <p>The responsibility to comply with the guidelines and other conditions fully lies with the participant and the organisers shall not be liable for any disputes raised by a third party.</p>
+            <p>The Designer of the finally selected logo will get a prize of Rs.5,000/- with a citation and would be required to surrender copyright of the design to the organisers of Typoday 2026 conference.</p>
+            <p>Designer of the winning logo should submit the vector file of the logo in .ai and .eps formats.</p>
+            <p>If the name of the designer is mentioned in the logo, directly or indirectly, the entry will be disqualified.</p>
+            <p>All data about the identity of the designer should be uploaded in a separate file.</p>
+          </div>
+        </section>
       </div>
     </div>
   );

@@ -96,238 +96,66 @@ const PosterDesignCompetition = () => {
             Poster Design Competition
           </h1>
 
-          <div className="space-y-6 text-sm md:text-[15px] leading-relaxed">
-            <div>
-              <h2 className="text-lg font-bold mb-3 border-l-4 border-[#f59e0b] pl-3">
-                Theme: 'Typographic Intersections: Analogue to Digital and Beyond'
-              </h2>
-              <p className="mb-3 font-medium">
-                Design a poster to represent 'Typographic Intersections:
-                Analogue to Digital and Beyond.'
-              </p>
-              <ul className="list-disc ml-5 space-y-2">
-                <li>
-                  Handcrafted, Calligraphic, digitally created letterforms or
-                  digital fonts can be used in the poster.
-                </li>
-                <li>
-                  Any language, script and typeface of any script can be used.
-                </li>
-                <li>
-                  You can make use of one letter, one word, many words, or even
-                  a paragraph composed of words.
-                </li>
-              </ul>
-            </div>
+          <div className="text-sm md:text-[15px] leading-relaxed space-y-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#f59e0b]">
+              Theme: 'Typographic Intersections: Analogue to Digital and Beyond'
+            </h2>
 
-            <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-              <h2 className="text-lg font-bold mb-4 text-[#f59e0b]">
-                Submission Specifications:
-              </h2>
-              <p className="mb-4">
-                You need to submit the solution along with a brief write-up of
-                around 150 words. All poster submissions should be of the size
-                and specification given below:
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <ul className="space-y-1">
-                  <li>
-                    <span className="font-semibold text-blue-300">Size:</span> 4
-                    ft height x 3ft width
-                  </li>
-                  <li>
-                    <span className="font-semibold text-blue-300">
-                      Orientation:
-                    </span>{" "}
-                    Portrait format only
-                  </li>
-                  <li>
-                    <span className="font-semibold text-blue-300">
-                      Resolution:
-                    </span>{" "}
-                    300 dpi
-                  </li>
-                </ul>
-                <ul className="space-y-1">
-                  <li>
-                    <span className="font-semibold text-blue-300">
-                      File type:
-                    </span>{" "}
-                    PDF
-                  </li>
-                  <li>
-                    <span className="font-semibold text-blue-300">
-                      Color Mode:
-                    </span>{" "}
-                    CMYK
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div>
-              <p className="text-[#f59e0b] font-bold text-lg">
-                Deadline for poster submission: 10th June 2026
-              </p>
-              <p className="font-bold">
-                Declaration of poster competition results: 1st August 2026
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-lg font-bold mb-3">
-                Uploading entries-Poster:
-              </h2>
-              <p className="mb-4">
-                Each participant has to upload{" "}
-                <span className="font-semibold">TWO SEPARATE FILES:</span>
-              </p>
-              <div className="space-y-4">
-                <p>
-                  <span className="font-bold text-blue-300">
-                    1. The final poster/s:
-                  </span>{" "}
-                  In PDF format. Each poster PDF file would be accompanied by a
-                  brief write up explaining the concept of the poster in a
-                  SEPARATE PAGE. The explanation should be in English, not
-                  exceeding 100 words. Identity of the participant should not be
-                  mentioned anywhere, directly or indirectly in these two pages.
-                  If you are uploading multiple entries, each poster should
-                  accompany a write up.
-                </p>
-                <p>
-                  <span className="font-bold text-blue-300">
-                    2. Brief bio data:
-                  </span>{" "}
-                  Contact Info (Name, Institution Name and Address, Postal
-                  Address, Email, Telephone Number). Bio-data/personal
-                  information: Maximum of 100 words in English.
-                </p>
-              </div>
-              <p className="mt-6 font-semibold bg-white/10 inline-block px-4 py-2 rounded">
-                Each participant is allowed a maximum of three entries.
-                (Repetition is not allowed.)
-              </p>
-              <p className="mt-6">
-                For online Poster Submission{" "}
-                <a
-                  href="https://event.leconfe.com/juk1/scheduled/Poster/panel/submissions"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#f59e0b] font-bold hover:underline"
-                >
-                  click here
-                </a>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <hr className="border-white/10 my-8" />
-
-        {/* Terms and Conditions Section */}
-        <section>
-          <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-[#f59e0b]">
-            Terms and Conditions
-          </h1>
-          <h2 className="text-xl font-bold mb-6">Poster competition</h2>
-
-          <div className="space-y-8 text-sm md:text-[15px] leading-relaxed">
             <p>
-              Participation in this competition is open to students, faculty
-              members, and professionals. It is inclusive of all individuals,
-              non-resident Indians and foreign nationals.
+              Design a poster to represent 'Typographic Intersections: Analogue to Digital and
+              Beyond.'Handcrafted, Calligraphic, digitally created letterforms or digital fonts can be used in the poster.
+            </p>
+            <p>Any language, script and typeface of any script can be used.</p>
+            <p>You can make use of one letter, one word, many words, or even a paragraph composed of words.</p>
+
+            <p><span className="font-bold">Submission Specifications:</span></p>
+            <p>You need to submit the solution along with a brief write-up of around 150 words.</p>
+            <p>All poster submissions should be of the size and specification given below.</p>
+            <p>Size of the final poster: 4 ft height x 3ft width only in portrait format</p>
+            <p>Resolution: 300 dpi</p>
+            <p>File type: PDF</p>
+            <p>Color Mode: CMYK</p>
+
+            <p>
+              Deadline for poster submission: <span className="font-bold text-[#f59e0b]">10th June 2026</span>
+            </p>
+            <p>
+              Declaration of poster competition results: <span className="font-bold text-[#f59e0b]">1st August 2026</span>
             </p>
 
-            <div>
-              <h3 className="font-bold underline mb-3">
-                Jury/ selection process
-              </h3>
-              <p>
-                All the entries received by the stipulated date and time and
-                found in order, shall be evaluated by a Jury panel set up by the
-                organisers. No correspondence or enquiry about the identity of
-                jury members will be entertained by the organisers at any point
-                of time. The decision of the jury will be final.
-              </p>
-              <p className="mt-3">
-                <span className="font-bold">Rights of the organisers:</span> The
-                jury will have the right to select, reject, or request
-                modifications for the selected posters.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-bold underline mb-3">Winner Incentives</h3>
-              <ul className="list-disc ml-5 space-y-2">
-                <li>
-                  Winning entries will be published as a book and displayed in
-                  an exhibition during the event.
-                </li>
-                <li>
-                  The winners are entitled to a 20% discount in registration
-                  fees for the event.
-                </li>
-                <li>
-                  Winners of the first and second prize in the Poster
-                  competition will be given free registration for the event
-                  (Does NOT include travel and accommodation).
-                </li>
-                <li>
-                  All winning participants will receive a copy of the book and
-                  the 'Certificate of Winning the Poster Competition'.
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-bold underline mb-3">
-                Undertaking - plagiarism/non-AI/copyrights
-              </h3>
-              <ul className="list-decimal ml-5 space-y-3">
-                <li>
-                  The poster should be the original work of the participant and
-                  must not infringe the Intellectual Property Rights of any
-                  third party.
-                </li>
-                <li>
-                  Total responsibility of originality and plagiarism free
-                  content is with the participant.
-                </li>
-                <li>
-                  The organisers do not take any responsibility on any legal
-                  disputes arising out of copyrighted materials or fonts used.
-                </li>
-                <li>
-                  <span className="font-bold text-[#f59e0b]">
-                    AI generated posters will not be accepted in this
-                    competition.
-                  </span>
-                </li>
-                <li>
-                  The final selected poster shall become the intellectual
-                  property of the organisers and the designer shall not have any
-                  right over the same.
-                </li>
-                <li>
-                  If the name of the designer is mentioned in the poster,
-                  directly or indirectly, the entry will be disqualified.
-                </li>
-                <li>
-                  All data about the identity of the designer should be uploaded
-                  in a separate file.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-12 p-6 bg-blue-900/30 rounded-xl text-center border border-blue-800">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#f59e0b] pt-4">
+              Uploading entries-Poster:
+            </h2>
+            <p>Each participant has to upload <span className="font-bold">Two SEPARATE FILES:</span></p>
             <p>
-              If you have any queries, please do not hesitate to contact us at:{" "}
+              <span className="font-bold">1. The final poster/s</span> in PDF format. Each poster PDF file would be accompanied
+              by a brief write up explaining the concept of the poster in a
+              SEPARATE PAGE. The explanation should be in english, not exceeding 100 words.
+              Identity of the participant should not be mentioned anywhere, directly or indirectly
+              in these two pages.
+            </p>
+            <p>If you are uploading multiple entries, each poster should accompany a write up.</p>
+            <p><span className="font-bold">2.Brief bio data</span></p>
+            <p>Contact Info: Name, Name and Address of Institution (if you are a student), Postal Address, Email, Telephone Number.</p>
+            <p>Bio-data/personal information: Maximum of 100 words in English.</p>
+            <p className="font-bold">Each participant is allowed a maximum of three entries.</p>
+            <p className="font-bold">(Repetition is not allowed.)</p>
+            <p>
+              For online Logo Submission &lt;
               <a
-                href="mailto:help@typoday.org"
-                className="text-[#f59e0b] hover:underline font-bold"
+                href="https://event.leconfe.com/juk1/scheduled/Poster/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#f59e0b] font-bold hover:underline"
               >
+                click here
+              </a>
+              &gt;
+            </p>
+            <p>If you have any queries, please do not hesitate to contact us:</p>
+            <p>
+              mailing it to:{" "}
+              <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">
                 help@typoday.org
               </a>
             </p>

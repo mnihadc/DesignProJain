@@ -112,7 +112,7 @@ const LogoDesignCompetition = () => {
             </p>
             <p><span className="font-bold">Important Dates:</span></p>
             <p>
-              Deadline for logo submission: <span className="font-bold text-[#f59e0b]">15th April 2026</span>
+              Deadline for logo submission: <span className="font-bold text-[#f59e0b]">1st May 2026</span>
             </p>
             <p>
               Declaration of logo competition results: <span className="font-bold text-[#f59e0b]">20th May 2026</span>

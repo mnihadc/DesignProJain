@@ -114,7 +114,11 @@ const Header = () => {
 
   const navItems = [
     { id: "home", label: "Home", icon: <Home className="w-5 h-5" /> },
-    { id: "registration", label: "Registration", icon: <User className="w-5 h-5" /> },
+    {
+      id: "registration",
+      label: "Registration",
+      icon: <User className="w-5 h-5" />,
+    },
     { id: "schedule", label: "Schedule", icon: <Clock className="w-5 h-5" /> },
     { id: "more", label: "More", icon: null },
   ];
@@ -141,7 +145,11 @@ const Header = () => {
                 setIsMoreDropdownOpen(false);
               }}
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
 
             <Link to="/">
@@ -206,7 +214,10 @@ const Header = () => {
                     <div className="absolute right-0 mt-2 w-56 bg-[#052058] border border-white/20 rounded-lg shadow-lg">
                       <Link
                         to="/terms-and-conditions"
-                        onClick={() => { setActiveNav("more"); setIsMoreDropdownOpen(false); }}
+                        onClick={() => {
+                          setActiveNav("more");
+                          setIsMoreDropdownOpen(false);
+                        }}
                         className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10"
                       >
                         Terms & Conditions
@@ -234,7 +245,9 @@ const Header = () => {
                           className="flex justify-between w-full px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg"
                         >
                           {item.label}
-                          <ChevronDown className={`w-4 h-4 transition ${isMoreDropdownOpen ? "rotate-180" : ""}`} />
+                          <ChevronDown
+                            className={`w-4 h-4 transition ${isMoreDropdownOpen ? "rotate-180" : ""}`}
+                          />
                         </button>
                         {isMoreDropdownOpen && (
                           <div className="ml-4 mt-2 space-y-2">

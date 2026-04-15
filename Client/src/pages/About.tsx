@@ -74,7 +74,7 @@ const AboutSection = () => {
           <div className="flex justify-center">
             <div className="bg-white rounded-xl p-4 shadow-md inline-flex items-center justify-center w-[500px] h-[220px]">
               <img
-                src="/images/sadea.png.gif"
+                src="/images/sadea.png"
                 alt="SADEA - South Asian Design Educators Alliance"
                 className="w-full h-full object-contain"
                 loading="lazy"
@@ -86,9 +86,15 @@ const AboutSection = () => {
 
         {/* Statistics Section */}
         <div className="flex flex-wrap items-center justify-center gap-8 pt-4 pb-2 sm:gap-12 md:gap-16">
-          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">50+ Speakers</span>
-          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">30+ Workshops</span>
-          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">500+ Attendees</span>
+          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">
+            50+ Speakers
+          </span>
+          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">
+            30+ Workshops
+          </span>
+          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">
+            500+ Attendees
+          </span>
         </div>
       </div>
     </section>

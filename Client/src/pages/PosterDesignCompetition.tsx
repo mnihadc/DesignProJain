@@ -117,10 +117,10 @@ const PosterDesignCompetition = () => {
             <p>Color Mode: CMYK</p>
 
             <p>
-              Deadline for poster submission: <span className="font-bold text-[#f59e0b]">10th June 2026</span>
+              Deadline for poster submission: <span className="font-bold text-[#f59e0b]">25th July 2026</span>
             </p>
             <p>
-              Declaration of poster competition results: <span className="font-bold text-[#f59e0b]">1st August 2026</span>
+              Declaration of poster competition results: <span className="font-bold text-[#f59e0b]">30th August 2026</span>
             </p>
 
             <h2 className="text-xl sm:text-2xl font-bold text-[#f59e0b] pt-4">

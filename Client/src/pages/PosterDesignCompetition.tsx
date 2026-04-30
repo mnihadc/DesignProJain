@@ -141,7 +141,7 @@ const PosterDesignCompetition = () => {
             <p className="font-bold">Each participant is allowed a maximum of three entries.</p>
             <p className="font-bold">(Repetition is not allowed.)</p>
             <p>
-              For online Logo Submission &lt;
+              For online Poster Submission &lt;
               <a
                 href="https://event.leconfe.com/juk1/scheduled/Poster/login"
                 target="_blank"

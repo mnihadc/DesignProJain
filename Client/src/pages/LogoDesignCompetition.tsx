@@ -173,6 +173,12 @@ const LogoDesignCompetition = () => {
               </a>
               &gt;
             </p>
+            <p>
+              You can also mail the Logo as a submission on,{" "}
+              <a href="mailto:typographydaylogo2026@gmail.com" className="text-[#f59e0b] hover:underline">
+                typographydaylogo2026@gmail.com
+              </a>
+            </p>
             <p>If you have any queries, please do not hesitate to contact us:</p>
             <p>
               mailing it to:{" "}

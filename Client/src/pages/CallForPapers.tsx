@@ -194,6 +194,12 @@ const CallForPapers = () => {
               </a>
               &gt;
             </p>
+            <p>
+              You can also mail the Abstract as a submission on,{" "}
+              <a href="mailto:typographydayabstract2026@gmail.com" className="text-[#f59e0b] hover:underline">
+                typographydayabstract2026@gmail.com
+              </a>
+            </p>
 
             <div className="pt-2">
               <h2 className="text-xl sm:text-2xl font-bold text-[#f59e0b]">

@@ -206,7 +206,7 @@ const CallForPapers = () => {
                 Deadlines:
               </h2>
               <p className="text-[#f59e0b] font-bold">
-                Deadline for abstract submission: 25th June 2026
+                Deadline for abstract submission: 10th July 2026
               </p>
               <p className="text-[#f59e0b] font-bold">
                 Declaration of accepted abstracts: 1st August 2026

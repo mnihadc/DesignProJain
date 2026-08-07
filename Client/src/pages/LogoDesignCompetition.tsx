@@ -41,21 +41,21 @@ const LogoDesignCompetition = () => {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mt-4 sm:mt-5 md:mt-6">
-            <Link
+               <Link
               to="/call-for-papers"
-              className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#001C54]/80 transition-colors duration-200"
+              className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200"
             >
               Call for Papers
             </Link>
             <Link
               to="/logo-design-competition"
-              className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200"
+              className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200"
             >
               Logo Design Competition
             </Link>
             <Link
               to="/poster-design-competition"
-              className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#001C54]/80 transition-colors duration-200"
+              className="px-4 py-2 text-sm sm:text-base font-semibold text-white bg-[#001C54] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200"
             >
               Poster Design Competition
             </Link>

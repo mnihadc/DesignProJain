@@ -31,7 +31,6 @@ function App() {
   if (isLoading) {
     return <Loading />;
   }
-
   const HomePage = () => (
     <>
       <section id="home">
@@ -52,9 +51,15 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-        <Route path="/poster-design-competition" element={<PosterDesignCompetition />} />
+        <Route
+          path="/poster-design-competition"
+          element={<PosterDesignCompetition />}
+        />
         <Route path="/call-for-papers" element={<CallForPapers />} />
-        <Route path="/logo-design-competition" element={<LogoDesignCompetition />} />
+        <Route
+          path="/logo-design-competition"
+          element={<LogoDesignCompetition />}
+        />
         <Route path="/registration" element={<Registration />} />
       </Routes>
 

@@ -138,8 +138,25 @@ const Registration = () => {
 
           {/* Payment */}
           <div className="pt-4">
-            <p className="font-semibold text-[#f59e0b] mb-1">Payment:</p>
-            <p>Details of the payment will be updated soon</p>
+            <p className="font-semibold text-[#f59e0b] mb-3">Payment:</p>
+            <div className="border border-white/20 rounded-lg overflow-hidden text-sm">
+              <div className="grid grid-cols-2 border-b border-white/20">
+                <div className="px-4 py-3 border-r border-white/20">Account Holder:</div>
+                <div className="px-4 py-3">FUTURE SUMMIT – JAIN UNIVERSITY</div>
+              </div>
+              <div className="grid grid-cols-2 border-b border-white/20">
+                <div className="px-4 py-3 border-r border-white/20">Account No.</div>
+                <div className="px-4 py-3">50200105041057</div>
+              </div>
+              <div className="grid grid-cols-2 border-b border-white/20">
+                <div className="px-4 py-3 border-r border-white/20">Bank</div>
+                <div className="px-4 py-3">HDFC Bank</div>
+              </div>
+              <div className="grid grid-cols-2">
+                <div className="px-4 py-3 border-r border-white/20">IFSC</div>
+                <div className="px-4 py-3">HDFC0002711</div>
+              </div>
+            </div>
           </div>
         </div>
 

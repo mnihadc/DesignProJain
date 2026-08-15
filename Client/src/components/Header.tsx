@@ -94,6 +94,24 @@ const Header = () => {
       return;
     }
 
+    if (navItem === "contact") {
+      navigate("/contact");
+      setIsMenuOpen(false);
+      return;
+    }
+
+    if (navItem === "accommodations") {
+      navigate("/accommodations");
+      setIsMenuOpen(false);
+      return;
+    }
+
+    if (navItem === "directions") {
+      navigate("/directions");
+      setIsMenuOpen(false);
+      return;
+    }
+
     if (navItem === "more") {
       setIsMoreDropdownOpen((prev) => !prev);
       return;
@@ -120,6 +138,9 @@ const Header = () => {
       icon: <User className="w-5 h-5" />,
     },
     { id: "schedule", label: "Schedule", icon: <Clock className="w-5 h-5" /> },
+    { id: "accommodations", label: "Accommodations", icon: null },
+    { id: "directions", label: "Directions To JAIN", icon: null },
+    { id: "contact", label: "Contact Us", icon: null },
     { id: "more", label: "More", icon: null },
   ];
 

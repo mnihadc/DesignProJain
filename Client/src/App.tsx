@@ -11,6 +11,9 @@ import PosterDesignCompetition from "./pages/PosterDesignCompetition";
 import CallForPapers from "./pages/CallForPapers";
 import LogoDesignCompetition from "./pages/LogoDesignCompetition";
 import Registration from "./pages/Registration";
+import Contact from "./pages/Contact";
+import Accommodations from "./pages/Accommodations";
+import Directions from "./pages/Directions";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -61,6 +64,9 @@ function App() {
           element={<LogoDesignCompetition />}
         />
         <Route path="/registration" element={<Registration />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/accommodations" element={<Accommodations />} />
+        <Route path="/directions" element={<Directions />} />
       </Routes>
 
       <Footer />

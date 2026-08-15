@@ -139,7 +139,7 @@ const Registration = () => {
           {/* Payment */}
           <div className="pt-4">
             <p className="font-semibold text-[#f59e0b] mb-3">Payment:</p>
-            <div className="border border-white/20 rounded-lg overflow-hidden text-sm">
+            <div className="border border-white/20 rounded-lg overflow-hidden text-sm max-w-lg">
               <div className="grid grid-cols-2 border-b border-white/20">
                 <div className="px-4 py-3 border-r border-white/20">Account Holder:</div>
                 <div className="px-4 py-3">FUTURE SUMMIT – JAIN UNIVERSITY</div>

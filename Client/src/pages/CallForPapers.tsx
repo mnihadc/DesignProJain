@@ -21,7 +21,7 @@ const CallForPapers = () => {
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="mb-8 sm:mb-10 md:mb-12 flex justify-center">
             <img
-              src="/images/Typoday2026logo.png"
+              src="/images/newlogo.png"
               alt="Typoday 2026 Header"
               className="w-full max-w-[900px] h-auto object-contain"
               loading="lazy"
@@ -241,6 +241,16 @@ const CallForPapers = () => {
                 Deadline for submission of full paper and Poster: 15th September
                 2026
               </p>
+            </div>
+
+            <div className="pt-2">
+              <p className="font-bold text-[#f59e0b] mb-1">Cancellation Policy:</p>
+              <p>All cancellation requests with payment proof should be sent by email to <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">help@typoday.org</a></p>
+              <p className="mt-2 font-semibold">Cancellation Request Refund — Refund amount will be as follows:</p>
+              <ul className="space-y-1 ml-2 mt-1">
+                <li>Before 15th September 2026 : <span className="font-semibold">40% refund</span></li>
+                <li>After 15th September 2026 : <span className="font-semibold">No Refund</span></li>
+              </ul>
             </div>
 
             <p>If you have any queries, please feel free to contact us:</p>

@@ -11,7 +11,7 @@ const Directions = () => {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="mb-8 sm:mb-10 md:mb-12 flex justify-center">
-            <img src="/images/Typoday2026logo.png" alt="Typoday 2026 Header" className="w-full max-w-[900px] h-auto object-contain" loading="lazy" />
+            <img src="/images/newlogo.png" alt="Typoday 2026 Header" className="w-full max-w-[900px] h-auto object-contain" loading="lazy" />
           </div>
           <div className="mt-4 sm:mt-6 md:mt-8">
             <div className="inline-block px-4 py-1.5 bg-blue-50/80 backdrop-blur-sm rounded-full border border-blue-200 sm:px-5 sm:py-2">

@@ -21,7 +21,7 @@ const LogoDesignCompetition = () => {
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="mb-8 sm:mb-10 md:mb-12 flex justify-center">
             <img
-              src="/images/Typoday2026logo.png"
+              src="/images/newlogo.png"
               alt="Typoday 2026 Header"
               className="w-full max-w-[900px] h-auto object-contain"
               loading="lazy"

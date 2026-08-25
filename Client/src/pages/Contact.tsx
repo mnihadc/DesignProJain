@@ -11,7 +11,7 @@ const Contact = () => {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="mb-8 sm:mb-10 md:mb-12 flex justify-center">
-            <img src="/images/Typoday2026logo.png" alt="Typoday 2026 Header" className="w-full max-w-[900px] h-auto object-contain" loading="lazy" />
+            <img src="/images/newlogo.png" alt="Typoday 2026 Header" className="w-full max-w-[900px] h-auto object-contain" loading="lazy" />
           </div>
           <div className="mt-4 sm:mt-6 md:mt-8">
             <div className="inline-block px-4 py-1.5 bg-blue-50/80 backdrop-blur-sm rounded-full border border-blue-200 sm:px-5 sm:py-2">
@@ -45,6 +45,11 @@ const Contact = () => {
               <p className="font-bold text-lg">Mr Jeevak A</p>
               <p className="text-gray-300">Assistant Professor</p>
               <a href="tel:9562601999" className="text-[#f59e0b] hover:underline mt-1 inline-block">95626 01999</a>
+            </div>
+            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <p className="font-bold text-lg">Ms Ambili</p>
+              <p className="text-gray-300">Coordinator</p>
+              <a href="tel:7034047878" className="text-[#f59e0b] hover:underline mt-1 inline-block">70340 47878</a>
             </div>
           </div>
         </div>

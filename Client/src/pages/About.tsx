@@ -83,19 +83,6 @@ const AboutSection = () => {
           </div>
           <div className="w-full h-px bg-white/20 mt-6" />
         </div>
-
-        {/* Statistics Section */}
-        <div className="flex flex-wrap items-center justify-center gap-8 pt-4 pb-2 sm:gap-12 md:gap-16">
-          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">
-            50+ Speakers
-          </span>
-          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">
-            30+ Workshops
-          </span>
-          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">
-            500+ Attendees
-          </span>
-        </div>
       </div>
     </section>
   );

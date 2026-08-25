@@ -21,7 +21,7 @@ const Registration = () => {
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="mb-8 sm:mb-10 md:mb-12 flex justify-center">
             <img
-              src="/images/Typoday2026logo.png"
+              src="/images/newlogo.png"
               alt="Typoday 2026 Header"
               className="w-full max-w-[900px] h-auto object-contain"
               loading="lazy"
@@ -78,22 +78,16 @@ const Registration = () => {
           Registrations
         </h1>
 
-        {/* Register Now Box */}
+        {/* Pay Now Button */}
         <div className="flex justify-center mb-8">
-          <div className="bg-white rounded-xl px-8 py-6 text-center w-full max-w-2xl shadow-md">
-            <p className="text-[#f59e0b] font-semibold text-base mb-4 drop-shadow-[0_0_8px_rgba(245,158,11,0.8)] animate-pulse">Register Now</p>
-            <div className="flex flex-nowrap justify-center gap-3">
-              <a href="https://event.leconfe.com/juk1/scheduled/abstract/login" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
-                Call for Papers
-              </a>
-              <a href="https://event.leconfe.com/juk1/scheduled/logo/login" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
-                Logo Design Competition
-              </a>
-              <a href="https://event.leconfe.com/juk1/scheduled/Poster/login" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm font-semibold text-white bg-[#f59e0b] rounded-[10px] hover:bg-[#f59e0b]/80 transition-colors duration-200">
-                Poster Design Competition
-              </a>
-            </div>
-          </div>
+          <a
+            href="https://typoday.futuresummit.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 text-lg font-bold text-white bg-[#f59e0b] rounded-xl hover:bg-[#f59e0b]/80 transition-colors duration-200"
+          >
+            Pay Now
+          </a>
         </div>
 
         {/* Fees */}
@@ -107,7 +101,7 @@ const Registration = () => {
               <li>Professionals (InDeAs / Aksharaya Members): Rs. 9500.00 (8050 + 1450-GST)</li>
               <li>Faculty or NGOs: Rs. 6000.00 (5084 + 916-GST)</li>
               <li>Faculty or NGOs (InDeAs / Aksharaya Members): Rs. 5000.00 (4237 + 763-GST)</li>
-              <li>Students*: Rs. 5000.00 (4237 + 611-GST)</li>
+              <li>Students*: <s>Rs. 5000.00 (4237 + 611-GST)</s> Rs. 4000.00 (3389 + 611-GST) till 15th September 2026</li>
             </ul>
           </div>
 
@@ -127,37 +121,14 @@ const Registration = () => {
           {/* Cancellation Policy */}
           <div className="pt-4">
             <p className="font-semibold text-[#f59e0b] mb-2">Cancellation Policy:</p>
-            <p>All cancellation requests should be sent by email to <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">help@typoday.org</a></p>
-            <p className="mt-2 font-semibold">Cancellation Request Refund Amount:</p>
+            <p>All cancellation requests with payment proof should be sent by email to <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">help@typoday.org</a></p>
+            <p className="mt-2 font-semibold">Cancellation Request Refund — Refund amount will be as follows:</p>
             <ul className="space-y-1 ml-2 mt-1">
-              <li>Before 1st June 2026 : 75%</li>
-              <li>Before 20th August 2026 : 50%</li>
-              <li>After 21st August 2026 : No Refund</li>
+              <li>Before 15th September 2026 : <span className="font-semibold">40% refund</span></li>
+              <li>After 15th September 2026 : <span className="font-semibold">No Refund</span></li>
             </ul>
           </div>
 
-          {/* Payment */}
-          <div className="pt-4">
-            <p className="font-semibold text-[#f59e0b] mb-3">Payment:</p>
-            <div className="border border-white/20 rounded-lg overflow-hidden text-sm max-w-lg">
-              <div className="grid grid-cols-2 border-b border-white/20">
-                <div className="px-4 py-3 border-r border-white/20">Account Holder:</div>
-                <div className="px-4 py-3">FUTURE SUMMIT – JAIN UNIVERSITY</div>
-              </div>
-              <div className="grid grid-cols-2 border-b border-white/20">
-                <div className="px-4 py-3 border-r border-white/20">Account No.</div>
-                <div className="px-4 py-3">50200105041057</div>
-              </div>
-              <div className="grid grid-cols-2 border-b border-white/20">
-                <div className="px-4 py-3 border-r border-white/20">Bank</div>
-                <div className="px-4 py-3">HDFC Bank</div>
-              </div>
-              <div className="grid grid-cols-2">
-                <div className="px-4 py-3 border-r border-white/20">IFSC</div>
-                <div className="px-4 py-3">HDFC0002711</div>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Associate Partner */}
@@ -176,14 +147,7 @@ const Registration = () => {
           </div>
           <div className="w-full h-px bg-white/20 mt-6" />
         </div>
-
-        {/* Stats */}
-        <div className="flex flex-wrap items-center justify-center gap-8 pt-6 pb-4 sm:gap-12 md:gap-16">
-          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">50+ Speakers</span>
-          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">30+ Workshops</span>
-          <span className="text-xl font-bold text-[#f59e0b] sm:text-2xl md:text-3xl">500+ Attendees</span>
         </div>
-      </div>
       </div>
     </div>
   );

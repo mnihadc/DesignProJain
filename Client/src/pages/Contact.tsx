@@ -30,7 +30,7 @@ const Contact = () => {
       </section>
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-10 text-white bg-[#0A2463]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-10 text-white bg-[#0A2463] slide-up-section">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-[#f59e0b]">Contact</h1>
 
         <div className="mb-4">

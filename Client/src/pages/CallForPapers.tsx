@@ -260,7 +260,7 @@ const CallForPapers = () => {
 
             <div className="pt-2">
               <p className="font-bold text-[#f59e0b] mb-1">Cancellation Policy:</p>
-              <p>All cancellation requests with payment proof should be sent by email to <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">help@typoday.org</a></p>
+              <p>All cancellation requests with payment proof should be sent by email to <a href="mailto:typographyday2025@gmail.com" className="text-[#f59e0b] hover:underline">typographyday2025@gmail.com</a></p>
               <p className="mt-2 font-semibold">Cancellation Request Refund — Refund amount will be as follows:</p>
               <ul className="space-y-1 ml-2 mt-1">
                 <li>Before 15th September 2026 : <span className="font-semibold">40% refund</span></li>
@@ -272,10 +272,10 @@ const CallForPapers = () => {
             <p>
               mailing it to:{" "}
               <a
-                href="mailto:help@typoday.org"
+                href="mailto:typographyday2025@gmail.com"
                 className="text-[#f59e0b] hover:underline"
               >
-                help@typoday.org
+                typographyday2025@gmail.com
               </a>
             </p>
           </div>

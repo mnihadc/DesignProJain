@@ -139,7 +139,7 @@ const LogoDesignCompetitionSection = () => {
             If you have any queries, please do not hesitate to contact us:
             <br />
             <span className="text-gray-300">Mailing it to: </span>
-            <strong> help@typoday.org</strong>
+            <strong> typographyday2025@gmail.com</strong>
           </p>
         </div>
       </div>

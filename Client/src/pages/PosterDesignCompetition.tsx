@@ -161,8 +161,8 @@ const PosterDesignCompetition = () => {
             <p>If you have any queries, please do not hesitate to contact us:</p>
             <p>
               mailing it to:{" "}
-              <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">
-                help@typoday.org
+              <a href="mailto:typographyday2025@gmail.com" className="text-[#f59e0b] hover:underline">
+                typographyday2025@gmail.com
               </a>
             </p>
           </div>

@@ -244,6 +244,21 @@ const CallForPapers = () => {
             </div>
 
             <div className="pt-2">
+              <p className="font-bold text-[#f59e0b] mb-1">Template for Submission:</p>
+              <p>
+                Download the submission template:{" "}
+                <a
+                  href="https://docs.google.com/document/d/1q7AXQ6L2jZoAeQdPNxFRYrTmSa56ZKHm-cMUzS1q53c/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#f59e0b] font-bold hover:underline"
+                >
+                  click here
+                </a>
+              </p>
+            </div>
+
+            <div className="pt-2">
               <p className="font-bold text-[#f59e0b] mb-1">Cancellation Policy:</p>
               <p>All cancellation requests with payment proof should be sent by email to <a href="mailto:help@typoday.org" className="text-[#f59e0b] hover:underline">help@typoday.org</a></p>
               <p className="mt-2 font-semibold">Cancellation Request Refund — Refund amount will be as follows:</p>

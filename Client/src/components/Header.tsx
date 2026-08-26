@@ -173,11 +173,23 @@ const Header = () => {
             </button>
 
             <Link to="/">
-              <h1 className="text-xl sm:text-2xl md:text-3xl font-black text-white font-serif">
-                Typoday 2026
-              </h1>
+              <img
+                src="/images/newlogo.png"
+                alt="Typoday 2026"
+                className="h-10 sm:h-12 w-auto object-contain"
+              />
             </Link>
           </div>
+
+          {/* Mobile Register Now button */}
+          <a
+            href="https://typoday.futuresummit.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="lg:hidden px-3 py-1.5 text-xs font-bold text-white bg-[#f59e0b] rounded-lg hover:bg-[#f59e0b]/80 transition-colors"
+          >
+            Register Now
+          </a>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:block">

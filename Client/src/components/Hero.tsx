@@ -25,7 +25,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full bg-gradient-to-b from-white via-white to-gray-50 text-center overflow-hidden pt-6 pb-2 px-4 sm:pt-8 sm:pb-4 sm:px-6 md:pt-10 md:pb-6 md:px-8 lg:pt-12">
+    <section className="relative w-full bg-gradient-to-b from-white via-white to-gray-50 text-center overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-50 rounded-full opacity-30 sm:opacity-40" />
@@ -40,55 +40,42 @@ const Hero = () => {
         />
       </div>
 
-      {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto">
-        {/* Logo + Banner Slideshow */}
-        <div className="mb-8 sm:mb-10 md:mb-12 relative w-full max-w-[900px] mx-auto overflow-hidden rounded-2xl">
-          <div
-            className="flex transition-transform duration-700 ease-in-out"
-            style={{ transform: `translateX(-${current * 100}%)` }}
-          >
-            {/* Slide 0: newlogo */}
-            <div className="min-w-full flex justify-center bg-transparent">
-              <img src="/images/newlogo.png" alt="Typoday 2026" className="w-full h-auto object-contain" loading="lazy" />
-            </div>
-            {/* Slide 1: Registration Open banner */}
-            <div className="min-w-full">
-              <img src="/images/slide1.jpg" alt="Registration Open" className="w-full h-auto object-cover" loading="lazy" />
-            </div>
-            {/* Slide 2: Winner banner */}
-            <div className="min-w-full">
-              <img src="/images/slide2.jpg" alt="Logo Competition Winner" className="w-full h-auto object-cover" loading="lazy" />
-            </div>
+      {/* Full-width Slideshow */}
+      <div className="relative w-full overflow-hidden">
+        <div
+          className="flex transition-transform duration-700 ease-in-out"
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
+          {/* Slide 0: newlogo */}
+          <div className="min-w-full flex justify-center bg-white pt-2 pb-2 px-4 sm:px-6 md:px-8">
+            <img src="/images/newlogo.png" alt="Typoday 2026" className="w-full max-w-[900px] h-auto object-contain" loading="lazy" />
           </div>
-
-          {/* Left Arrow */}
-          <button
-            onClick={() => goTo((current - 1 + TOTAL_SLIDES) % TOTAL_SLIDES)}
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full w-8 h-8 flex items-center justify-center transition-colors"
-          >
-            ‹
-          </button>
-
-          {/* Right Arrow */}
-          <button
-            onClick={() => goTo((current + 1) % TOTAL_SLIDES)}
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full w-8 h-8 flex items-center justify-center transition-colors"
-          >
-            ›
-          </button>
-
-          {/* Dots */}
-          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-            {Array.from({ length: TOTAL_SLIDES }).map((_, i) => (
-              <button
-                key={i}
-                onClick={() => goTo(i)}
-                className={`w-2.5 h-2.5 rounded-full transition-all ${i === current ? "bg-[#0A2463] scale-125" : "bg-[#0A2463]/40"}`}
-              />
-            ))}
+          {/* Slide 1: Registration Open banner */}
+          <div className="min-w-full">
+            <Link to="/registration">
+              <img src="/images/slide1.jpg" alt="Registration Open" className="w-full h-auto object-cover cursor-pointer" loading="lazy" />
+            </Link>
+          </div>
+          {/* Slide 2: Winner banner */}
+          <div className="min-w-full">
+            <img src="/images/slide2.jpg" alt="Logo Competition Winner" className="w-full h-auto object-cover" loading="lazy" />
           </div>
         </div>
+
+        {/* Left Arrow */}
+        <button onClick={() => goTo((current - 1 + TOTAL_SLIDES) % TOTAL_SLIDES)} className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full w-8 h-8 flex items-center justify-center transition-colors z-10">‹</button>
+        {/* Right Arrow */}
+        <button onClick={() => goTo((current + 1) % TOTAL_SLIDES)} className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full w-8 h-8 flex items-center justify-center transition-colors z-10">›</button>
+        {/* Dots */}
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+          {Array.from({ length: TOTAL_SLIDES }).map((_, i) => (
+            <button key={i} onClick={() => goTo(i)} className={`w-2.5 h-2.5 rounded-full transition-all ${i === current ? "bg-[#0A2463] scale-125" : "bg-[#0A2463]/40"}`} />
+          ))}
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:pt-6 pb-2 sm:pb-4 md:pb-6 lg:pb-8">
 
         {/* Event Date Badge */}
         <div className="mt-4 sm:mt-6 md:mt-8">

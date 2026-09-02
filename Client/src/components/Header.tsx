@@ -153,11 +153,11 @@ const Header = () => {
           : "bg-[#052058] shadow-lg"
       }`}
     >
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-stretch min-h-[72px] justify-between">
         {/* Top Bar */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center w-full">
           {/* Logo + Mobile Button */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-stretch gap-3 shrink-0">
             <button
               className="lg:hidden text-white p-2 rounded-lg hover:bg-white/10"
               onClick={() => {
@@ -172,11 +172,12 @@ const Header = () => {
               )}
             </button>
 
-            <Link to="/">
+            <Link to="/" className="flex items-stretch -ml-4 sm:-ml-6 lg:-ml-8">
               <img
                 src="/images/newlogo.png"
                 alt="Typoday 2026"
-                className="h-10 sm:h-12 w-auto object-contain"
+                className="w-auto object-cover"
+                style={{ height: "100%", minHeight: "56px", maxHeight: "72px" }}
               />
             </Link>
           </div>
@@ -192,7 +193,7 @@ const Header = () => {
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:block">
+          <nav className="hidden lg:flex items-center flex-1 justify-end">
             <ul className="flex items-center gap-2">
               {navItems.map((item) => (
                 <li

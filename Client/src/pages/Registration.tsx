@@ -29,9 +29,7 @@ const Registration = () => {
             <p className="font-semibold text-[#f59e0b] mb-2">From India and SAARC Countries: (Inclusive GST 18%)</p>
             <ul className="space-y-1 ml-2">
               <li>Professionals: Rs. 12000.00 (10169 + 1831-GST)</li>
-              <li>Professionals (InDeAs / Aksharaya Members): Rs. 9500.00 (8050 + 1450-GST)</li>
               <li>Faculty or NGOs: Rs. 6000.00 (5084 + 916-GST)</li>
-              <li>Faculty or NGOs (InDeAs / Aksharaya Members): Rs. 5000.00 (4237 + 763-GST)</li>
               <li>Students*: <s>Rs. 5000.00 (4237 + 611-GST)</s> Rs. 4000.00 (3389 + 611-GST) till 15th September 2026</li>
             </ul>
           </div>

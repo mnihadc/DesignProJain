@@ -163,7 +163,15 @@ const Accommodations = () => {
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-10 text-white bg-[#0A2463]">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-[#f59e0b]">Accommodations</h1>
-        <p className="text-gray-300 mb-8 text-sm sm:text-base">Near JAIN University, Kochi</p>
+        <p className="text-gray-300 mb-6 text-sm sm:text-base">Near JAIN University, Kochi</p>
+
+        {/* Notice */}
+        <div className="bg-[#f59e0b]/15 border border-[#f59e0b]/40 rounded-xl p-5 mb-8">
+          <p className="text-base font-bold text-[#f59e0b] mb-1">📌 Booking Information</p>
+          <p className="text-sm text-gray-200 leading-relaxed">
+            <span className="font-semibold text-white">Advance Reservation Recommended</span> — Room availability in Kakkanad is often in high demand due to the presence of IT companies, conferences, and other major events. We recommend booking your accommodation <span className="font-semibold text-[#f59e0b]">2–3 weeks in advance</span> to ensure availability.
+          </p>
+        </div>
 
         <div className="space-y-10">
           {hotels.map((group) => (

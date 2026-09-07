@@ -47,18 +47,18 @@ const Hero = () => {
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {/* Slide 0: newlogo */}
-          <div className="min-w-full flex justify-center items-center bg-white" style={{ height: "520px" }}>
-            <img src="/images/newlogo.png" alt="Typoday 2026" className="w-full max-w-[900px] h-full object-contain object-center" loading="lazy" />
+          <div className="min-w-full flex justify-center items-center bg-white">
+            <img src="/images/newlogo.png" alt="Typoday 2026" className="w-full h-auto block" loading="lazy" />
           </div>
           {/* Slide 1: Registration Open banner */}
-          <div className="min-w-full" style={{ height: "520px" }}>
+          <div className="min-w-full">
             <Link to="/registration">
-              <img src="/images/slide1.jpg" alt="Registration Open" className="w-full h-full object-fill cursor-pointer" loading="lazy" />
+              <img src="/images/slide1.jpg" alt="Registration Open" className="w-full h-auto block cursor-pointer" loading="lazy" />
             </Link>
           </div>
           {/* Slide 2: Winner banner */}
-          <div className="min-w-full" style={{ height: "520px" }}>
-            <img src="/images/slide2.jpg" alt="Logo Competition Winner" className="w-full h-full object-fill" loading="lazy" />
+          <div className="min-w-full">
+            <img src="/images/slide2.jpg" alt="Logo Competition Winner" className="w-full h-auto block" loading="lazy" />
           </div>
         </div>
 

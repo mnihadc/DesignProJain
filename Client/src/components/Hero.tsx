@@ -58,7 +58,7 @@ const Hero = () => {
           </div>
           {/* Slide 2: Winner banner */}
           <div className="min-w-full">
-            <img src="/images/slide2.jpg" alt="Logo Competition Winner" className="w-full h-auto block" loading="lazy" />
+            <img src="/images/RAJA.png" alt="Logo Competition Winner" className="w-full h-auto block" loading="lazy" />
           </div>
         </div>
 

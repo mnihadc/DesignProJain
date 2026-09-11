@@ -105,6 +105,12 @@ const Header = () => {
       return;
     }
 
+    if (navItem === "workshop") {
+      navigate("/workshop");
+      setIsMenuOpen(false);
+      return;
+    }
+
     if (navItem === "directions") {
       navigate("/directions");
       setIsMenuOpen(false);
@@ -138,6 +144,7 @@ const Header = () => {
     },
     { id: "schedule", label: "Schedule", icon: <Clock className="w-5 h-5" /> },
     { id: "accommodations", label: "Accommodations", icon: null },
+    { id: "workshop", label: "Workshop", icon: null },
     { id: "directions", label: "Directions To JAIN", icon: null },
     { id: "contact", label: "Contact Us", icon: null },
     { id: "more", label: "More", icon: null },

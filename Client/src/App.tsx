@@ -20,27 +20,21 @@ function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    // Simulate loading time or wait for resources
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000); // Adjust time as needed
-
-    // If you're loading actual resources, use:
-    // window.addEventListener('load', () => setIsLoading(false));
-    // return () => window.removeEventListener('load', () => setIsLoading(false));
-
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {
     return <Loading />;
   }
+
   const HomePage = () => (
     <>
       <section id="home">
         <Hero />
       </section>
-
       <section id="about">
         <AboutSection />
       </section>
@@ -51,26 +45,18 @@ function App() {
     <>
       <Toaster position="top-center" reverseOrder={false} />
       <Header />
-
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-        <Route
-          path="/poster-design-competition"
-          element={<PosterDesignCompetition />}
-        />
+        <Route path="/poster-design-competition" element={<PosterDesignCompetition />} />
         <Route path="/call-for-papers" element={<CallForPapers />} />
-        <Route
-          path="/logo-design-competition"
-          element={<LogoDesignCompetition />}
-        />
+        <Route path="/logo-design-competition" element={<LogoDesignCompetition />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/accommodations" element={<Accommodations />} />
         <Route path="/directions" element={<Directions />} />
         <Route path="/workshop" element={<Workshop />} />
       </Routes>
-
       <Footer />
     </>
   );

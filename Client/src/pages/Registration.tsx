@@ -60,21 +60,24 @@ const Registration = () => {
 
         </div>
 
-        {/* Associate Partner */}
+        {/* Partners */}
         <div className="mt-12 text-center">
-          <h2 className="text-[#f59e0b] font-bold text-lg sm:text-xl mb-3">Associate Partner</h2>
-          <div className="w-full h-px bg-white/20 mb-6" />
-          <div className="flex justify-center">
-            <div className="bg-white rounded-xl p-4 shadow-md inline-flex items-center justify-center w-[500px] h-[220px]">
-              <img
-                src="/images/sadea.png"
-                alt="SADEA - South Asian Design Educators Alliance"
-                className="w-full h-full object-contain"
-                loading="lazy"
-              />
+          <div className="w-full h-px bg-white/20 mb-8" />
+          <div className="flex flex-col sm:flex-row justify-center items-start gap-8">
+            <div className="flex flex-col items-center gap-3">
+              <div className="bg-white rounded-xl p-4 shadow-md flex items-center justify-center w-[320px] h-[160px] sm:w-[360px] sm:h-[180px]">
+                <img src="/images/sadea.png" alt="SADEA" className="w-full h-full object-contain" loading="lazy" />
+              </div>
+              <p className="text-[#f59e0b] font-bold text-sm sm:text-base">Associate Partner</p>
+            </div>
+            <div className="flex flex-col items-center gap-3">
+              <div className="bg-white rounded-xl p-4 shadow-md flex items-center justify-center w-[320px] h-[160px] sm:w-[360px] sm:h-[180px]">
+                <img src="/images/TSI-LOGO-1080PIXEL.jpg.jpeg" alt="Typography Society of India" className="w-full h-full object-contain" loading="lazy" />
+              </div>
+              <p className="text-[#f59e0b] font-bold text-sm sm:text-base">Organising Partner</p>
             </div>
           </div>
-          <div className="w-full h-px bg-white/20 mt-6" />
+          <div className="w-full h-px bg-white/20 mt-8" />
         </div>
         </div>
       </div>

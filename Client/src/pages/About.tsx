@@ -45,24 +45,6 @@ const AboutSection = () => {
             of students and faculty members from Design Institutes from around
             the country including interactive and non-interactive installations.
           </p>
-
-          <p className="text-sm leading-relaxed sm:text-base sm:leading-relaxed md:text-[15px] lg:text-base lg:leading-relaxed mb-4 sm:mb-5 md:mb-6">
-            The event pans out across three days:
-          </p>
-
-          {/* Event Schedule */}
-          <div className="text-sm leading-relaxed sm:text-base sm:leading-relaxed md:text-[15px] lg:text-base lg:leading-relaxed mb-8 sm:mb-10 md:mb-12">
-            <div className="mb-3">
-              <strong className="font-semibold">Day 1:</strong> Workshops on
-              Typography + Meet on 'Research in Typography'
-            </div>
-            <div>
-              <strong className="font-semibold">Day 2 & 3:</strong> Conference
-              focusing on 'Typography and Storytelling' + Typo Quiz +
-              Exhibitions and Installations + Award ceremony + conferment of a
-              Lifetime Achievement Award
-            </div>
-          </div>
         </div>
 
         {/* Partners Section */}
@@ -80,6 +62,11 @@ const AboutSection = () => {
                 <img src="/images/TSI-LOGO-1080PIXEL.jpg.jpeg" alt="Typography Society of India" className="w-full h-full object-contain" loading="lazy" />
               </div>
               <p className="text-[#f59e0b] font-bold text-sm sm:text-base">Organising Partner</p>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <div className="bg-white rounded-xl p-4 shadow-md inline-flex items-center justify-center w-[320px] h-[160px] sm:w-[360px] sm:h-[180px]">
+                <img src="/images/icfk_page-0001.jpg" alt="ICFK" className="w-full h-full object-contain" loading="lazy" />
+              </div>
             </div>
           </div>
           <div className="w-full h-px bg-white/20 mt-6" />

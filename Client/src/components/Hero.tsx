@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 
-const TOTAL_SLIDES = 3;
+const TOTAL_SLIDES = 11;
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);
@@ -46,20 +46,12 @@ const Hero = () => {
           className="flex transition-transform duration-700 ease-in-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
-          {/* Slide 0: newlogo */}
-          <div className="min-w-full flex justify-center items-center bg-white">
-            <img src="/images/newlogo.png" alt="Typoday 2026" className="w-full h-auto block" loading="lazy" />
-          </div>
-          {/* Slide 1: Registration Open banner */}
-          <div className="min-w-full">
-            <Link to="/registration">
-              <img src="/images/slide1.jpg" alt="Registration Open" className="w-full h-auto block cursor-pointer" loading="lazy" />
-            </Link>
-          </div>
-          {/* Slide 2: Winner banner */}
-          <div className="min-w-full">
-            <img src="/images/RAJA.png" alt="Logo Competition Winner" className="w-full h-auto block" loading="lazy" />
-          </div>
+          {/* Slides: banner1 - banner11 */}
+          {Array.from({ length: 11 }, (_, i) => (
+            <div key={i} className="min-w-full">
+              <img src={`/images/banner${i + 1}.jpeg`} alt={`Typoday 2026 Banner ${i + 1}`} className="w-full h-auto block" loading="lazy" />
+            </div>
+          ))}
         </div>
 
         {/* Left Arrow */}

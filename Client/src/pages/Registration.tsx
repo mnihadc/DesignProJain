@@ -30,7 +30,7 @@ const Registration = () => {
             <ul className="space-y-1 ml-2">
               <li>Professionals: Rs. 6000.00 (5084 + 916-GST)</li>
               <li>Faculty or NGOs: Rs. 6000.00 (5084 + 916-GST)</li>
-              <li>Students*: <s>Rs. 5000.00 (4237 + 611-GST)</s> Rs. 4000.00 (3389 + 611-GST) till 15th September 2026</li>
+              <li>Students*: <s>Rs. 5000.00 (4237 + 611-GST)</s> Rs. 4000.00 (3389 + 611-GST)</li>
             </ul>
           </div>
 
@@ -75,6 +75,11 @@ const Registration = () => {
                 <img src="/images/TSI-LOGO-1080PIXEL.jpg.jpeg" alt="Typography Society of India" className="w-full h-full object-contain" loading="lazy" />
               </div>
               <p className="text-[#f59e0b] font-bold text-sm sm:text-base">Organising Partner</p>
+            </div>
+            <div className="flex flex-col items-center gap-3">
+              <div className="bg-white rounded-xl p-4 shadow-md flex items-center justify-center w-[320px] h-[160px] sm:w-[360px] sm:h-[180px]">
+                <img src="/images/icfk_page-0001.jpg" alt="ICFK" className="w-full h-full object-contain" loading="lazy" />
+              </div>
             </div>
           </div>
           <div className="w-full h-px bg-white/20 mt-8" />

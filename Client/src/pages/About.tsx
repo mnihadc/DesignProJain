@@ -67,6 +67,7 @@ const AboutSection = () => {
               <div className="bg-white rounded-xl p-4 shadow-md inline-flex items-center justify-center w-[320px] h-[160px] sm:w-[360px] sm:h-[180px]">
                 <img src="/images/icfk_page-0001.jpg" alt="ICFK" className="w-full h-full object-contain" loading="lazy" />
               </div>
+              <p className="text-[#f59e0b] font-bold text-sm sm:text-base">Partner</p>
             </div>
           </div>
           <div className="w-full h-px bg-white/20 mt-6" />

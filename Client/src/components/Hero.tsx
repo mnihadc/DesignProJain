@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 
-const TOTAL_SLIDES = 11;
+const TOTAL_SLIDES = 12;
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);
@@ -52,6 +52,9 @@ const Hero = () => {
               <img src={`/images/banner${i + 1}.jpeg`} alt={`Typoday 2026 Banner ${i + 1}`} className="w-full h-auto block" loading="lazy" />
             </div>
           ))}
+          <div className="min-w-full">
+            <img src="/images/bannerpro.jpeg" alt="Typoday 2026 Banner Pro" className="w-full h-auto block" loading="lazy" />
+          </div>
         </div>
 
         {/* Left Arrow */}

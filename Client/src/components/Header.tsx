@@ -99,6 +99,12 @@ const Header = () => {
       return;
     }
 
+    if (navItem === "schedule") {
+      navigate("/schedule");
+      setIsMenuOpen(false);
+      return;
+    }
+
     if (navItem === "accommodations") {
       navigate("/accommodations");
       setIsMenuOpen(false);
@@ -125,7 +131,6 @@ const Header = () => {
     const map: NavMap = {
       home: "home",
       about: "about",
-      schedule: "schedule",
     };
 
     scrollToSection(map[navItem]);

@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import Accommodations from "./pages/Accommodations";
 import Directions from "./pages/Directions";
 import Workshop from "./pages/Workshop";
+import Schedule from "./pages/Schedule";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -56,6 +57,7 @@ function App() {
         <Route path="/accommodations" element={<Accommodations />} />
         <Route path="/directions" element={<Directions />} />
         <Route path="/workshop" element={<Workshop />} />
+        <Route path="/schedule" element={<Schedule />} />
       </Routes>
       <Footer />
     </>
